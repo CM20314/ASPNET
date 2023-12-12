@@ -2,5 +2,9 @@
 {
     public class PathfindingService
     {
+        public string DummyMethodToUppercase(string input)
+        {
+            return input.ToUpper();
+        }
     }
 }
