@@ -5,7 +5,8 @@
 2. [Download](https://git-scm.com/) `git`.
 3. Go to `%USERPROFILE%\source\repos` and open the command line.
 4. Run `git` to ensure git is installed correctly.
-5. Run `git clone https://github.com/ronaldobutrus/CM20314_ASPNET`.
+5. Run `git clone https://github.com/CM20314/ASPNET`.
+6. Run `cd ASPNET`
 6. Run `git branch development`. **This is crucial.**
 
 ## Working on the project
