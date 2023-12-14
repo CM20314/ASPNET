@@ -10,7 +10,7 @@ namespace CM20314.Tests
         {
             string input = "This is a test string";
             string expected_output = "THIS IS A TEST STRING";
-            Assert.AreEqual(expected_output, new PathfindingService().DummyMethodToUppercase(input));
+            Assert.AreEqual(expected_output, PathfindingService.DummyMethodToUppercase(input));
         }
     }
 }
