@@ -17,10 +17,10 @@ namespace CM20314.Services
             allNodeArcs = dbContext.NodeArc.ToList();
         }
 
-        public List<Node> FindShortestPath(Node startNode, Node endNode, AccessibilityLevel accessLevel)
+        public List<Node> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel)
         {
             // IMPLEMENT: Call BreadthFirstSearch (change name/params if appropriate) to perform chosen pathfinding algorithm
-            return BreadthFirstSearch(startNode, endNode, accessLevel);
+            return BreadthFirstSearch(new Node(), new Node(), accessLevel);
         }
 
         private List<Node> BreadthFirstSearch(Node startNode, Node endNode, AccessibilityLevel accessLevel)
