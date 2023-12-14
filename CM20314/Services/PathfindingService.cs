@@ -1,17 +1,20 @@
-﻿using CM20314.Models;
+﻿using CM20314.Data;
+using CM20314.Models;
 using CM20314.Models.Database;
 
 namespace CM20314.Services
 {
     public class PathfindingService
     {
-        private List<Node> allNodes;
-        private List<NodeArc> allNodeArcs;
+        private List<Node> allNodes = new List<Node>();
+        private List<NodeArc> allNodeArcs = new List<NodeArc>();
 
-        public PathfindingService(List<Node> mapNodes, List<NodeArc> mapNodeArcs)
+        public void Initialise(IServiceProvider serviceProvider)
         {
-            allNodes = mapNodes;
-            allNodeArcs = mapNodeArcs;
+            ApplicationDbContext dbContext = serviceProvider.GetRequiredService<ApplicationDbContext>();
+
+            allNodes = dbContext.Node.ToList();
+            allNodeArcs = dbContext.NodeArc.ToList();
         }
 
         public List<Node> FindShortestPath(Node startNode, Node endNode, AccessibilityLevel accessLevel)

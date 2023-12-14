@@ -1,4 +1,5 @@
 ﻿using System;
+using CM20314.Data;
 using CM20314.Models;
 using CM20314.Models.Database;
 
@@ -6,12 +7,15 @@ namespace CM20314.Services
 {
 	public class MapDataService
 	{
-		private MapResponseData mapResponseData;
+		private MapResponseData mapResponseData = new MapResponseData();
 
-        public MapDataService()
-		{
-			mapResponseData = new MapResponseData(); // Set on startup, only intialised once across system
-		}
+        public void Initialise(IServiceProvider serviceProvider)
+        {
+            ApplicationDbContext dbContext = serviceProvider.GetRequiredService<ApplicationDbContext>();
+            
+            // Set on startup, only intialised once across system
+            mapResponseData = new MapResponseData();
+        }
 
         public MapResponseData GetMapData()
         {

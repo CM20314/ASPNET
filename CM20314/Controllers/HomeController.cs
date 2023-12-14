@@ -1,4 +1,5 @@
-﻿using CM20314.Models;
+﻿using CM20314.Data;
+using CM20314.Models;
 using CM20314.Models.Database;
 using Microsoft.AspNetCore.Mvc;
 
