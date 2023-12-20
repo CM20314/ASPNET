@@ -1,0 +1,16 @@
+Clay
+Clay Court
+          at point  X=344341411.852  Y=226087252.046  Z=    0.000
+          at point  X=344374608.003  Y=226087360.811  Z=    0.000
+          at point  X=344374488.988  Y=226123685.296  Z=    0.000
+          at point  X=344341292.837  Y=226123576.531  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bcf
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7700.000
+          at point  X=344336100.000  Y=226123100.000  Z=    0.000
+          at point  X=344343800.000  Y=226123100.000  Z=    0.000

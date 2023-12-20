@@ -1,0 +1,24 @@
+8W
+8 West (Main)
+          at point  X=343753715.435  Y=226098942.629  Z=    0.000
+          at point  X=343753747.594  Y=226080473.882  Z=    0.000
+          at point  X=343680878.743  Y=226080385.653  Z=    0.000
+          at point  X=343680854.046  Y=226087054.384  Z=    0.000
+          at point  X=343679332.800  Y=226087054.384  Z=    0.000
+          at point  X=343679332.800  Y=226091144.384  Z=    0.000
+          at point  X=343678248.555  Y=226092678.817  Z=    0.000
+          at point  X=343680185.752  Y=226094604.384  Z=    0.000
+          at point  X=343681015.577  Y=226094604.384  Z=    0.000
+          at point  X=343681015.577  Y=226095600.000  Z=    0.000
+          at point  X=343684600.070  Y=226099046.687  Z=    0.000
+          at point  X=343753715.435  Y=226098942.629  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b5c
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2234.338
+          at point  X=343731000.000  Y=226100634.338  Z=    0.000
+          at point  X=343731000.000  Y=226098400.000  Z=    0.000

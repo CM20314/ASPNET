@@ -1,0 +1,21 @@
+Bobsleigh Track
+Bobsleigh Track
+          at point  X=344628965.896  Y=225798035.215  Z=    0.000
+          at point  X=344628965.896  Y=225786272.789  Z=    0.000
+          at point  X=344650644.694  Y=225786265.273  Z=    0.000
+          at point  X=344650644.694  Y=225777561.490  Z=    0.000
+          at point  X=344661492.133  Y=225777561.490  Z=    0.000
+          at point  X=344661492.133  Y=225906234.728  Z=    0.000
+          at point  X=344655148.828  Y=225906205.614  Z=    0.000
+          at point  X=344655290.574  Y=225830504.498  Z=    0.000
+          at point  X=344628965.896  Y=225798035.215  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12300.000
+          at point  X=344638400.000  Y=225776900.000  Z=    0.000
+          at point  X=344638400.000  Y=225789200.000  Z=    0.000

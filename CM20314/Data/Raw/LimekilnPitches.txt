@@ -1,0 +1,26 @@
+Limekiln Pitches
+Limekiln Football Pitches
+          at point  X=344576707.915  Y=225713096.620  Z=    0.000
+          at point  X=344655725.206  Y=225713096.620  Z=    0.000
+          at point  X=344655725.206  Y=225457236.229  Z=    0.000
+          at point  X=344576707.915  Y=225457236.229  Z=    0.000
+          at point  X=344576707.915  Y=225713096.620  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0aa7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   10300.000
+          at point  X=344572400.000  Y=225467300.000  Z=    0.000
+          at point  X=344582700.000  Y=225467300.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394be8
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13500.000
+          at point  X=344614791.103  Y=225716300.000  Z=    0.000
+          at point  X=344614791.103  Y=225702800.000  Z=    0.000

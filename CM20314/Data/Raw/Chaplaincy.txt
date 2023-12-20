@@ -1,0 +1,16 @@
+Chaplaincy
+Chaplaincy
+          at point  X=343948652.824  Y=226161156.719  Z=    0.000
+          at point  X=343948652.824  Y=226145356.719  Z=    0.000
+          at point  X=343959552.824  Y=226145356.719  Z=    0.000
+          at point  X=343959552.824  Y=226161156.719  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b8e
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2600.000
+          at point  X=343954600.000  Y=226144300.000  Z=    0.000
+          at point  X=343954600.000  Y=226146900.000  Z=    0.000

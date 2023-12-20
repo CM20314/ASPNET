@@ -1,0 +1,72 @@
+Track
+Athletics Track
+          at point  X=344316976.196  Y=226044701.521  Z=    0.000
+          at point  X=344329230.560  Y=226044752.086  Z=    0.000
+          at point  X=344335653.254  Y=226050552.984  Z=    0.000
+          at point  X=344343202.962  Y=226055126.695  Z=    0.000
+          at point  X=344353145.752  Y=226058581.145  Z=    0.000
+          at point  X=344363690.492  Y=226059689.451  Z=    0.000
+          at point  X=344371599.521  Y=226058921.262  Z=    0.000
+          at point  X=344379311.171  Y=226056786.913  Z=    0.000
+          at point  X=344385396.232  Y=226053999.399  Z=    0.000
+          at point  X=344390938.925  Y=226050416.415  Z=    0.000
+          at point  X=344395796.994  Y=226046195.213  Z=    0.000
+          at point  X=344401112.954  Y=226039825.453  Z=    0.000
+          at point  X=344404706.140  Y=226033663.423  Z=    0.000
+          at point  X=344409222.527  Y=226033663.423  Z=    0.000
+          at point  X=344409222.527  Y=225906080.973  Z=    0.000
+          at point  X=344400271.571  Y=225906044.039  Z=    0.000
+          at point  X=344396101.422  Y=225901265.079  Z=    0.000
+          at point  X=344391886.854  Y=225897542.791  Z=    0.000
+          at point  X=344386517.875  Y=225893930.922  Z=    0.000
+          at point  X=344381025.634  Y=225891240.068  Z=    0.000
+          at point  X=344375027.673  Y=225889248.529  Z=    0.000
+          at point  X=344369127.078  Y=225888133.262  Z=    0.000
+          at point  X=344362904.175  Y=225887796.993  Z=    0.000
+          at point  X=344356063.911  Y=225888401.919  Z=    0.000
+          at point  X=344348255.087  Y=225890398.206  Z=    0.000
+          at point  X=344343396.698  Y=225892423.350  Z=    0.000
+          at point  X=344338028.275  Y=225895491.166  Z=    0.000
+          at point  X=344333535.829  Y=225898887.970  Z=    0.000
+          at point  X=344329178.672  Y=225903152.915  Z=    0.000
+          at point  X=344325385.336  Y=225908010.202  Z=    0.000
+          at point  X=344322790.498  Y=225912324.385  Z=    0.000
+          at point  X=344316976.196  Y=225912324.385  Z=    0.000
+          at point  X=344316976.196  Y=226044701.521  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd0
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7300.000
+          at point  X=344317800.000  Y=226048800.000  Z=    0.000
+          at point  X=344317800.000  Y=226041500.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bfb
+              Open
+    Constant width     0.000
+              area   0.000
+            length   11400.000
+          at point  X=344344500.000  Y=225886300.000  Z=    0.000
+          at point  X=344344500.000  Y=225897700.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13700.000
+          at point  X=344419300.000  Y=225917000.000  Z=    0.000
+          at point  X=344405600.000  Y=225917000.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13700.000
+          at point  X=344419300.000  Y=226029900.000  Z=    0.000
+          at point  X=344405600.000  Y=226029900.000  Z=    0.000

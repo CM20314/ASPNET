@@ -9,6 +9,17 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Containers\**" />
+    <Compile Remove="Data\Paths\**" />
+    <Content Remove="Data\Containers\**" />
+    <Content Remove="Data\Paths\**" />
+    <EmbeddedResource Remove="Data\Containers\**" />
+    <EmbeddedResource Remove="Data\Paths\**" />
+    <None Remove="Data\Containers\**" />
+    <None Remove="Data\Paths\**" />
+  </ItemGroup>
   <ItemGroup>
     <None Remove="README.md" />
   </ItemGroup>

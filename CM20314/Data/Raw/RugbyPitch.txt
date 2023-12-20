@@ -1,0 +1,17 @@
+Rugby Pitch
+Rugby Pitch
+          at point  X=344464078.037  Y=225850256.990  Z=    0.000
+          at point  X=344584078.037  Y=225850256.990  Z=    0.000
+          at point  X=344584078.037  Y=225786256.990  Z=    0.000
+          at point  X=344464078.037  Y=225786256.990  Z=    0.000
+          at point  X=344464078.037  Y=225850256.990  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c02
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7296.965
+          at point  X=344576900.000  Y=225854096.965  Z=    0.000
+          at point  X=344576900.000  Y=225846800.000  Z=    0.000

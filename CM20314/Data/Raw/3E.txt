@@ -1,0 +1,42 @@
+3E
+3 East
+          at point  X=343948652.824  Y=226196156.719  Z=    0.000
+          at point  X=343950752.824  Y=226198356.719  Z=    0.000
+          at point  X=343959052.824  Y=226198356.719  Z=    0.000
+          at point  X=343960452.824  Y=226197056.719  Z=    0.000
+          at point  X=343961452.824  Y=226197056.719  Z=    0.000
+          at point  X=343962952.824  Y=226198356.719  Z=    0.000
+          at point  X=343969352.824  Y=226198356.719  Z=    0.000
+          at point  X=343970752.824  Y=226196656.719  Z=    0.000
+          at point  X=343984652.824  Y=226196656.719  Z=    0.000
+          at point  X=343984652.824  Y=226206856.719  Z=    0.000
+          at point  X=343997252.824  Y=226206856.719  Z=    0.000
+          at point  X=343997252.824  Y=226171656.719  Z=    0.000
+          at point  X=343986152.824  Y=226171656.719  Z=    0.000
+          at point  X=343986152.824  Y=226185356.719  Z=    0.000
+          at point  X=343972452.824  Y=226185356.719  Z=    0.000
+          at point  X=343972452.824  Y=226183456.719  Z=    0.000
+          at point  X=343960852.824  Y=226183456.719  Z=    0.000
+          at point  X=343960852.824  Y=226174456.719  Z=    0.000
+          at point  X=343957552.824  Y=226172656.719  Z=    0.000
+          at point  X=343951352.824  Y=226172656.719  Z=    0.000
+          at point  X=343948652.824  Y=226174456.719  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394db7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1561.406
+          at point  X=343961800.000  Y=226198300.000  Z=    0.000
+          at point  X=343962970.310  Y=226197266.383  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b97
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2300.000
+          at point  X=343966900.000  Y=226182000.000  Z=    0.000
+          at point  X=343966900.000  Y=226184300.000  Z=    0.000

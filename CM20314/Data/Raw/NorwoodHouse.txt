@@ -1,0 +1,33 @@
+Norwood House
+Norwood House
+          at point  X=343988952.824  Y=226128025.925  Z=    0.000
+          at point  X=343988952.824  Y=226124956.719  Z=    0.000
+          at point  X=343986252.824  Y=226124956.719  Z=    0.000
+          at point  X=343986252.824  Y=226110856.719  Z=    0.000
+          at point  X=343988952.824  Y=226110846.588  Z=    0.000
+          at point  X=343988952.824  Y=226104456.719  Z=    0.000
+          at point  X=343987352.824  Y=226104456.719  Z=    0.000
+          at point  X=343987352.824  Y=226096056.719  Z=    0.000
+          at point  X=344000927.973  Y=226096056.720  Z=    0.000
+          at point  X=344000996.158  Y=226114228.548  Z=    0.000
+          at point  X=344001048.045  Y=226128056.719  Z=    0.000
+          at point  X=343988952.824  Y=226128025.925  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394ba3
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1805.794
+          at point  X=343994956.074  Y=226104505.794  Z=    0.000
+          at point  X=343994956.074  Y=226102700.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394ba2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2022.703
+          at point  X=343994900.000  Y=226096877.297  Z=    0.000
+          at point  X=343994900.000  Y=226098900.000  Z=    0.000

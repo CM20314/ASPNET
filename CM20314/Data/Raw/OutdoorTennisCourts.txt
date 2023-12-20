@@ -1,0 +1,17 @@
+Tennis Courts
+Outdoor Tennis Courts
+          at point  X=344152879.493  Y=225694143.060  Z=    0.000
+          at point  X=344189066.594  Y=225681178.167  Z=    0.000
+          at point  X=344135743.038  Y=225534638.993  Z=    0.000
+          at point  X=344099555.938  Y=225547603.886  Z=    0.000
+          at point  X=344152879.493  Y=225694143.060  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394beb
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8070.936
+          at point  X=344189700.000  Y=225684900.000  Z=    0.000
+          at point  X=344185200.000  Y=225678200.000  Z=    0.000

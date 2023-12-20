@@ -1,0 +1,42 @@
+SU
+The SU
+          at point  X=344001048.045  Y=226128056.719  Z=    0.000
+          at point  X=344025052.824  Y=226128056.719  Z=    0.000
+          at point  X=344025052.824  Y=226114756.719  Z=    0.000
+          at point  X=344026019.471  Y=226114756.719  Z=    0.000
+          at point  X=344026019.410  Y=226114228.548  Z=    0.000
+          at point  X=344017719.410  Y=226114228.548  Z=    0.000
+          at point  X=344017719.410  Y=226113628.090  Z=    0.000
+          at point  X=344009613.682  Y=226113628.090  Z=    0.000
+          at point  X=344009620.910  Y=226113628.090  Z=    0.000
+          at point  X=344009620.910  Y=226114228.548  Z=    0.000
+          at point  X=344000989.471  Y=226114228.548  Z=    0.000
+          at point  X=344001048.045  Y=226128056.719  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394ba1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2248.997
+          at point  X=344014373.308  Y=226112751.003  Z=    0.000
+          at point  X=344014373.308  Y=226115000.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bad
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3500.000
+          at point  X=344024500.000  Y=226130400.000  Z=    0.000
+          at point  X=344024500.000  Y=226126900.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394dd2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3100.000
+          at point  X=344002600.000  Y=226129800.000  Z=    0.000
+          at point  X=344002600.000  Y=226126700.000  Z=    0.000

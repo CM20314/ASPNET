@@ -1,0 +1,47 @@
+
+                  LWPOLYLINE  Layer: "PATHS-INTERNAL-LINKS"
+                            Space: Model space
+                   Handle = 39e7a
+              Open
+    Constant width     0.000
+              area   13388.055
+            length   3720.900
+
+          at point  X=48093.752  Y=31641.872  Z=    0.000
+          at point  X=48074.957  Y=29345.701  Z=    0.000
+          at point  X=48074.957  Y=27921.049  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS-INTERNAL-LINKS"
+                            Space: Model space
+                   Handle = 39e7b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2007.076
+
+          at point  X=21343.155  Y=42332.645  Z=    0.000
+          at point  X=20281.954  Y=42332.645  Z=    0.000
+          at point  X=19336.078  Y=42332.645  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS-INTERNAL-LINKS"
+                            Space: Model space
+                   Handle = 39e7c
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1931.298
+
+          at point  X=52183.917  Y=31944.159  Z=    0.000
+          at point  X=52183.917  Y=30012.861  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS-INTERNAL-LINKS"
+                            Space: Model space
+                   Handle = 39e7d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4879.264
+
+          at point  X=24082.487  Y=13052.367  Z=    0.000
+          at point  X=21483.504  Y=13052.367  Z=    0.000
+          at point  X=19203.223  Y=13052.367  Z=    0.000

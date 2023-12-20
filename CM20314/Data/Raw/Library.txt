@@ -1,0 +1,23 @@
+Library
+The Library
+          at point  X=343905252.824  Y=226171056.719  Z=    0.000
+          at point  X=343942452.824  Y=226171056.719  Z=    0.000
+          at point  X=343942452.824  Y=226143056.719  Z=    0.000
+          at point  X=343942452.824  Y=226131556.719  Z=    0.000
+          at point  X=343942452.824  Y=226127056.719  Z=    0.000
+          at point  X=343905252.824  Y=226127056.719  Z=    0.000
+          at point  X=343905252.824  Y=226128956.719  Z=    0.000
+          at point  X=343902062.625  Y=226128958.852  Z=    0.000
+          at point  X=343902088.858  Y=226135136.133  Z=    0.000
+          at point  X=343905252.824  Y=226135136.133  Z=    0.000
+          at point  X=343905252.824  Y=226171056.719  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394da7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8073.984
+          at point  X=343924392.035  Y=226121826.016  Z=    0.000
+          at point  X=343924392.035  Y=226129900.000  Z=    0.000

@@ -1,0 +1,26 @@
+Hockey
+Hockey Pitch
+          at point  X=344348548.775  Y=225880433.476  Z=    0.000
+          at point  X=344409566.010  Y=225880433.476  Z=    0.000
+          at point  X=344409566.010  Y=225777126.345  Z=    0.000
+          at point  X=344348548.775  Y=225777126.345  Z=    0.000
+          at point  X=344348548.775  Y=225880433.476  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bf6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   9000.000
+          at point  X=344344500.000  Y=225874000.000  Z=    0.000
+          at point  X=344353500.000  Y=225874000.000  Z=    0.000
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bf8
+              Open
+    Constant width     0.000
+              area   0.000
+            length   9081.519
+          at point  X=344344218.481  Y=225785012.546  Z=    0.000
+          at point  X=344353300.000  Y=225785012.546  Z=    0.000
