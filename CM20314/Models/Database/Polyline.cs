@@ -3,14 +3,18 @@ namespace CM20314.Models.Database
 {
 	public class Polyline
 	{
-		private Coordinate[] coordinateList;
+		private string coordinateIdList;
 
-		public Polyline(Coordinate[] coordinates)
-		{
-			coordinateList = coordinates;
-		}
+        public Polyline(string coordinateIds)
+        {
+            coordinateIdList = coordinateIds;
+        }
+        public Polyline(IEnumerable<int> coordinateIds)
+        {
+            coordinateIdList = string.Join(',', coordinateIds);
+        }
 
-		//public int getBuildingID() { return ?; }
-	}
+        //public int getBuildingID() { return ?; }
+    }
 }
 

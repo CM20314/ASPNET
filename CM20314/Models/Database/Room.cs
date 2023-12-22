@@ -7,7 +7,7 @@ namespace CM20314.Models.Database
 		private int secondaryFloor;
 		private int buildingID;
 
-		public Room(string containerName, Polyline containerPolyline, int primary, int secondary, Building building) : base(containerName, containerPolyline)
+		public Room(string shortName, string longName, Polyline containerPolyline, int primary, int secondary, Building building) : base(shortName, longName, containerPolyline)
 		{
 			primaryFloor   = primary;
 			secondaryFloor = secondary;

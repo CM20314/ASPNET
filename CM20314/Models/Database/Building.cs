@@ -4,11 +4,15 @@ namespace CM20314.Models.Database
 {
 	public class Building : Container
 	{
-		private int[] floors;
+		private string floors;
 
-		public Building(string containerName, Polyline containerPolyline, int[] buildingFloors) : base(containerName, containerPolyline)
+        public Building() : base()
+        {
+            
+        }
+        public Building(string shortName, string longName, Polyline containerPolyline, List<int> buildingFloors) : base(shortName, longName, containerPolyline)
 		{
-			floors = buildingFloors;
+			floors = string.Join(',', buildingFloors);
 		}
 
 		//public ? getMapForFloor(int floor) { }

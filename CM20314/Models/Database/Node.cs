@@ -1,26 +1,31 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace CM20314.Models.Database
 {
 	public class Node : Entity
 	{
 		private int floor;
-		private int coordinateID;
-		private int buildingID;
+		private int coordinateId;
+		private int buildingId;
 
-		public Node(int f, Building building, Coordinate coordinate)
+        public Node()
+        {
+            
+        }
+        public Node(int floor, int buildingId, int coordinateId)
 		{
-			floor        = f;
-            buildingID   = building.Id;
-            coordinateID = coordinate.Id;
+			this.floor        = floor;
+            this.buildingId   = buildingId;
+			this.coordinateId = coordinateId;
 		}
 
-		public int getBuildingID() { return buildingID; }
+		public int getBuildingID() { return buildingId; }
 
 		//public Building getBuilding(int buildingID) { return ?; }
 
 		//public bool isOutside(int coordinateId) { return ?; }
 
-		public int getCoordinateID() { return coordinateID; }
+		public int getCoordinateID() { return coordinateId; }
 
 		//public Coordinate getCoordinate(int coordinateID) {return ?;}
 
