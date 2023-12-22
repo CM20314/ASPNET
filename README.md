@@ -26,7 +26,7 @@
 11. Add a title, e.g. ```Implemented database model classes```.
 12. Add a description which mentions the issue number(s), e.g. ```Resolved #1``` or ```Resolved #1 and #2```.
 13. I will then review your pull request, resolve any merge conflicts and let you know if there are any changes that need to be made by adding a comment to the request. If there are, then make the changes in your same feature branch and follow **steps 3 to 5** - once you push, this will update the pull request automatically. 
-14. If you are sure you are done with the feature branch, run `git branch -D feature-[feature_name]` to delete it. You won't need it any more. Otherwise, refer to step 3 of [Branch information](#branch-information).
+14. If you are sure you are done with the feature branch, run `git branch -D feature-issue-[issue-number]` to delete it. You won't need it any more. Otherwise, refer to step 3 of [Branch information](#branch-information).
 
 ~~5. Run `git checkout development`. This moves your `HEAD` to the `development` branch.~~
 ~~6. Run `git pull` (if this doesn't work, `git pull origin development`) to pull changes from the cloud to your local copy so as not to overwrite others' work.~~
