@@ -21,7 +21,7 @@
               area   0.000
             length   2400.000
           at point  X=344042400.000  Y=226095800.000  Z=    0.000
-          at point  X=344042400.000  Y=226093400.000  Z=    0.000
+          at point  X=344042400.000  Y=226093400.000  Z=    2
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c4f
@@ -30,4 +30,4 @@
               area   0.000
             length   3705.940
           at point  X=344070414.659  Y=226093805.940  Z=    0.000
-          at point  X=344070414.659  Y=226090100.000  Z=    0.000
+          at point  X=344070414.659  Y=226090100.000  Z=    2

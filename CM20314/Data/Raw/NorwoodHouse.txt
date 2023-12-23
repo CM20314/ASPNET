@@ -21,7 +21,7 @@ Norwood House
               area   0.000
             length   1805.794
           at point  X=343994956.074  Y=226104505.794  Z=    0.000
-          at point  X=343994956.074  Y=226102700.000  Z=    0.000
+          at point  X=343994956.074  Y=226102700.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394ba2
@@ -30,4 +30,4 @@ Norwood House
               area   0.000
             length   2022.703
           at point  X=343994900.000  Y=226096877.297  Z=    0.000
-          at point  X=343994900.000  Y=226098900.000  Z=    0.000
+          at point  X=343994900.000  Y=226098900.000  Z=    1

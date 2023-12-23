@@ -44,7 +44,7 @@ Sports Training Village
               area   0.000
             length   10092.503
           at point  X=344160107.497  Y=225951000.000  Z=    0.000
-          at point  X=344170200.000  Y=225951000.000  Z=    0.000
+          at point  X=344170200.000  Y=225951000.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c32
@@ -53,7 +53,7 @@ Sports Training Village
               area   0.000
             length   5600.000
           at point  X=344293100.000  Y=225920600.000  Z=    0.000
-          at point  X=344287500.000  Y=225920600.000  Z=    0.000
+          at point  X=344287500.000  Y=225920600.000  Z=    0
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c16
@@ -62,4 +62,4 @@ Sports Training Village
               area   0.000
             length   14100.000
           at point  X=344310500.000  Y=225966100.000  Z=    0.000
-          at point  X=344296400.000  Y=225966100.000  Z=    0.000
+          at point  X=344296400.000  Y=225966100.000  Z=    1

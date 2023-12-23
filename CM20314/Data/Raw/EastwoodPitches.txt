@@ -18,7 +18,7 @@ Eastwood Football Pitches
               area   0.000
             length   3753.665
           at point  X=344471100.000  Y=226118900.000  Z=    0.000
-          at point  X=344468300.000  Y=226116400.000  Z=    0.000
+          at point  X=344468300.000  Y=226116400.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c12
@@ -27,7 +27,7 @@ Eastwood Football Pitches
               area   0.000
             length   13697.565
           at point  X=344593900.000  Y=225974100.000  Z=    0.000
-          at point  X=344583233.984  Y=225965505.852  Z=    0.000
+          at point  X=344583233.984  Y=225965505.852  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bd4
@@ -36,7 +36,7 @@ Eastwood Football Pitches
               area   0.000
             length   12200.000
           at point  X=344604700.000  Y=225921400.000  Z=    0.000
-          at point  X=344592500.000  Y=225921400.000  Z=    0.000
+          at point  X=344592500.000  Y=225921400.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c11
@@ -45,4 +45,4 @@ Eastwood Football Pitches
               area   0.000
             length   13503.035
           at point  X=344576900.000  Y=225854096.965  Z=    0.000
-          at point  X=344576900.000  Y=225867600.000  Z=    0.000
+          at point  X=344576900.000  Y=225867600.000  Z=    1

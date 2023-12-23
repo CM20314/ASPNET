@@ -42,7 +42,7 @@ Athletics Track
               area   0.000
             length   7300.000
           at point  X=344317800.000  Y=226048800.000  Z=    0.000
-          at point  X=344317800.000  Y=226041500.000  Z=    0.000
+          at point  X=344317800.000  Y=226041500.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bfb
@@ -51,7 +51,7 @@ Athletics Track
               area   0.000
             length   11400.000
           at point  X=344344500.000  Y=225886300.000  Z=    0.000
-          at point  X=344344500.000  Y=225897700.000  Z=    0.000
+          at point  X=344344500.000  Y=225897700.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bd2
@@ -60,7 +60,7 @@ Athletics Track
               area   0.000
             length   13700.000
           at point  X=344419300.000  Y=225917000.000  Z=    0.000
-          at point  X=344405600.000  Y=225917000.000  Z=    0.000
+          at point  X=344405600.000  Y=225917000.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bd1
@@ -69,4 +69,4 @@ Athletics Track
               area   0.000
             length   13700.000
           at point  X=344419300.000  Y=226029900.000  Z=    0.000
-          at point  X=344405600.000  Y=226029900.000  Z=    0.000
+          at point  X=344405600.000  Y=226029900.000  Z=    1

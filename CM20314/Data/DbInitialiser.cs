@@ -123,7 +123,7 @@ namespace CM20314.Data
                         List<double> coordinates = lines[i].Split(" ").Where(e => !string.IsNullOrWhiteSpace(e)).Reverse().Take(3).Reverse()
                                         .Select(coord => double.Parse(coord.Split('=')[1])).ToList();
 
-                        Coordinate coordinate = new Coordinate(coordinates[0], coordinates[1]);
+                        Coordinate coordinate = new Coordinate(coordinates[0], coordinates[1], (int)coordinates[2]);
                         if (!pointsAreEntranceNodes)
                         {
                             polylineCoordinates.Add(coordinate);
@@ -146,13 +146,12 @@ namespace CM20314.Data
                 Building building = new Building(shortName, longName, polyline, floors);
                 _context.Add(building);
 
-                Coordinate entranceNodeCoord = new Coordinate(entranceCoordinates[1].getX(), entranceCoordinates[1].getY());
+                Coordinate entranceNodeCoord = new Coordinate(entranceCoordinates[1].getX(), entranceCoordinates[1].getY(), entranceCoordinates[2].getZ());
                 _context.Add(entranceNodeCoord);
 
                 _context.SaveChanges();
 
-                // NEEDS FLOOR SPECIFICATION - NOT HARDCODED AS BELOW
-                Node entranceNode = new Node(2, building.Id, entranceNodeCoord.Id);
+                Node entranceNode = new Node(entranceNodeCoord.getZ(), building.Id, entranceNodeCoord.Id);
                 _context.Add(entranceNode);
                 _context.SaveChanges();
 
