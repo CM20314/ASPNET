@@ -14,7 +14,7 @@ Beach Volleyball Court
               area   0.000
             length   13700.000
           at point  X=344405600.000  Y=226029900.000  Z=    0.000
-          at point  X=344419300.000  Y=226029900.000  Z=    0.000
+          at point  X=344419300.000  Y=226029900.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bd2
@@ -23,4 +23,4 @@ Beach Volleyball Court
               area   0.000
             length   13700.000
           at point  X=344405600.000  Y=225917000.000  Z=    0.000
-          at point  X=344419300.000  Y=225917000.000  Z=    0.000
+          at point  X=344419300.000  Y=225917000.000  Z=    1

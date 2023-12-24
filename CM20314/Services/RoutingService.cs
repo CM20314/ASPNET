@@ -27,7 +27,7 @@ namespace CM20314.Services
 
             for(int i = 0; i < nodes.Count - 1; i++)
             {
-                NodeArc arc = new NodeArc(nodes.ElementAt(i), nodes.ElementAt(i + 1));
+                NodeArc arc = new NodeArc(nodes.ElementAt(i), nodes.ElementAt(i + 1), false, 0, NodeArcType.Path, false);
                 NodeArcDirection nodeArcDirection = new NodeArcDirection(arc, GetDirectionStringForNodeArc(arc));
                 arcDirections.Add(nodeArcDirection);
             }
@@ -37,7 +37,7 @@ namespace CM20314.Services
 
         public Node GetNearestNodeToCoordinate(Coordinate coords)
         {
-            return new Node();
+            return new Node(0, 0,0);
         }
 
         public string GetDirectionStringForNodeArc(NodeArc arc)

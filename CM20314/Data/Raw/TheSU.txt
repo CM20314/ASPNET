@@ -21,7 +21,7 @@ The SU
               area   0.000
             length   2248.997
           at point  X=344014373.308  Y=226112751.003  Z=    0.000
-          at point  X=344014373.308  Y=226115000.000  Z=    0.000
+          at point  X=344014373.308  Y=226115000.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bad
@@ -30,13 +30,13 @@ The SU
               area   0.000
             length   3500.000
           at point  X=344024500.000  Y=226130400.000  Z=    0.000
-          at point  X=344024500.000  Y=226126900.000  Z=    0.000
+          at point  X=344024500.000  Y=226126900.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394dd2
               Open
     Constant width     0.000
               area   0.000
-            length   3100.000
+            length   3100.000 (THIS ONE IS TO THE PLUG AND TUB (1E))
           at point  X=344002600.000  Y=226129800.000  Z=    0.000
-          at point  X=344002600.000  Y=226126700.000  Z=    0.000
+          at point  X=344002600.000  Y=226126700.000  Z=    1

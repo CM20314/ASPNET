@@ -12,7 +12,7 @@ South Football Pitch          at point  X=343643269.549  Y=225989761.315  Z=    
               area   0.000
             length   14854.561
           at point  X=343617334.720  Y=225932457.264  Z=    0.000
-          at point  X=343625600.000  Y=225944800.000  Z=    0.000
+          at point  X=343625600.000  Y=225944800.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394dc7
@@ -21,7 +21,7 @@ South Football Pitch          at point  X=343643269.549  Y=225989761.315  Z=    
               area   0.000
             length   16099.689
           at point  X=343730400.000  Y=225932300.000  Z=    0.000
-          at point  X=343716000.000  Y=225939500.000  Z=    0.000
+          at point  X=343716000.000  Y=225939500.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394dc9
@@ -30,4 +30,4 @@ South Football Pitch          at point  X=343643269.549  Y=225989761.315  Z=    
               area   0.000
             length   12140.016
           at point  X=343702300.000  Y=225893300.000  Z=    0.000
-          at point  X=343692600.000  Y=225900600.000  Z=    0.000
+          at point  X=343692600.000  Y=225900600.000  Z=    1

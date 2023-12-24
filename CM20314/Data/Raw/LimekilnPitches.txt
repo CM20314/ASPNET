@@ -14,7 +14,7 @@ Limekiln Football Pitches
               area   0.000
             length   10300.000
           at point  X=344572400.000  Y=225467300.000  Z=    0.000
-          at point  X=344582700.000  Y=225467300.000  Z=    0.000
+          at point  X=344582700.000  Y=225467300.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394be8
@@ -23,4 +23,4 @@ Limekiln Football Pitches
               area   0.000
             length   13500.000
           at point  X=344614791.103  Y=225716300.000  Z=    0.000
-          at point  X=344614791.103  Y=225702800.000  Z=    0.000
+          at point  X=344614791.103  Y=225702800.000  Z=    1

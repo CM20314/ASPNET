@@ -14,7 +14,7 @@ Astro Pitch
               area   0.000
             length   6218.481
           at point  X=344344218.481  Y=225790200.000  Z=    0.000
-          at point  X=344338000.000  Y=225790200.000  Z=    0.000
+          at point  X=344338000.000  Y=225790200.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bf7
@@ -23,4 +23,4 @@ Astro Pitch
               area   0.000
             length   10200.000
           at point  X=344344500.000  Y=225874000.000  Z=    0.000
-          at point  X=344334300.000  Y=225874000.000  Z=    0.000
+          at point  X=344334300.000  Y=225874000.000  Z=    1

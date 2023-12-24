@@ -23,4 +23,4 @@ Department of Campus Infrastructure
               area   0.000
             length   2500.000
           at point  X=344046400.000  Y=226226500.000  Z=    0.000
-          at point  X=344046400.000  Y=226224000.000  Z=    0.000
+          at point  X=344046400.000  Y=226224000.000  Z=    1

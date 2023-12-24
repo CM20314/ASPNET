@@ -14,7 +14,7 @@ Hockey Pitch
               area   0.000
             length   9000.000
           at point  X=344344500.000  Y=225874000.000  Z=    0.000
-          at point  X=344353500.000  Y=225874000.000  Z=    0.000
+          at point  X=344353500.000  Y=225874000.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394bf8
@@ -23,4 +23,4 @@ Hockey Pitch
               area   0.000
             length   9081.519
           at point  X=344344218.481  Y=225785012.546  Z=    0.000
-          at point  X=344353300.000  Y=225785012.546  Z=    0.000
+          at point  X=344353300.000  Y=225785012.546  Z=    1

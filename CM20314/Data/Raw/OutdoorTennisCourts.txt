@@ -14,4 +14,4 @@ Outdoor Tennis Courts
               area   0.000
             length   8070.936
           at point  X=344189700.000  Y=225684900.000  Z=    0.000
-          at point  X=344185200.000  Y=225678200.000  Z=    0.000
+          at point  X=344185200.000  Y=225678200.000  Z=    1

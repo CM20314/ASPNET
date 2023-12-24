@@ -40,7 +40,7 @@ Wessex House
               area   0.000
             length   3482.725
           at point  X=343788708.865  Y=226126682.725  Z=    0.000
-          at point  X=343788708.865  Y=226123200.000  Z=    0.000
+          at point  X=343788708.865  Y=226123200.000  Z=    2
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394b84
@@ -49,7 +49,7 @@ Wessex House
               area   0.000
             length   4417.275
           at point  X=343794316.221  Y=226126682.725  Z=    0.000
-          at point  X=343794316.221  Y=226131100.000  Z=    0.000
+          at point  X=343794316.221  Y=226131100.000  Z=    2
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394b83
@@ -58,7 +58,7 @@ Wessex House
               area   0.000
             length   3534.338
           at point  X=343790600.000  Y=226100634.338  Z=    0.000
-          at point  X=343790600.000  Y=226097100.000  Z=    0.000
+          at point  X=343790600.000  Y=226097100.000  Z=    2
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c98
@@ -67,4 +67,4 @@ Wessex House
               area   0.000
             length   3900.000
           at point  X=343782700.000  Y=226077200.000  Z=    0.000
-          at point  X=343782700.000  Y=226081100.000  Z=    0.000
+          at point  X=343782700.000  Y=226081100.000  Z=    1

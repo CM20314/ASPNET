@@ -18,15 +18,16 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<MapDataService>();
 builder.Services.AddSingleton<PathfindingService>();
+builder.Services.AddSingleton<FileService>();
+builder.Services.AddScoped<DbInitialiser>();
 builder.Services.AddScoped<RoutingService>();
 
 var app = builder.Build();
 
-DbInitialiser.Initialise();
-
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+    services.GetRequiredService<DbInitialiser>().Initialise();
     services.GetRequiredService<MapDataService>().Initialise(services);
     services.GetRequiredService<PathfindingService>().Initialise(services);
 }

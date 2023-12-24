@@ -14,7 +14,7 @@ St John's Pitches
               area   0.000
             length   42100.000
           at point  X=344271288.872  Y=225745500.000  Z=    0.000
-          at point  X=344271288.872  Y=225703400.000  Z=    0.000
+          at point  X=344271288.872  Y=225703400.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c14
@@ -23,7 +23,7 @@ St John's Pitches
               area   0.000
             length   14355.835
           at point  X=344247500.000  Y=225710100.000  Z=    0.000
-          at point  X=344260300.000  Y=225703600.000  Z=    0.000
+          at point  X=344260300.000  Y=225703600.000  Z=    1
                   LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
                             Space: Model space
                    Handle = 394c13
@@ -32,4 +32,4 @@ St John's Pitches
               area   0.000
             length   18365.729
           at point  X=344176600.000  Y=225528300.000  Z=    0.000
-          at point  X=344194300.000  Y=225523400.000  Z=    0.000
+          at point  X=344194300.000  Y=225523400.000  Z=    1

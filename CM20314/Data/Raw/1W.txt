@@ -28,39 +28,43 @@
           at point  X=343861435.869  Y=226137716.728  Z=    0.000
           at point  X=343846433.407  Y=226137556.741  Z=    0.000
 #ENTRANCES
-                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES" (ANTICLOCKWISE)
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES" (BOTTOM LEFT)
                             Space: Model space
                    Handle = 394b86
+                   MatchHandle = 1W-bottom-left
               Open
     Constant width     0.000
               area   0.000
             length   3333.052
           at point  X=343870987.254  Y=226126123.559  Z=    0.000
-          at point  X=343870987.254  Y=226129456.611  Z=    0.000
-                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+          at point  X=343870987.254  Y=226129456.611  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES" (BOTTOM RIGHT)
                             Space: Model space
                    Handle = 3a0ae8
+                   MatchHandle = 1W-bottom-right
               Open
     Constant width     0.000
               area   0.000
             length   2169.241
           at point  X=343889706.736  Y=226126123.559  Z=    0.000
-          at point  X=343889704.179  Y=226128292.798  Z=    0.000
-                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+          at point  X=343889704.179  Y=226128292.798  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES" (TOP RIGHT)
                             Space: Model space
                    Handle = 394b88
+                   MatchHandle = 1W-top-right
               Open
     Constant width     0.000
               area   0.000
             length   3676.350
           at point  X=343903700.000  Y=226159326.445  Z=    0.000
-          at point  X=343900023.650  Y=226159326.445  Z=    0.000
-                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+          at point  X=343900023.650  Y=226159326.445  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES" (TOP LEFT)
                             Space: Model space
                    Handle = 394b87
+                   MatchHandle = 1W-top-left
               Open
     Constant width     0.000
               area   0.000
             length   878.070
           at point  X=343873578.070  Y=226176429.274  Z=    0.000
-          at point  X=343873578.070  Y=226175551.204  Z=    0.000
+          at point  X=343873578.070  Y=226175551.204  Z=    2
