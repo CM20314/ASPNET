@@ -1,0 +1,27 @@
+TB
+Test Building
+          at point  X=1.0  Y=1.0  Z=    0.000
+          at point  X=1.0  Y=1.5  Z=    0.000
+          at point  X=1.0  Y=2.0  Z=    0.000
+          at point  X=1.05  Y=2.0  Z=    0.000
+          at point  X=1.1  Y=2.0  Z=    0.000
+
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a93
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2785.908
+          at point  X=2.0  Y=1.5  Z=    0.000
+          at point  X=1.0  Y=1.5  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a92
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2998.316
+          at point  X=1.05  Y=3.0  Z=    0.000
+          at point  X=1.05  Y=2.0  Z=    1
