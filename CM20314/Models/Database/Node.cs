@@ -7,31 +7,36 @@ namespace CM20314.Models.Database
 		private int floor;
 		private int coordinateId;
 		private int buildingId;
+        private string matchHandle;
 
         public Node()
         {
             
         }
-        public Node(int floor, int buildingId, int coordinateId)
+        public Node(int floor, int buildingId, int coordinateId, string matchHandle = "")
 		{
 			this.floor        = floor;
             this.buildingId   = buildingId;
 			this.coordinateId = coordinateId;
+            this.matchHandle = matchHandle;
 		}
 
-		public int getBuildingID() { return buildingId; }
+		public int getBuildingId() { return buildingId; }
 
-		//public Building getBuilding(int buildingID) { return ?; }
+        //public Building getBuilding(int buildingID) { return ?; }
 
-		//public bool isOutside(int coordinateId) { return ?; }
+        //public bool isOutside(int coordinateId) { return ?; }
 
-		public int getCoordinateID() { return coordinateId; }
+        public int getCoordinateId() { return coordinateId; }
+        public int getFloor() { return floor; }
+        public string getMatchHandle() { return matchHandle; }
+        public void setMatchHandle(string value) { matchHandle = value; }
 
-		//public Coordinate getCoordinate(int coordinateID) {return ?;}
+        //public Coordinate getCoordinate(int coordinateID) {return ?;}
 
-		//public Node[] getNeighbouringNodes() { return ?; }
+        //public Node[] getNeighbouringNodes() { return ?; }
 
-		//public NodeArc[] getNodeArcs(Node[] neighbouringNodes) { return ?; }
-	}
+        //public NodeArc[] getNodeArcs(Node[] neighbouringNodes) { return ?; }
+    }
 }
 

@@ -67,6 +67,20 @@ namespace CM20314.Migrations
 
                     b.HasDiscriminator().HasValue("Building");
                 });
+
+            modelBuilder.Entity("CM20314.Models.Database.Floor", b =>
+                {
+                    b.HasBaseType("CM20314.Models.Database.Container");
+
+                    b.HasDiscriminator().HasValue("Floor");
+                });
+
+            modelBuilder.Entity("CM20314.Models.Database.Room", b =>
+                {
+                    b.HasBaseType("CM20314.Models.Database.Container");
+
+                    b.HasDiscriminator().HasValue("Room");
+                });
 #pragma warning restore 612, 618
         }
     }

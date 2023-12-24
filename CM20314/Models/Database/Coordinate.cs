@@ -9,17 +9,20 @@ namespace CM20314.Models.Database
 
         [NotMapped]
         private int z;
+        [NotMapped]
+        private string matchHandle;
 
         public Coordinate()
         {
 
         }
 
-        public Coordinate(double x, double y, int z = 0)
+        public Coordinate(double x, double y, int z = 0, string matchHandle = "")
         {
-            this.x = x;
-            this.y = y;
+            this.x = Math.Round(x, 3);
+            this.y = Math.Round(y, 3); ;
             this.z = z;
+            this.matchHandle = matchHandle;
         }
 
         public void setX(double newX) { this.x = newX; }
@@ -30,6 +33,8 @@ namespace CM20314.Models.Database
 
         public double getY() { return this.y; }
         public int getZ() { return this.z; }
+        public string getMatchHandle() { return this.matchHandle; }
+        public void setMatchHandle(string value) { this.matchHandle = value; }
 
         public static double CalculateEucilidianDistance(Coordinate c1, Coordinate c2)
         {
@@ -39,6 +44,10 @@ namespace CM20314.Models.Database
         public override bool Equals(object? obj)
         {
             Coordinate coordinate = obj as Coordinate ?? new Coordinate(-1, -1);
+            return coordinate.x == this.x && coordinate.y == this.y;
+        }
+        public bool Equals(Coordinate coordinate)
+        {
             return coordinate.x == this.x && coordinate.y == this.y;
         }
 

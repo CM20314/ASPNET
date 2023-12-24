@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CM20314.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231222174532_Initial")]
+    [Migration("20231224202719_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,13 @@ namespace CM20314.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("Entity");
                 });
 
+            modelBuilder.Entity("CM20314.Models.Database.Container", b =>
+                {
+                    b.HasBaseType("CM20314.Models.Database.Entity");
+
+                    b.HasDiscriminator().HasValue("Container");
+                });
+
             modelBuilder.Entity("CM20314.Models.Database.Coordinate", b =>
                 {
                     b.HasBaseType("CM20314.Models.Database.Entity");
@@ -54,6 +61,27 @@ namespace CM20314.Migrations
                     b.HasBaseType("CM20314.Models.Database.Entity");
 
                     b.HasDiscriminator().HasValue("NodeArc");
+                });
+
+            modelBuilder.Entity("CM20314.Models.Database.Building", b =>
+                {
+                    b.HasBaseType("CM20314.Models.Database.Container");
+
+                    b.HasDiscriminator().HasValue("Building");
+                });
+
+            modelBuilder.Entity("CM20314.Models.Database.Floor", b =>
+                {
+                    b.HasBaseType("CM20314.Models.Database.Container");
+
+                    b.HasDiscriminator().HasValue("Floor");
+                });
+
+            modelBuilder.Entity("CM20314.Models.Database.Room", b =>
+                {
+                    b.HasBaseType("CM20314.Models.Database.Container");
+
+                    b.HasDiscriminator().HasValue("Room");
                 });
 #pragma warning restore 612, 618
         }

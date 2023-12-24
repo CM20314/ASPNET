@@ -22,9 +22,14 @@ namespace CM20314.Services
             public const string FLOOR_CORRIDOR_PREFIX = "C";
             public const string BUILDING_FLOOR_SEPARATOR = "-";
 
-            public static List<string> BUILDING_NAMES = new List<string>()
+            /*public static List<string> BUILDING_NAMES = new List<string>()
             {
                 "10W", "1E", "1S", "1W", "1WN", "2E", "2S", "2W", "3E", "3GPitch", "3S", "3W", "3WA", "3WN", "4E", "4ES", "4S", "4SA", "4W", "4WCafe", "5S", "5W", "6E", "6W", "6WS", "7W", "8E", "8W_Main", "8W_Secondary", "9W", "AstroPitch", "AthleticsTrack", "BeachVolleyball", "BobsleighTrack", "ChancellorsBuilding", "Chaplaincy", "ClayCourt", "EastBuilding", "EastwoodPitches", "Estates", "FoundlersHall", "HockeyPitch", "Library", "LimekilnPitches", "MedicalCentre", "NorwoodHouse", "OutdoorTennisCourts", "RugbyPitch", "SchoolOfManagement", "ShootingRange", "SportsPitch", "SportsTrainingVillage", "StJohnsPitches", "TheEdge", "TheLimeTree", "TheSU", "UniversityHall", "WessexHouse"
+            };*/
+
+            public static List<string> BUILDING_NAMES = new List<string>()
+            {
+                "1W"
             };
 
             public static Dictionary<string, List<int>> BUILDING_FLOORS = new Dictionary<string, List<int>>()

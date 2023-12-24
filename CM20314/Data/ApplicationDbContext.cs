@@ -15,6 +15,8 @@ namespace CM20314.Data
         public DbSet<Entity> Entity { get; set; }
         public DbSet<Coordinate> Coordinate { get; set; }
         public DbSet<Building> Building { get; set; }
+        public DbSet<Room> Room { get; set; }
+        public DbSet<Floor> Floor { get; set; }
         public DbSet<Container> Container { get; set; }
         public DbSet<Node> Node { get; set; }
         public DbSet<NodeArc> NodeArc { get; set; }
