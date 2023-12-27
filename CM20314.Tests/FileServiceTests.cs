@@ -31,6 +31,7 @@ namespace CM20314.Tests
         public void ReadLinesFromFile()
         {
             var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
+            hostingEnvironmentMock.Setup(m => m.ContentRootPath).Returns($"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314");
             var fileServiceMock = new Mock<FileService>(hostingEnvironmentMock.Object);
 
             string path = $"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314\\Data\\Raw\\TestFiles\\Lines.txt";
@@ -47,6 +48,7 @@ namespace CM20314.Tests
         public void FolderExistsForFloor()
         {
             var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
+            hostingEnvironmentMock.Setup(m => m.ContentRootPath).Returns($"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314");
             var fileServiceMock = new Mock<FileService>(hostingEnvironmentMock.Object);
 
             bool result1 = fileServiceMock.Object.FolderExistsForFloor("1W", 2);

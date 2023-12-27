@@ -14,11 +14,11 @@ namespace CM20314.Models.Database
         {
 
         }
-        public NodeArc(Node n1, Node n2, bool steps, double cost, NodeArcType type, bool usageRequest)
+        public NodeArc(Node n1, Node n2, bool stepFree, double cost, NodeArcType type, bool usageRequest)
         {
             node1ID = n1.Id;
             node2ID = n2.Id;
-            stepFree = steps;
+            this.stepFree = stepFree;
             this.cost = cost;
             nodeArcType = (int)type;
             requiresUsageRequest = usageRequest;
