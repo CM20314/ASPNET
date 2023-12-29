@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace CM20314.Models.Database
 {
     public class NodeArc : Entity
@@ -9,6 +10,11 @@ namespace CM20314.Models.Database
         private double cost;
         private int nodeArcType;
         private bool requiresUsageRequest;
+
+        [NotMapped]
+        private Node node1;
+        [NotMapped]
+        private Node node2;
 
         public NodeArc()
         {
@@ -22,6 +28,9 @@ namespace CM20314.Models.Database
             this.cost = cost;
             nodeArcType = (int)type;
             requiresUsageRequest = usageRequest;
+
+            this.node1 = n1;
+            this.node2 = n2;
         }
 
         //public Node[] getNodes(int node1ID, int node2ID) { return ?; }
@@ -29,6 +38,12 @@ namespace CM20314.Models.Database
         public bool isStepFree() { return stepFree; }
         public double getCost() { return cost; }
         public NodeArcType getNodeArcType() { return (NodeArcType)nodeArcType; }
+
+        public Node getNode1 () { return node1; }
+        public Node getNode2 () { return node2; }
+
+        public int getNode1ID () { return node1ID;  }
+        public int getNode2ID () { return node2ID;  }
     }
 }
 

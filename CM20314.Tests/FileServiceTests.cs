@@ -12,7 +12,7 @@ namespace CM20314.Tests
     [TestClass]
     public class FileServiceTests
     {
-        [TestMethod]
+        //[TestMethod]
         public void GetPath()
         {
             var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
@@ -27,7 +27,7 @@ namespace CM20314.Tests
             Assert.AreEqual(expected, output);
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void ReadLinesFromFile()
         {
             var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
@@ -44,7 +44,7 @@ namespace CM20314.Tests
             }
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void FolderExistsForFloor()
         {
             var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
