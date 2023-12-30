@@ -1,4 +1,5 @@
-﻿using CM20314.Models;
+﻿using CM20314.Data;
+using CM20314.Models;
 using CM20314.Models.Database;
 
 namespace CM20314.Services
@@ -6,10 +7,14 @@ namespace CM20314.Services
     public class RoutingService
     {
         private readonly PathfindingService _pathfindingService;
+        private readonly ApplicationDbContext _context;
+
         public RoutingService(
-            PathfindingService pathfindingService)
+            PathfindingService pathfindingService,
+            ApplicationDbContext context)
         {
             _pathfindingService = pathfindingService;
+            _context = context;
         }
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
@@ -21,7 +26,7 @@ namespace CM20314.Services
             }
 
             var nodes = _pathfindingService.FindShortestPath(
-                requestData.StartNode, requestData.EndContainer, requestData.AccessibilityLevel);
+                requestData.StartNode, requestData.EndContainer, requestData.AccessibilityLevel, _context.Node.ToList(), _context.NodeArc.ToList());
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 

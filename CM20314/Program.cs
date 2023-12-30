@@ -29,7 +29,6 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     services.GetRequiredService<DbInitialiser>().Initialise();
     services.GetRequiredService<MapDataService>().Initialise(services);
-    services.GetRequiredService<PathfindingService>().Initialise(services);
 }
 
 // Configure the HTTP request pipeline.

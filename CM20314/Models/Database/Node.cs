@@ -1,13 +1,16 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography;
 namespace CM20314.Models.Database
 {
 	public class Node : Entity
 	{
-		private int floor;
-		private int coordinateId;
-		private int buildingId;
-        private string matchHandle;
+		protected int floor;
+		protected int coordinateId;
+		protected int buildingId;
+        protected string matchHandle;
+        
 
         public Node()
         {
