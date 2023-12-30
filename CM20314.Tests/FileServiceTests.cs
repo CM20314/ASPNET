@@ -12,14 +12,20 @@ namespace CM20314.Tests
     [TestClass]
     public class FileServiceTests
     {
-        //[TestMethod]
-        public void GetPath()
+        private readonly Mock<IWebHostEnvironment> hostingEnvironmentMock;
+        private readonly Mock<FileService> fileServiceMock;
+
+        public FileServiceTests()
         {
-            var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
+            hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
             hostingEnvironmentMock.Setup(m => m.ContentRootPath).Returns($"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314");
 
-            var fileServiceMock = new Mock<FileService>(hostingEnvironmentMock.Object);
+            fileServiceMock = new Mock<FileService>(hostingEnvironmentMock.Object);
+        }
 
+        [TestMethod]
+        public void GetPath()
+        {
             var input = "TESTPATH\\TESTFILE";
             string expected = $"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314\\Data\\Raw\\{input}.txt";
 
@@ -27,13 +33,9 @@ namespace CM20314.Tests
             Assert.AreEqual(expected, output);
         }
 
-        //[TestMethod]
+        [TestMethod]
         public void ReadLinesFromFile()
         {
-            var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
-            hostingEnvironmentMock.Setup(m => m.ContentRootPath).Returns($"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314");
-            var fileServiceMock = new Mock<FileService>(hostingEnvironmentMock.Object);
-
             string path = $"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314\\Data\\Raw\\TestFiles\\Lines.txt";
 
             List<string> output = fileServiceMock.Object.ReadLinesFromFile(path);
@@ -44,13 +46,9 @@ namespace CM20314.Tests
             }
         }
 
-        //[TestMethod]
+        [TestMethod]
         public void FolderExistsForFloor()
         {
-            var hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
-            hostingEnvironmentMock.Setup(m => m.ContentRootPath).Returns($"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\source\\repos\\ASPNET\\CM20314");
-            var fileServiceMock = new Mock<FileService>(hostingEnvironmentMock.Object);
-
             bool result1 = fileServiceMock.Object.FolderExistsForFloor("1W", 2);
             bool result2 = fileServiceMock.Object.FolderExistsForFloor("Non-existent", 0);
             bool result3 = fileServiceMock.Object.FolderExistsForFloor("1WN", 2);
