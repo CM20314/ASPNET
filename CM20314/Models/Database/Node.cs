@@ -6,13 +6,11 @@ namespace CM20314.Models.Database
 {
 	public class Node : Entity
 	{
-		private int floor;
-		private int coordinateId;
-		private int buildingId;
-        private string matchHandle;
-        private double distanceFromStartNode;
-        private Node previousNode;
-        private Boolean visited;
+		protected int floor;
+		protected int coordinateId;
+		protected int buildingId;
+        protected string matchHandle;
+        
 
         public Node()
         {
@@ -42,15 +40,6 @@ namespace CM20314.Models.Database
         //public Node[] getNeighbouringNodes() { return ?; }
 
         //public NodeArc[] getNodeArcs(Node[] neighbouringNodes) { return ?; }
-
-        public double getDistanceFromStartNode() {  return distanceFromStartNode; }
-        public void setDistanceFromStartNode(double distance) { this.distanceFromStartNode = distance;  }
-
-        public void setPreviousNode(Node prevNode) { this.previousNode = prevNode; }
-        public Node getPreviousNode() { return previousNode; }
-
-        public void setVisited(Boolean visited) { this.visited = visited; }
-        public Boolean getVisited() {  return visited; }
     }
 }
 

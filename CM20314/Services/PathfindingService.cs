@@ -14,19 +14,21 @@ namespace CM20314.Services
             return new List<Node>();
         }
 
-        public List<Node> BreadthFirstSearch(Node startNode, Node endNode, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> nodeArcs)
+        public List<DijkstraNode> BreadthFirstSearch(DijkstraNode startNode, DijkstraNode endNode, AccessibilityLevel accessLevel, List<DijkstraNode> nodes, List<NodeArc> nodeArcs)
         {
-            List<Node> shortestPath = new List<Node>();
+            if (startNode.getMatchHandle().Equals(endNode.getMatchHandle())) { return new List<DijkstraNode>() { startNode }; }
+
+            List<DijkstraNode> shortestPath = new List<DijkstraNode>();
             Boolean unvisitedVertexExists = true;
 
-            foreach (Node node in nodes)
+            foreach (DijkstraNode node in nodes)
             {
                 node.setDistanceFromStartNode(int.MaxValue);
             }
             startNode.setDistanceFromStartNode(0);
 
 
-            foreach (Node node in nodes)
+            foreach (DijkstraNode node in nodes)
             {
                 if (node.getVisited() == false)
                 {
@@ -37,8 +39,8 @@ namespace CM20314.Services
 
             while (unvisitedVertexExists == true)
             {
-                Node shortest = null;
-                foreach (Node node in nodes)
+                DijkstraNode shortest = null;
+                foreach (DijkstraNode node in nodes)
                 {
                     if (node.getVisited() == false)
                     {
@@ -55,11 +57,10 @@ namespace CM20314.Services
 
 
 
-                List<Node> neighbours = new List<Node>();
                 foreach (NodeArc arc in nodeArcs)
                 {
-                    Node node1 = nodes.First(n => n.Id == arc.getNode1ID());
-                    Node node2 = nodes.First(n => n.Id == arc.getNode2ID());
+                    DijkstraNode node1 = nodes.First(n => n.Id == arc.getNode1ID());
+                    DijkstraNode node2 = nodes.First(n => n.Id == arc.getNode2ID());
 
 
                     if (accessLevel == AccessibilityLevel.StepFree)
@@ -67,16 +68,15 @@ namespace CM20314.Services
                         if (arc.isStepFree() == false) { continue;  }
                     }
 
-                    if (arc.getNode1() == shortest)
+                    if (node1 == shortest)
                     {
-                        if (arc.getNode2().getVisited() == false)
+                        if (node2.getVisited() == false)
                         {
-                            if (arc.getCost() + shortest.getDistanceFromStartNode() < arc.getNode2().getDistanceFromStartNode())
+                            if (arc.getCost() + shortest.getDistanceFromStartNode() < node2.getDistanceFromStartNode())
                             {
-                                arc.getNode2().setDistanceFromStartNode(arc.getCost() + shortest.getDistanceFromStartNode());
-                                arc.getNode2().setPreviousNode(shortest);
+                                node2.setDistanceFromStartNode(arc.getCost() + shortest.getDistanceFromStartNode());
+                                node2.setPreviousNode(shortest);
                             }
-                            neighbours.Add(arc.getNode2());
                         }
                     }
                 }
@@ -84,7 +84,7 @@ namespace CM20314.Services
                 shortest.setVisited(true);
 
                 unvisitedVertexExists = false;
-                foreach (Node node in nodes)
+                foreach (DijkstraNode node in nodes)
                 {
                     if (node.getVisited() == false)
                     {
@@ -95,11 +95,19 @@ namespace CM20314.Services
 
             }
 
-            Node end = endNode;
-            while (end != startNode)
+            DijkstraNode end = endNode;
+            while (end != startNode && end.getPreviousNode() != null)
             {
                 shortestPath.Add(end);
-                end = end.getPreviousNode();
+                if (end.getPreviousNode() != null)
+                {
+                    end = end.getPreviousNode();
+                }
+            }
+
+            if (end != startNode)
+            {
+                return new List<DijkstraNode>() { };
             }
             shortestPath.Add(startNode);
 
