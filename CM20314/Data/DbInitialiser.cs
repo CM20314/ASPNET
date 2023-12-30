@@ -206,6 +206,7 @@ namespace CM20314.Data
             {
                 List<int> floors = Constants.SourceFilePaths.BUILDING_FLOORS.ContainsKey(buildingName) ?
                     Constants.SourceFilePaths.BUILDING_FLOORS[buildingName] : new List<int>();
+                if (floors.Count() == 0) continue;
                 Building building = _context.Building.AsEnumerable().First(b => b.getShortName().Equals(buildingName));
 
                 foreach (int floor in floors)

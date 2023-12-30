@@ -22,7 +22,7 @@ namespace CM20314.Services
             return mapResponseData;
         }
 
-        public List<Container> SearchContainers()
+        public List<Container> SearchContainers(string query, List<Building> buildings, List<Room> rooms)
         {
             return new List<Container>();
         }
