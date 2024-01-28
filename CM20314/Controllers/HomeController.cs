@@ -13,10 +13,13 @@ namespace CM20314.Controllers
     public class HomeController : ControllerBase
     {
         private readonly RoutingService _routingService;
+        private readonly MapDataService _mapDataService;
         public HomeController(
-            RoutingService routingService)
+            RoutingService routingService,
+            MapDataService mapDataService)
         {
             _routingService = routingService;
+            _mapDataService = mapDataService;
         }
 
         // GET api/directions
@@ -30,10 +33,9 @@ namespace CM20314.Controllers
 
         // GET api/map
         [HttpGet("map")]
-        public MapResponseData GetMap()
+        public MapResponseData GetMap(int buildingId = 0)
         {
-            // IMPLEMENT: Call MapDataService.GetMapData()
-            return new MapResponseData();
+            return _mapDataService.GetMapData(buildingId);
         }
 
         // GET api/search?query=SEARCH_QUERY

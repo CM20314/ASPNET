@@ -4,8 +4,7 @@ namespace CM20314.Models.Database
 {
 	public class Building : Container
 	{
-		private string floors;
-		private string polylineIds;
+        public string Floors { get; set; }
 
         public Building()
         {
@@ -13,11 +12,8 @@ namespace CM20314.Models.Database
         }
         public Building(string shortName, string longName, string polylineIds, List<int> buildingFloors) : base(shortName, longName, polylineIds)
 		{
-			floors = string.Join(',', buildingFloors);
-			this.polylineIds = polylineIds;
+			Floors = string.Join(',', buildingFloors);
 		}
-
-		//public ? getMapForFloor(int floor) { }
     }
 }
 

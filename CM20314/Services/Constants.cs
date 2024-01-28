@@ -4,7 +4,7 @@ namespace CM20314.Services
 {
     public static class Constants
     {
-        public static StartupMode STARTUP_MODE = StartupMode.GenerateDb;
+        public static StartupMode STARTUP_MODE = StartupMode.UseExistingDb;
         public static class SourceFilePaths
         {
             public const string ROOT = "Data\\Raw";

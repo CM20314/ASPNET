@@ -16,7 +16,7 @@ namespace CM20314.Services
 
         public List<DijkstraNode> BreadthFirstSearch(DijkstraNode startNode, DijkstraNode endNode, AccessibilityLevel accessLevel, List<DijkstraNode> nodes, List<NodeArc> nodeArcs)
         {
-            if (startNode.getMatchHandle().Equals(endNode.getMatchHandle())) { return new List<DijkstraNode>() { startNode }; }
+            if (startNode.MatchHandle.Equals(endNode.MatchHandle)) { return new List<DijkstraNode>() { startNode }; }
 
             List<DijkstraNode> shortestPath = new List<DijkstraNode>();
             Boolean unvisitedVertexExists = true;
@@ -59,22 +59,22 @@ namespace CM20314.Services
 
                 foreach (NodeArc arc in nodeArcs)
                 {
-                    DijkstraNode node1 = nodes.First(n => n.Id == arc.getNode1ID());
-                    DijkstraNode node2 = nodes.First(n => n.Id == arc.getNode2ID());
+                    DijkstraNode node1 = nodes.First(n => n.Id == arc.Node1Id);
+                    DijkstraNode node2 = nodes.First(n => n.Id == arc.Node2Id);
 
 
                     if (accessLevel == AccessibilityLevel.StepFree)
                     {
-                        if (arc.isStepFree() == false) { continue;  }
+                        if (!arc.StepFree) { continue;  }
                     }
 
                     if (node1 == shortest)
                     {
                         if (node2.getVisited() == false)
                         {
-                            if (arc.getCost() + shortest.getDistanceFromStartNode() < node2.getDistanceFromStartNode())
+                            if (arc.Cost + shortest.getDistanceFromStartNode() < node2.getDistanceFromStartNode())
                             {
-                                node2.setDistanceFromStartNode(arc.getCost() + shortest.getDistanceFromStartNode());
+                                node2.setDistanceFromStartNode(arc.Cost + shortest.getDistanceFromStartNode());
                                 node2.setPreviousNode(shortest);
                             }
                         }

@@ -16,9 +16,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<MapDataService>();
 builder.Services.AddSingleton<PathfindingService>();
 builder.Services.AddSingleton<FileService>();
+builder.Services.AddSingleton<MapDataService>();
 builder.Services.AddScoped<DbInitialiser>();
 builder.Services.AddScoped<RoutingService>();
 
@@ -27,8 +27,9 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    services.GetRequiredService<DbInitialiser>().Initialise();
-    services.GetRequiredService<MapDataService>().Initialise(services);
+    ApplicationDbContext applicationDbContext = services.GetRequiredService<ApplicationDbContext>();
+    services.GetRequiredService<DbInitialiser>().Initialise(applicationDbContext);
+    services.GetRequiredService<MapDataService>().Initialise(applicationDbContext);
 }
 
 // Configure the HTTP request pipeline.

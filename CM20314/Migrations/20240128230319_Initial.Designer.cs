@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CM20314.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231224202719_Initial")]
+    [Migration("20240128230319_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,12 +39,30 @@ namespace CM20314.Migrations
                 {
                     b.HasBaseType("CM20314.Models.Database.Entity");
 
+                    b.Property<string>("LongName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PolylineIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ShortName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasDiscriminator().HasValue("Container");
                 });
 
             modelBuilder.Entity("CM20314.Models.Database.Coordinate", b =>
                 {
                     b.HasBaseType("CM20314.Models.Database.Entity");
+
+                    b.Property<double>("X")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("Y")
+                        .HasColumnType("REAL");
 
                     b.HasDiscriminator().HasValue("Coordinate");
                 });
@@ -53,6 +71,15 @@ namespace CM20314.Migrations
                 {
                     b.HasBaseType("CM20314.Models.Database.Entity");
 
+                    b.Property<int>("BuildingId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CoordinateId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Floor")
+                        .HasColumnType("INTEGER");
+
                     b.HasDiscriminator().HasValue("Node");
                 });
 
@@ -60,12 +87,34 @@ namespace CM20314.Migrations
                 {
                     b.HasBaseType("CM20314.Models.Database.Entity");
 
+                    b.Property<double>("Cost")
+                        .HasColumnType("REAL");
+
+                    b.Property<int>("Node1Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Node2Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("NodeArcType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("RequiresUsageRequest")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("StepFree")
+                        .HasColumnType("INTEGER");
+
                     b.HasDiscriminator().HasValue("NodeArc");
                 });
 
             modelBuilder.Entity("CM20314.Models.Database.Building", b =>
                 {
                     b.HasBaseType("CM20314.Models.Database.Container");
+
+                    b.Property<string>("Floors")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.HasDiscriminator().HasValue("Building");
                 });
@@ -80,6 +129,19 @@ namespace CM20314.Migrations
             modelBuilder.Entity("CM20314.Models.Database.Room", b =>
                 {
                     b.HasBaseType("CM20314.Models.Database.Container");
+
+                    b.Property<int>("BuildingId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Room_BuildingId");
+
+                    b.Property<bool>("ExcludeFromRooms")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PrimaryFloor")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SecondaryFloor")
+                        .HasColumnType("INTEGER");
 
                     b.HasDiscriminator().HasValue("Room");
                 });

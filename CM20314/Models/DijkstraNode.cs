@@ -7,10 +7,10 @@
         private Boolean visited;
         public DijkstraNode(int floor, int buildingId, int coordinateId, string matchHandle = "") : base(floor, buildingId, coordinateId, matchHandle)
         {
-            this.floor = floor;
-            this.buildingId = buildingId;
-            this.coordinateId = coordinateId;
-            this.matchHandle = matchHandle;
+            Floor = floor;
+            BuildingId = buildingId;
+            CoordinateId = coordinateId;
+            MatchHandle = matchHandle;
         }
 
         public double getDistanceFromStartNode() { return distanceFromStartNode; }
