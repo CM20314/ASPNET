@@ -4,6 +4,7 @@ using CM20314.Models.Database;
 
 namespace CM20314.Services
 {
+    // Handles path-finding and direction services
     public class PathfindingService
     {
         public List<Node> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> nodeArcs)
@@ -14,12 +15,13 @@ namespace CM20314.Services
             return new List<Node>();
         }
 
-        public List<DijkstraNode> BreadthFirstSearch(DijkstraNode startNode, DijkstraNode endNode, AccessibilityLevel accessLevel, List<DijkstraNode> nodes, List<NodeArc> nodeArcs)
+        // Uses Dijkstra's Algorithm to perform path search
+        public List<DijkstraNode> DijkstraPathSearch(DijkstraNode startNode, DijkstraNode endNode, AccessibilityLevel accessLevel, List<DijkstraNode> nodes, List<NodeArc> nodeArcs)
         {
             if (startNode.MatchHandle.Equals(endNode.MatchHandle)) { return new List<DijkstraNode>() { startNode }; }
 
             List<DijkstraNode> shortestPath = new List<DijkstraNode>();
-            Boolean unvisitedVertexExists = true;
+            bool unvisitedVertexExists = true;
 
             foreach (DijkstraNode node in nodes)
             {
@@ -39,7 +41,7 @@ namespace CM20314.Services
 
             while (unvisitedVertexExists == true)
             {
-                DijkstraNode shortest = null;
+                DijkstraNode? shortest = null;
                 foreach (DijkstraNode node in nodes)
                 {
                     if (node.getVisited() == false)
@@ -81,7 +83,7 @@ namespace CM20314.Services
                     }
                 }
 
-                shortest.setVisited(true);
+                shortest?.setVisited(true);
 
                 unvisitedVertexExists = false;
                 foreach (DijkstraNode node in nodes)

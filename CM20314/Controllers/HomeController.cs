@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CM20314.Controllers
 {
+    // Home controller responsible for all calls to the API
     [Route("api")]
     [ApiController]
     public class HomeController : ControllerBase
@@ -18,6 +19,7 @@ namespace CM20314.Controllers
             RoutingService routingService,
             MapDataService mapDataService)
         {
+            // Acquire services via dependency injection
             _routingService = routingService;
             _mapDataService = mapDataService;
         }
@@ -26,15 +28,15 @@ namespace CM20314.Controllers
         [HttpGet("directions")]
         public RouteResponseData GetDirections([FromBody] RouteRequestData requestData)
         {
-            // IMPLEMENT: RouteRequestData and RouteResponseData classes
-            var routeResponse = _routingService.ComputeRoute(requestData);
-            return routeResponse;
+            // Make call to RoutingService 
+            return _routingService.ComputeRoute(requestData);
         }
 
         // GET api/map
         [HttpGet("map")]
         public MapResponseData GetMap(int buildingId = 0)
         {
+            // Make call to MapDataService
             return _mapDataService.GetMapData(buildingId);
         }
 
