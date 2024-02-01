@@ -2,27 +2,59 @@
 using CM20314.Data;
 using CM20314.Models;
 using CM20314.Models.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace CM20314.Services
 {
+    // Handles map data search and fetch operations
 	public class MapDataService
-	{
-		private MapResponseData mapResponseData = new MapResponseData();
+    {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        private ApplicationDbContext _context;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
-        public void Initialise(IServiceProvider serviceProvider)
+        private static MapResponseData mapResponseData = new MapResponseData(new List<Building>(), new List<Room>());
+
+        public void Initialise(ApplicationDbContext context)
         {
-            ApplicationDbContext dbContext = serviceProvider.GetRequiredService<ApplicationDbContext>();
-            
+            _context = context;
             // Set on startup, only intialised once across system
-            mapResponseData = new MapResponseData();
+            foreach (Building building in _context.Building.ToList())
+            {
+                List<Coordinate> polylineCoords = new List<Coordinate>();
+                foreach (string coordinateId in building.PolylineIds.Split(","))
+                {
+                    Coordinate coord = _context.Coordinate.First(c => c.Id == Convert.ToInt32(coordinateId));
+                    polylineCoords.Add(coord);
+                }
+                building.Polyline = new Polyline(polylineCoords);
+                mapResponseData.Buildings.Add(building);
+            }
+            foreach (Room room in _context.Room.ToList())
+            {
+                List<Coordinate> polylineCoords = new List<Coordinate>();
+                foreach (string coordinateId in room.PolylineIds.Split(","))
+                {
+                    Coordinate coord = _context.Coordinate.First(c => c.Id == Convert.ToInt32(coordinateId));
+                    polylineCoords.Add(coord);
+                }
+                room.Polyline = new Polyline(polylineCoords);
+                mapResponseData.Rooms.Add(room);
+            }
         }
 
-        public MapResponseData GetMapData()
+        public MapResponseData GetMapData(int buildingId)
         {
-            return mapResponseData;
+            if(buildingId == 0)
+                return mapResponseData;
+            MapResponseData filteredResponseData = new MapResponseData(
+                mapResponseData.Buildings.Where(b => b.Id == buildingId).ToList(),
+                mapResponseData.Rooms.Where(r => r.BuildingId == buildingId).ToList()
+                );
+            return filteredResponseData;
         }
 
-        public List<Container> SearchContainers()
+        public List<Container> SearchContainers(string query, List<Building> buildings, List<Room> rooms)
         {
             return new List<Container>();
         }
