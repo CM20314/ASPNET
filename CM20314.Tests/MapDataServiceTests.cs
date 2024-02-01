@@ -26,7 +26,7 @@ namespace CM20314.Tests
             List<Container> output = mapDataServiceMock.Object.SearchContainers(input, TestData.Containers.buildings, TestData.Containers.rooms);
             List<Container> expected = new List<Container>()
             {
-                TestData.Containers.rooms.First(r => r.getLongName() == "2.59")
+                TestData.Containers.rooms.First(r => r.LongName == "2.59")
             };
             Assert.AreEqual(expected.Count(), output.Count());
             for (int i = 0; i < output.Count(); i++)
