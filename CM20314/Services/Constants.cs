@@ -4,7 +4,7 @@ namespace CM20314.Services
 {
     public static class Constants
     {
-        public static StartupMode STARTUP_MODE = StartupMode.UseExistingDb;
+        public static StartupMode STARTUP_MODE = StartupMode.GenerateDb;
         public static class SourceFilePaths
         {
             public const string ROOT = "Data\\Raw";
@@ -32,5 +32,7 @@ namespace CM20314.Services
                 { "1W", new List<int> { 2 } }
             };
         }
+
+        public const int COORDINATE_RANGE = 1000;
     }
 }

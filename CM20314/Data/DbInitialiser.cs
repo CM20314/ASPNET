@@ -42,6 +42,8 @@ namespace CM20314.Data
             ProcessBuildingBoundariesAndEntrances();
             // Open buildings floors folders one by one:
             ProcessBuildings();
+            // Ensure coordinates are adjusted such that the top left corner is the origin
+            StandardiseCoordinates();
         }
 
         // Opens a path file, extracts coordinates and creates Nodes and NodeArcs.
@@ -429,6 +431,34 @@ namespace CM20314.Data
             System.Diagnostics.Debug.WriteLine("Added external link node arc");
         }
 
+        // Scale and offset coordinates for use in client app
+        private void StandardiseCoordinates()
+        {
+            List<Coordinate> coordinates = _context.Coordinate.ToList();
+            StandardiseCoordinates(coordinates);
+            _context.SaveChanges();
+        }
+        public static void StandardiseCoordinates(List<Coordinate> coords)
+        {
+            var minCoordX = coords.Min(c => c.X);
+            var maxCoordX = coords.Max(c => c.X);
+            var minCoordY = coords.Min(c => c.Y);
+            var maxCoordY = coords.Max(c => c.Y);
+
+            var rangeX = maxCoordX - minCoordX;
+            var rangeY = maxCoordY - minCoordY;
+
+            var scale = Math.Min(Constants.COORDINATE_RANGE / rangeX, Constants.COORDINATE_RANGE / rangeY);
+            var offsetX = -1 * minCoordX;
+            var offsetY = -1 * maxCoordY;
+
+            foreach (Coordinate coord in coords)
+            {
+                coord.X = (coord.X + offsetX) * scale;
+                coord.Y = (coord.Y + offsetY) * scale;
+            }
+        }
+
         // Clears all rows from database tables.
         private void ClearDatabase()
         {
@@ -448,5 +478,6 @@ namespace CM20314.Data
 
             _context.SaveChanges();
         }
+
     }
 }
