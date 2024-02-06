@@ -1,18 +1,26 @@
-﻿using CM20314.Models;
+﻿using CM20314.Data;
+using CM20314.Models;
 using CM20314.Models.Database;
 
 namespace CM20314.Services
 {
+    // Handles routing at a higher level by using the PathfindingService
     public class RoutingService
     {
         private readonly PathfindingService _pathfindingService;
+        private readonly ApplicationDbContext _context;
+
         public RoutingService(
-            PathfindingService pathfindingService)
+            PathfindingService pathfindingService,
+            ApplicationDbContext context)
         {
+            // Acquire services via dependency injection
             _pathfindingService = pathfindingService;
+            _context = context;
         }
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
+            // Validates request and then calls PathfindingService methods
             if(requestData.StartNode == null)
             {
                 if (requestData.StartCoordinate == null)
@@ -21,7 +29,7 @@ namespace CM20314.Services
             }
 
             var nodes = _pathfindingService.FindShortestPath(
-                requestData.StartNode, requestData.EndContainer, requestData.AccessibilityLevel);
+                requestData.StartNode, requestData.EndContainer, requestData.AccessibilityLevel, _context.Node.ToList(), _context.NodeArc.ToList());
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 
@@ -37,11 +45,13 @@ namespace CM20314.Services
 
         public Node GetNearestNodeToCoordinate(Coordinate coords)
         {
-            return new Node(0, 0,0);
+            // IMPLEMENT
+            return new Node(0,0,0);
         }
 
         public string GetDirectionStringForNodeArc(NodeArc arc)
         {
+            // IMPLEMENT
             return string.Empty;
         }
     }

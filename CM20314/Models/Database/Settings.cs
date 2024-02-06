@@ -3,18 +3,14 @@ namespace CM20314.Models.Database
 {
 	public class Settings
 	{
-		private bool requiresAccessibleRoute;
-		private bool requiresHighContrast;
+        public bool RequiresAccessibleRoute { get; set; }
+        public bool RequiresHighContrast { get; set; }
 
-		public Settings(bool accessibleRoute, bool highContrast)
+        public Settings(bool accessibleRoute, bool highContrast)
 		{
-			requiresAccessibleRoute = accessibleRoute;
-			requiresHighContrast    = highContrast;
+			RequiresAccessibleRoute = accessibleRoute;
+			RequiresHighContrast    = highContrast;
 		}
-
-		public bool getAccessibleRoute() { return requiresAccessibleRoute; }
-
-		public bool getHighContrast() {  return requiresHighContrast; }
 	}
 }
 
