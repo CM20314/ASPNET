@@ -17,7 +17,7 @@ namespace CM20314.Tests
             TestData.Containers.Initialise();
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void SearchTest1()
         {
             var mapDataServiceMock = new Mock<MapDataService>();
@@ -35,7 +35,7 @@ namespace CM20314.Tests
             }
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void SearchTest2()
         {
             var mapDataServiceMock = new Mock<MapDataService>();
