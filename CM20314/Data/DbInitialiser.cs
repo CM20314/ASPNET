@@ -450,7 +450,7 @@ namespace CM20314.Data
 
             var scale = Math.Min(Constants.COORDINATE_RANGE / rangeX, Constants.COORDINATE_RANGE / rangeY);
             var offsetX = -1 * minCoordX;
-            var offsetY = -1 * maxCoordY;
+            var offsetY = -1 * minCoordY;
 
             foreach (Coordinate coord in coords)
             {
