@@ -286,7 +286,7 @@ namespace CM20314.Data
 
             Coordinate n1coordinate = _context.Coordinate.First(c => c.Id == matchingNode.CoordinateId);
 
-            return CalculateOffset(n1coordinate, currentLineCoords[1], scale);
+            return CalculateOffset(currentLineCoords[1], n1coordinate, scale);
         }
 
         // Computes offset between two coordinates.
