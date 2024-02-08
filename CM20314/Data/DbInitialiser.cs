@@ -23,11 +23,9 @@ namespace CM20314.Data
             switch (Constants.STARTUP_MODE)
             {
                 case StartupMode.UseExistingDb:
-                    Building building1 = _context.Building.First();
                     break;
                 case StartupMode.GenerateDb:
                     GenerateDbFromFiles();
-                    Building building2 = _context.Building.First();
                     break;
             }
         }
@@ -164,6 +162,12 @@ namespace CM20314.Data
                     {
                         pointsAreEntranceNodes = true;
                     }
+                }
+
+                // If points are ABCD we want ABCD not ABCDA
+                if(polylineCoordinates.First() == polylineCoordinates.Last())
+                {
+                    polylineCoordinates.RemoveAt(polylineCoordinates.Count - 1);
                 }
 
                 _context.Coordinate.AddRange(polylineCoordinates);
