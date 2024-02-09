@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using CM20314.Data;
 using CM20314.Models;
 using CM20314.Models.Database;
@@ -56,8 +58,43 @@ namespace CM20314.Services
 
         public List<Container> SearchContainers(string query, List<Building> buildings, List<Room> rooms)
         {
-            return new List<Container>();
+            List<Container> containers = new List<Container>();
+            foreach (Building building in buildings)
+            {
+                if (query.Contains(building.LongName) || query.Contains(building.ShortName))
+                {
+                    query.Replace(building.LongName, building.ShortName);
+                    foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms))
+                    {
+                        if (room.BuildingId == building.Id)
+                        {
+                            if (query.Contains(room.LongName))
+                            {
+                                containers.Add(room);
+
+                                return containers;
+                            }
+                        }
+                    }
+                }
+
+                //query = "1W 2.59
+            }
+
+            foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms)
+            {
+                if (query.Contains(room.ShortName) || query.Contains(room.LongName))
+                {
+                    containers.Add(room);
+                }
+            }
+
+            
+            foreach (Container container in containers)
+            {
+                System.Diagnostics.Debug.WriteLine(container.LongName + " " + container.ShortName);
+            }
+            return containers;
         }
     }
 }
-
