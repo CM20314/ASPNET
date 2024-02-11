@@ -14,6 +14,7 @@ namespace CM20314.Tests.TestData
 
         public static void Initialise()
         {
+            buildings = new List<Building>();
             buildings.Add(new Building("10W", "10 West", "", new List<int>() { }));
             buildings.Add(new Building("1E", "1 East", "", new List<int>() { }));
             buildings.Add(new Building("1S", "1 South", "", new List<int>() { }));
@@ -48,7 +49,7 @@ namespace CM20314.Tests.TestData
             buildings.Add(new Building("Track", "Athletics Track", "", new List<int>() { }));
             buildings.Add(new Building("Volleyball", "Beach Volleyball Court", "", new List<int>() { }));
             buildings.Add(new Building("Bobsleigh Track", "Bobsleigh Track", "", new List<int>() { }));
-            buildings.Add(new Building("CB", "Chancellor's Building", "", new List<int>() { }));
+            buildings.Add(new Building("CB", "Chancellors' Building", "", new List<int>() { }));
             buildings.Add(new Building("Chaplaincy", "Chaplaincy", "", new List<int>() { }));
             buildings.Add(new Building("Clay", "Clay Court", "", new List<int>() { }));
             buildings.Add(new Building("EB", "East Building", "", new List<int>() { }));
@@ -72,57 +73,58 @@ namespace CM20314.Tests.TestData
             buildings.Add(new Building("SU", "The SU", "", new List<int>() { }));
             buildings.Add(new Building("UH", "University Hall", "", new List<int>() { }));
             buildings.Add(new Building("WH", "Wessex House", "", new List<int>() { }));
-            rooms.Add(new Room("2.59", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("C2.51", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("C2.52", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("2.60", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.57", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.61", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.56", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.53", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.58", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.54", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("C2.3", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("C2.2", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("2.04", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.05", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.08", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("C2.03", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("2.02", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.01", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("C2.1", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("2.101", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.102", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.103", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.105", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("C2.101", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("C2.03", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("C2.102", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("2.106", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.107", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.108", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.104", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("C2.4", "1W", "", 2, 96568, true));
-            rooms.Add(new Room("2.09", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.11", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.13", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.15", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.17", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.19", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.21", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.23", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.24", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.22", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.20", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.18", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.16", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.14", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.12", "1W", "", 2, 96568, false));
-            rooms.Add(new Room("2.12", "1W", "", 2, 96568, false));
+
+            rooms = new List<Room>();
+            rooms.Add(new Room("2.59", "1W 2.59", "", 2, 96568, false));
+            rooms.Add(new Room("C2.51", "1W C3.51", "", 2, 96568, true));
+            rooms.Add(new Room("C2.52", "1W C2.52", "", 2, 96568, true));
+            rooms.Add(new Room("2.60", "1W 2.60", "", 2, 96568, false));
+            rooms.Add(new Room("2.57", "1W 2.57", "", 2, 96568, false));
+            rooms.Add(new Room("2.61", "1W 2.61", "", 2, 96568, false));
+            rooms.Add(new Room("2.56", "1W 2.56", "", 2, 96568, false));
+            rooms.Add(new Room("2.53", "1W 2.53", "", 2, 96568, false));
+            rooms.Add(new Room("2.58", "1W 2.58", "", 2, 96568, false));
+            rooms.Add(new Room("2.54", "1W 2.54", "", 2, 96568, false));
+            rooms.Add(new Room("C2.3", "1W C2.3", "", 2, 96568, true));
+            rooms.Add(new Room("C2.2", "1W C2.2", "", 2, 96568, true));
+            rooms.Add(new Room("2.04", "1W 2.04", "", 2, 96568, false));
+            rooms.Add(new Room("2.05", "1W 2.05", "", 2, 96568, false));
+            rooms.Add(new Room("2.08", "1W 2.08", "", 2, 96568, false));
+            rooms.Add(new Room("C2.03", "1W C2.03", "", 2, 96568, true));
+            rooms.Add(new Room("2.02", "1W 2.02", "", 2, 96568, false));
+            rooms.Add(new Room("2.01", "1W 2.01", "", 2, 96568, false));
+            rooms.Add(new Room("C2.1", "1W C2.1", "", 2, 96568, true));
+            rooms.Add(new Room("2.101", "1W 2.101", "", 2, 96568, false));
+            rooms.Add(new Room("2.102", "1W 2.102", "", 2, 96568, false));
+            rooms.Add(new Room("2.103", "1W 2.103", "", 2, 96568, false));
+            rooms.Add(new Room("2.105", "1W 2.105", "", 2, 96568, false));
+            rooms.Add(new Room("C2.101", "1W C2.101", "", 2, 96568, true));
+            rooms.Add(new Room("C2.03", "1W C2.03", "", 2, 96568, true));
+            rooms.Add(new Room("C2.102", "1W C2.102", "", 2, 96568, true));
+            rooms.Add(new Room("2.106", "1W 2.106", "", 2, 96568, false));
+            rooms.Add(new Room("2.107", "1W 2.107", "", 2, 96568, false));
+            rooms.Add(new Room("2.108", "1W 2.108", "", 2, 96568, false));
+            rooms.Add(new Room("2.104", "1W 2.104", "", 2, 96568, false));
+            rooms.Add(new Room("C2.4", "1W C2.4", "", 2, 96568, true));
+            rooms.Add(new Room("2.09", "1W 2.09", "", 2, 96568, false));
+            rooms.Add(new Room("2.11", "1W 2.11", "", 2, 96568, false));
+            rooms.Add(new Room("2.13", "1W 2.13", "", 2, 96568, false));
+            rooms.Add(new Room("2.15", "1W 2.15", "", 2, 96568, false));
+            rooms.Add(new Room("2.17", "1W 2.17", "", 2, 96568, false));
+            rooms.Add(new Room("2.19", "1W 2.19", "", 2, 96568, false));
+            rooms.Add(new Room("2.21", "1W 2.21", "", 2, 96568, false));
+            rooms.Add(new Room("2.23", "1W 2.23", "", 2, 96568, false));
+            rooms.Add(new Room("2.24", "1W 2.24", "", 2, 96568, false));
+            rooms.Add(new Room("2.22", "1W 2.22", "", 2, 96568, false));
+            rooms.Add(new Room("2.20", "1W 2.20", "", 2, 96568, false));
+            rooms.Add(new Room("2.18", "1W 2.18", "", 2, 96568, false));
+            rooms.Add(new Room("2.16", "1W 2.16", "", 2, 96568, false));
+            rooms.Add(new Room("2.14", "1W 2.14", "", 2, 96568, false));
+            rooms.Add(new Room("2.12", "1W 2.12", "", 2, 96568, false));
 
             foreach(Building building in buildings)
             {
-                building.Id = rooms[0].Id;
+                building.Id = rooms[0].BuildingId;
             }
         }
     }
