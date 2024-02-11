@@ -1,5 +1,5 @@
 CB
-Chancellor's Building
+Chancellors' Building
           at point  X=344035170.705  Y=226211519.723  Z=    0.000
           at point  X=344035170.705  Y=226164519.723  Z=    0.000
           at point  X=344041820.705  Y=226164519.723  Z=    0.000

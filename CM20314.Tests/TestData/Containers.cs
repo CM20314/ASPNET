@@ -14,6 +14,7 @@ namespace CM20314.Tests.TestData
 
         public static void Initialise()
         {
+            buildings = new List<Building>();
             buildings.Add(new Building("10W", "10 West", "", new List<int>() { }));
             buildings.Add(new Building("1E", "1 East", "", new List<int>() { }));
             buildings.Add(new Building("1S", "1 South", "", new List<int>() { }));
@@ -48,7 +49,7 @@ namespace CM20314.Tests.TestData
             buildings.Add(new Building("Track", "Athletics Track", "", new List<int>() { }));
             buildings.Add(new Building("Volleyball", "Beach Volleyball Court", "", new List<int>() { }));
             buildings.Add(new Building("Bobsleigh Track", "Bobsleigh Track", "", new List<int>() { }));
-            buildings.Add(new Building("CB", "Chancellor's Building", "", new List<int>() { }));
+            buildings.Add(new Building("CB", "Chancellors' Building", "", new List<int>() { }));
             buildings.Add(new Building("Chaplaincy", "Chaplaincy", "", new List<int>() { }));
             buildings.Add(new Building("Clay", "Clay Court", "", new List<int>() { }));
             buildings.Add(new Building("EB", "East Building", "", new List<int>() { }));
@@ -72,6 +73,8 @@ namespace CM20314.Tests.TestData
             buildings.Add(new Building("SU", "The SU", "", new List<int>() { }));
             buildings.Add(new Building("UH", "University Hall", "", new List<int>() { }));
             buildings.Add(new Building("WH", "Wessex House", "", new List<int>() { }));
+
+            rooms = new List<Room>();
             rooms.Add(new Room("2.59", "1W 2.59", "", 2, 96568, false));
             rooms.Add(new Room("C2.51", "1W C3.51", "", 2, 96568, true));
             rooms.Add(new Room("C2.52", "1W C2.52", "", 2, 96568, true));

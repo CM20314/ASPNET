@@ -58,17 +58,35 @@ namespace CM20314.Services
 
         public List<Container> SearchContainers(string query, List<Building> buildings, List<Room> rooms)
         {
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return new List<Container>();
+            }
+
+            query = query.Replace("'", string.Empty);
+            query = query.ToUpper();
             List<Container> containers = new List<Container>();
+
+            // For the exact correct input
+            // Search through each building
             foreach (Building building in buildings)
             {
-                if (query.Contains(building.LongName) || query.Contains(building.ShortName))
+                String builLongName = building.LongName.Replace("'", string.Empty);
+                builLongName = builLongName.ToUpper();
+
+                // If the input contains the building's long name or short name
+                if (query.Contains(builLongName) || query.Contains(building.ShortName.ToUpper()))
                 {
-                    query.Replace(building.LongName, building.ShortName);
+                    // Replace the long name with it's short name i.e. 1 West -> 1W
+                    query.Replace(builLongName, building.ShortName.ToUpper());
+
+                    // Search each room and check if it's inside the building input
                     foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms))
                     {
                         if (room.BuildingId == building.Id)
                         {
-                            if (query.Contains(room.LongName))
+                            // Check if the input matches the room's long name
+                            if (query.Contains(room.LongName.ToUpper()))
                             {
                                 containers.Add(room);
 
@@ -77,24 +95,44 @@ namespace CM20314.Services
                         }
                     }
                 }
-
-                //query = "1W 2.59
             }
 
-            foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms)
+
+            foreach (Building building in buildings)
             {
-                if (query.Contains(room.ShortName) || query.Contains(room.LongName))
+                String builLongName = building.LongName.Replace("'", string.Empty);
+                builLongName = builLongName.ToUpper();
+                String builShortName = building.ShortName.Replace("'", string.Empty);
+                builShortName = builShortName.ToUpper();
+
+                if (builLongName.Contains(query) || builShortName.Contains(query))
+                {
+                    containers.Add(building);
+                }
+            }
+
+
+            foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms)) {
+                String roomLongName = room.LongName.Replace("'", string.Empty);
+                roomLongName = roomLongName.ToUpper();
+                String roomShortName = room.ShortName.Replace("'", string.Empty);
+                roomShortName = roomShortName.ToUpper();
+
+                if (roomShortName.Contains(query) || roomLongName.Contains(query))
                 {
                     containers.Add(room);
                 }
             }
 
-            
-            foreach (Container container in containers)
+            foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms))
             {
-                System.Diagnostics.Debug.WriteLine(container.LongName + " " + container.ShortName);
+                if (query.Contains(room.ShortName.ToUpper()) || query.Contains(room.LongName.ToUpper()))
+                {
+                    containers.Add(room);
+                }
             }
-            return containers;
+
+            return containers.Take(20).ToList();
         }
     }
 }
