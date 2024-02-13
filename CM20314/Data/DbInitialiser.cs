@@ -165,7 +165,7 @@ namespace CM20314.Data
                 }
 
                 // If points are ABCD we want ABCD not ABCDA
-                if(polylineCoordinates.First() == polylineCoordinates.Last())
+                if(polylineCoordinates.First().Equals(polylineCoordinates.Last()))
                 {
                     polylineCoordinates.RemoveAt(polylineCoordinates.Count - 1);
                 }
