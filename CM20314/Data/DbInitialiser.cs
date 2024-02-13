@@ -461,6 +461,13 @@ namespace CM20314.Data
                 coord.X = (coord.X + offsetX) * scale;
                 coord.Y = (coord.Y + offsetY) * scale;
             }
+
+            maxCoordY = coords.Max(c => c.Y);
+
+            foreach (Coordinate coord in coords)
+            {
+                coord.Y = Constants.COORDINATE_RANGE - coord.Y;
+            }
         }
 
         // Clears all rows from database tables.
