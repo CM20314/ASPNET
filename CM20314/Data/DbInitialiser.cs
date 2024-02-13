@@ -358,7 +358,7 @@ namespace CM20314.Data
                         _context.Coordinate.AddRange(currentLineCoords);
                         _context.SaveChanges();
                         Polyline polyline = new Polyline(currentLineCoords);
-                        Room room = new Room(roomName, building.ShortName, polyline.ToString(), floorNum, building.Id, roomName.StartsWith("C"));
+                        Room room = new Room(roomName, building.ShortName + " " + roomName, polyline.ToString(), floorNum, building.Id, roomName.StartsWith("C"));
                         _context.Room.Add(room);
                         _context.SaveChanges();
                         currentLineCoords = new List<Coordinate>();
@@ -460,6 +460,13 @@ namespace CM20314.Data
             {
                 coord.X = (coord.X + offsetX) * scale;
                 coord.Y = (coord.Y + offsetY) * scale;
+            }
+
+            maxCoordY = coords.Max(c => c.Y);
+
+            foreach (Coordinate coord in coords)
+            {
+                coord.Y = Constants.COORDINATE_RANGE - coord.Y;
             }
         }
 
