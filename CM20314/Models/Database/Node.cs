@@ -20,12 +20,14 @@ namespace CM20314.Models.Database
         {
             
         }
-        public Node(int floor, int buildingId, int coordinateId, string matchHandle = "")
+        public Node(int floor, int buildingId, int coordinateId, string matchHandle = "", Coordinate coordinate = null, int id = 0)
 		{
 		    Floor        = floor;
             BuildingId   = buildingId;
 			CoordinateId = coordinateId;
             MatchHandle = matchHandle;
+            if (coordinate != null) Coordinate = coordinate;
+            if (id != 0) Id = id;
 		}
     }
 }

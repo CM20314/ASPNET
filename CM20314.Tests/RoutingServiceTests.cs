@@ -14,12 +14,12 @@ namespace CM20314.Tests
 
         [TestMethod]
         public void FindNearestNeighbour1()
-		{
-            Node outputNode = RoutingService.GetNearestNodeToCoordinate(new Coordinate(0.9, 0.9), TestData.Nodes.testDijkstraNodes.Select(n => new Node(n.Floor, n.BuildingId, n.CoordinateId)).ToList());
+        {
+            Node outputNode = RoutingService.GetNearestNodeToCoordinate(new Coordinate(0.9, 0.9), TestData.Nodes.testDijkstraNodes.Select(n => new Node(n.Floor, n.BuildingId, n.CoordinateId, coordinate: n.Coordinate, id: n.Id)).ToList());
             Node expectedNode = TestData.Nodes.testDijkstraNodes.First(n => n.Coordinate.X == 1.0 && n.Coordinate.Y == 1.0);
 
-            Assert.AreEqual(outputNode, expectedNode);
+            Assert.AreEqual(outputNode.Id, expectedNode.Id);
         }
-	}
+    }
 }
 
