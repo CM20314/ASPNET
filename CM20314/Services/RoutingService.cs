@@ -1,6 +1,8 @@
-﻿using CM20314.Data;
+﻿using Accord.Collections;
+using CM20314.Data;
 using CM20314.Models;
 using CM20314.Models.Database;
+using KdTree;
 
 namespace CM20314.Services
 {
@@ -9,6 +11,7 @@ namespace CM20314.Services
     {
         private readonly PathfindingService _pathfindingService;
         private readonly ApplicationDbContext _context;
+        private KDTree<Node> kdTree;
 
         public RoutingService(
             PathfindingService pathfindingService,
@@ -17,6 +20,16 @@ namespace CM20314.Services
             // Acquire services via dependency injection
             _pathfindingService = pathfindingService;
             _context = context;
+
+            Node[] allNodes = _context.Node.ToArray();
+            foreach(Node node in allNodes)
+            {
+                node.Coordinate = _context.Coordinate.First(c => c.Id == node.CoordinateId);
+            }
+            var points = allNodes.Select(node => new double[] { node.Coordinate.X, node.Coordinate.Y }).ToArray();
+
+            kdTree = KDTree.FromData(points, allNodes);
+
         }
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
@@ -45,8 +58,19 @@ namespace CM20314.Services
 
         public Node GetNearestNodeToCoordinate(Coordinate coords)
         {
-            // IMPLEMENT
-            return new Node(0,0,0);
+            Node nearestNode = kdTree.Nearest(new double[] { coords.X, coords.Y }).Value;
+            return nearestNode;
+        }
+
+        // For unit testing
+        public static Node GetNearestNodeToCoordinate(Coordinate coords, List<Node> nodes)
+        {
+            Node[] allNodes = nodes.ToArray();
+            var points = nodes.Select(node => new double[] { node.Coordinate.X, node.Coordinate.Y }).ToArray();
+
+            KDTree<Node> kdTree = KDTree.FromData(points, allNodes);
+            Node nearestNode = kdTree.Nearest(new double[] { coords.X, coords.Y }).Value;
+            return nearestNode;
         }
 
         public string GetDirectionStringForNodeArc(NodeArc arc)

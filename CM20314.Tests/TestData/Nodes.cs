@@ -1,4 +1,5 @@
-﻿using CM20314.Models.Database;
+﻿using CM20314.Models;
+using CM20314.Models.Database;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,14 @@ namespace CM20314.Tests.TestData
 {
     public static class Nodes
     {
-        public static List<DijkstraNode> testNodes = new List<DijkstraNode>();
+        public static List<DijkstraNode> testDijkstraNodes = new List<DijkstraNode>();
+        public static List<Node> testNodes = new List<Node>();
         public static List<NodeArc> testNodeArcs = new List<NodeArc>();
         private static List<Coordinate> testCoordinates = new List<Coordinate>();
 
         public static void Initialise()
         {
-            testNodes = new List<DijkstraNode>();
+            testDijkstraNodes = new List<DijkstraNode>();
             testNodeArcs = new List<NodeArc>();
             testCoordinates = new List<Coordinate>();
 
@@ -23,56 +25,67 @@ namespace CM20314.Tests.TestData
             c1.Id = 1;
             DijkstraNode node1 = new DijkstraNode(0, 0, c1.Id, "Node 1");
             node1.Id = 1;
+            node1.Coordinate = c1;
 
             Coordinate c2 = new Coordinate(2.0, 1.0);
             c2.Id = 2;
             DijkstraNode node2 = new DijkstraNode(0, 0, c2.Id, "Node 2");
             node2.Id = 2;
+            node2.Coordinate = c2;
 
             Coordinate c3 = new Coordinate(3.0, 1.0);
             c3.Id = 3;
             DijkstraNode node3 = new DijkstraNode(0, 0, c3.Id, "Node 3");
             node3.Id = 3;
+            node3.Coordinate = c3;
 
             Coordinate c4 = new Coordinate(4.0, 1.0);
             c4.Id = 4;
             DijkstraNode node4 = new DijkstraNode(0, 0, c4.Id, "Node 4");
             node4.Id = 4;
+            node4.Coordinate = c4;
 
             Coordinate c5 = new Coordinate(5.0, 1.0);
             c5.Id = 5;
             DijkstraNode node5 = new DijkstraNode(0, 0, c5.Id, "Node 5");
             node5.Id = 5;
+            node5.Coordinate = c5;
 
             Coordinate c6 = new Coordinate(6.0, 1.0);
             c6.Id = 6;
             DijkstraNode node6 = new DijkstraNode(0, 0, c6.Id, "Node 6");
             node6.Id = 6;
+            node6.Coordinate = c6;
 
             Coordinate c7 = new Coordinate(7.0, 1.0);
             c7.Id = 7;
             DijkstraNode node7 = new DijkstraNode(0, 0, c7.Id, "Node 7");
             node7.Id = 7;
+            node7.Coordinate = c7;
 
             Coordinate c8 = new Coordinate(8.0, 1.0);
             c8.Id = 8;
             DijkstraNode node8 = new DijkstraNode(0, 0, c8.Id, "Node 8");
             node8.Id = 8;
+            node8.Coordinate = c8;
 
             Coordinate c9 = new Coordinate(9.0, 1.0);
             c9.Id = 9;
             DijkstraNode node9 = new DijkstraNode(0, 0, c9.Id, "Node 9");
             node9.Id = 9;
+            node9.Coordinate = c9;
 
             Coordinate c10 = new Coordinate(10.0, 1.0);
             c10.Id = 10;
             DijkstraNode node10 = new DijkstraNode(0, 0, c10.Id, "Node 10");
             node10.Id = 10;
+            node10.Coordinate = c10;
 
             Coordinate c11 = new Coordinate(100.0, 1.0);
             c11.Id = 11;
             DijkstraNode node11 = new DijkstraNode(0, 0, c11.Id, "Node 11");
             node11.Id = 10;
+            node11.Coordinate = c11;
 
             NodeArc n12 = new NodeArc(node1, node2, true, 4, NodeArcType.Path, false);
             NodeArc n21 = new NodeArc(node2, node1, true, 4, NodeArcType.Path, false);
@@ -108,17 +121,17 @@ namespace CM20314.Tests.TestData
             NodeArc n910 = new NodeArc(node9, node10, true, 50, NodeArcType.Path, false);
             NodeArc n109 = new NodeArc(node10, node9, true, 50, NodeArcType.Path, false);
 
-            testNodes.Add(node1);
-            testNodes.Add(node2);
-            testNodes.Add(node3);
-            testNodes.Add(node4);
-            testNodes.Add(node5);
-            testNodes.Add(node6);
-            testNodes.Add(node7);
-            testNodes.Add(node8);
-            testNodes.Add(node9);
-            testNodes.Add(node10);
-            testNodes.Add(node11);
+            testDijkstraNodes.Add(node1);
+            testDijkstraNodes.Add(node2);
+            testDijkstraNodes.Add(node3);
+            testDijkstraNodes.Add(node4);
+            testDijkstraNodes.Add(node5);
+            testDijkstraNodes.Add(node6);
+            testDijkstraNodes.Add(node7);
+            testDijkstraNodes.Add(node8);
+            testDijkstraNodes.Add(node9);
+            testDijkstraNodes.Add(node10);
+            testDijkstraNodes.Add(node11);
 
             testCoordinates.Add(c1);
             testCoordinates.Add(c2);
