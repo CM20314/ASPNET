@@ -44,8 +44,7 @@ namespace CM20314.Controllers
         [HttpGet("search")]
         public List<Container> SearchContainers(string query)
         {
-            // IMPLEMENT: Call MapDataService.SearchContainers()
-            return new List<Container>();
+            return _mapDataService.SearchContainers(query);
         }
     }
 }
