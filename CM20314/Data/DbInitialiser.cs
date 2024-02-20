@@ -122,6 +122,7 @@ namespace CM20314.Data
         {
             foreach (string buildingName in Constants.SourceFilePaths.BUILDING_NAMES)
             {
+                System.Diagnostics.Debug.WriteLine($"Extracting building boundaries and entrances for {buildingName}");
                 List<string> lines = _fileService.ReadLinesFromFileWithName(buildingName);
                 string shortName = lines[0];
                 string longName = lines[1];
@@ -213,6 +214,8 @@ namespace CM20314.Data
         {
             foreach (string buildingName in Constants.SourceFilePaths.BUILDING_NAMES)
             {
+                System.Diagnostics.Debug.WriteLine($"Extracting floors for {buildingName}");
+
                 List<int> floors = Constants.SourceFilePaths.BUILDING_FLOORS.ContainsKey(buildingName) ?
                     Constants.SourceFilePaths.BUILDING_FLOORS[buildingName] : new List<int>();
                 if (floors.Count() == 0) continue;
@@ -237,13 +240,17 @@ namespace CM20314.Data
             MapOffset mapOffset = ComputeMapOffset(building, floor, 1);
 
             //      Create floor, create polyline boundary.
+            System.Diagnostics.Debug.WriteLine($"Extracting floor boundaries for {building.LongName}");
             ProcessFloorBoundary(building, floor, mapOffset);
             //      Open paths, create all Nodes and NodeArcs, without duplicating Nodes.
+            System.Diagnostics.Debug.WriteLine($"Extracting paths for {building.LongName}");
             ProcessPaths($"{building.ShortName}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floor}\\{Constants.SourceFilePaths.FLOOR_FILENAME_PATHS}", floor, building.Id, mapOffset);
             //      Open containers, create Rooms and corridors, for rooms
+            System.Diagnostics.Debug.WriteLine($"Extracting floor containers for {building.LongName}");
             ProcessFloorContainers(building, floor, mapOffset);
             //      Open internal links (between floors), create Nodes and add flag
             //      Open external links, create NodeArcs to connect to outside nodes.
+            System.Diagnostics.Debug.WriteLine($"Extracting external floor links for {building.LongName}");
             ProcessExternalFloorLinks(building, floor, mapOffset);
         }
 

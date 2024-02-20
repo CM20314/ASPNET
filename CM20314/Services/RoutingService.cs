@@ -21,7 +21,7 @@ namespace CM20314.Services
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
             // Validates request and then calls PathfindingService methods
-            if(requestData.StartNode == null)
+            /*if(requestData.StartNode == null)
             {
                 if (requestData.StartCoordinate == null)
                     return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.");
@@ -40,7 +40,8 @@ namespace CM20314.Services
                 arcDirections.Add(nodeArcDirection);
             }
 
-            return new RouteResponseData(arcDirections, true, string.Empty);
+            return new RouteResponseData(arcDirections, true, string.Empty);*/
+            return new RouteResponseData(new List<NodeArcDirection>(), false, "Requires implementation");
         }
 
         public Node GetNearestNodeToCoordinate(Coordinate coords)
