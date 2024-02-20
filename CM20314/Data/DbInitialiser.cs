@@ -52,8 +52,9 @@ namespace CM20314.Data
             Stack<string> matchHandles = new Stack<string>();
             bool stepFree = true;
 
-            for (int i = 0; i < 150 /*lines.Count*/; i++)
+            for (int i = 0; i < lines.Count; i++)
             {
+                System.Diagnostics.Debug.WriteLine($"Extracting path {i} of {lines.Count}");
                 lines[i] = lines[i].FormatCoordinateLine();
 
                 if (lines[i].StartsWith("at point"))
@@ -96,7 +97,7 @@ namespace CM20314.Data
                 {
                     stepFree = false;
                 }
-                CreateNodeArcsForPath(currentLineNodes, stepFree);
+                //CreateNodeArcsForPath(currentLineNodes, stepFree);
             }
         }
 
