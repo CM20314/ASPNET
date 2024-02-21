@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container (so they can be acquired via dependency injection).
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -16,20 +16,22 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<MapDataService>();
 builder.Services.AddSingleton<PathfindingService>();
 builder.Services.AddSingleton<FileService>();
+builder.Services.AddSingleton<MapDataService>();
 builder.Services.AddScoped<DbInitialiser>();
 builder.Services.AddScoped<RoutingService>();
 
 var app = builder.Build();
 
+// Initialise Database (on first run) and MapDataService
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    services.GetRequiredService<DbInitialiser>().Initialise();
-    services.GetRequiredService<MapDataService>().Initialise(services);
-    services.GetRequiredService<PathfindingService>().Initialise(services);
+    ApplicationDbContext applicationDbContext = services.GetRequiredService<ApplicationDbContext>();
+    services.GetRequiredService<DbInitialiser>().Initialise(applicationDbContext);
+    services.GetRequiredService<MapDataService>().Initialise(applicationDbContext);
+    services.GetRequiredService<PathfindingService>().Initialise(applicationDbContext);
 }
 
 // Configure the HTTP request pipeline.
@@ -40,11 +42,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.UseMiddleware<ApiKeyMiddleware>();
-
 app.MapControllers();
-
 app.Run();

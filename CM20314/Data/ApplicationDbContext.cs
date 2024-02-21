@@ -11,7 +11,8 @@ namespace CM20314.Data
         {
 
         }
-
+        
+        // Database tables
         public DbSet<Entity> Entity { get; set; }
         public DbSet<Coordinate> Coordinate { get; set; }
         public DbSet<Building> Building { get; set; }

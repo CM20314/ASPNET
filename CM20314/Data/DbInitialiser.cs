@@ -11,20 +11,20 @@ namespace CM20314.Data
     public class DbInitialiser
     {
         private readonly FileService _fileService;
-        private readonly ApplicationDbContext _context;
+        private ApplicationDbContext _context;
 
-        public DbInitialiser(FileService fileService, DbContextOptions<ApplicationDbContext> contextOptions)
+        public DbInitialiser(FileService fileService)
         {
             _fileService = fileService;
-            _context = new ApplicationDbContext(contextOptions);
         }
-        public void Initialise()
+        public void Initialise(ApplicationDbContext context)
         {
+            _context = context;
             switch (Constants.STARTUP_MODE)
             {
-                case Models.StartupMode.UseExistingDb:
+                case StartupMode.UseExistingDb:
                     break;
-                case Models.StartupMode.GenerateDb:
+                case StartupMode.GenerateDb:
                     GenerateDbFromFiles();
                     break;
             }
@@ -40,6 +40,8 @@ namespace CM20314.Data
             ProcessBuildingBoundariesAndEntrances();
             // Open buildings floors folders one by one:
             ProcessBuildings();
+            // Ensure coordinates are adjusted such that the top left corner is the origin
+            StandardiseCoordinates();
         }
 
         // Opens a path file, extracts coordinates and creates Nodes and NodeArcs.
@@ -50,8 +52,9 @@ namespace CM20314.Data
             Stack<string> matchHandles = new Stack<string>();
             bool stepFree = true;
 
-            for (int i = 0; i < 150 /*lines.Count*/; i++)
+            for (int i = 0; i < lines.Count; i++)
             {
+                System.Diagnostics.Debug.WriteLine($"Extracting path {i} of {lines.Count}");
                 lines[i] = lines[i].FormatCoordinateLine();
 
                 if (lines[i].StartsWith("at point"))
@@ -63,7 +66,7 @@ namespace CM20314.Data
                     _context.Coordinate.Add(coordinate);
                     _context.SaveChanges();
 
-                    Coordinate? matchingCoordinate = _context.Coordinate.AsEnumerable().FirstOrDefault(c => c.getX() == coordinate.getX() && c.getY() == coordinate.getY());
+                    Coordinate? matchingCoordinate = _context.Coordinate.AsEnumerable().FirstOrDefault(c => c.X == coordinate.X && c.Y == coordinate.Y);
                     Node? matchingNode = _context.Node.FirstOrDefault(n => n.Id == (matchingCoordinate != null ? matchingCoordinate.Id : -1));
 
                     if (matchingNode == null)
@@ -94,7 +97,7 @@ namespace CM20314.Data
                 {
                     stepFree = false;
                 }
-                CreateNodeArcsForPath(currentLineNodes, stepFree);
+                //CreateNodeArcsForPath(currentLineNodes, stepFree);
             }
         }
 
@@ -103,8 +106,8 @@ namespace CM20314.Data
         {
             for (int i = 0; i < nodes.Count - 1; i++)
             {
-                Coordinate? c1 = _context.Coordinate.First(c => c.Id == nodes[i].getCoordinateId());
-                Coordinate? c2 = _context.Coordinate.First(c => c.Id == nodes[i + 1].getCoordinateId());
+                Coordinate? c1 = _context.Coordinate.First(c => c.Id == nodes[i].CoordinateId);
+                Coordinate? c2 = _context.Coordinate.First(c => c.Id == nodes[i + 1].CoordinateId);
                 NodeArc nodeArc = new NodeArc(
                     nodes[i], nodes[i + 1], stepFree,
                     Coordinate.CalculateEucilidianDistance(c1, c2),
@@ -119,6 +122,7 @@ namespace CM20314.Data
         {
             foreach (string buildingName in Constants.SourceFilePaths.BUILDING_NAMES)
             {
+                System.Diagnostics.Debug.WriteLine($"Extracting building boundaries and entrances for {buildingName}");
                 List<string> lines = _fileService.ReadLinesFromFileWithName(buildingName);
                 string shortName = lines[0];
                 string longName = lines[1];
@@ -147,7 +151,7 @@ namespace CM20314.Data
                         {
                             if (matchHandles.Count > 0)
                             {
-                                coordinate.setMatchHandle(matchHandles.Pop());
+                                coordinate.MatchHandle = matchHandles.Pop();
                             }
                             entranceCoordinates.Add(coordinate);
                         }
@@ -162,6 +166,12 @@ namespace CM20314.Data
                     }
                 }
 
+                // If points are ABCD we want ABCD not ABCDA
+                if(polylineCoordinates.First().Equals(polylineCoordinates.Last()))
+                {
+                    polylineCoordinates.RemoveAt(polylineCoordinates.Count - 1);
+                }
+
                 _context.Coordinate.AddRange(polylineCoordinates);
                 _context.SaveChanges();
 
@@ -173,21 +183,21 @@ namespace CM20314.Data
 
                 for (int i = 0; i < entranceCoordinates.Count; i += 2)
                 {
-                    Coordinate entranceNodeCoord = new Coordinate(entranceCoordinates[i + 1].getX(), entranceCoordinates[i + 1].getY(), entranceCoordinates[i + 1].getZ());
+                    Coordinate entranceNodeCoord = new Coordinate(entranceCoordinates[i + 1].X, entranceCoordinates[i + 1].Y, entranceCoordinates[i + 1].Z);
                     _context.Coordinate.Add(entranceNodeCoord);
                     _context.SaveChanges();
 
-                    Node entranceNode = new Node(entranceNodeCoord.getZ(), building.Id, entranceNodeCoord.Id, entranceCoordinates[i].getMatchHandle());
+                    Node entranceNode = new Node(entranceNodeCoord.Z, building.Id, entranceNodeCoord.Id, entranceCoordinates[i].MatchHandle);
                     _context.Node.Add(entranceNode);
                     _context.SaveChanges();
 
-                    Coordinate? coord = _context.Coordinate.AsEnumerable().FirstOrDefault(c => c.getX() == entranceCoordinates[i].getX() && c.getY() == entranceCoordinates[i].getY());
+                    Coordinate? coord = _context.Coordinate.AsEnumerable().FirstOrDefault(c => c.X == entranceCoordinates[i].X && c.Y == entranceCoordinates[i].Y);
                     if (coord != null)
                     {
-                        Node? sitewidePathNode = _context.Node.AsEnumerable().FirstOrDefault(n => n.getCoordinateId() == coord.Id);
+                        Node? sitewidePathNode = _context.Node.AsEnumerable().FirstOrDefault(n => n.CoordinateId == coord.Id);
                         if (sitewidePathNode != null)
                         {
-                            sitewidePathNode.setMatchHandle(entranceCoordinates[i].getMatchHandle());
+                            sitewidePathNode.MatchHandle = entranceCoordinates[i].MatchHandle;
                             _context.Node.Update(sitewidePathNode);
                             NodeArc entranceNodeArc = new NodeArc(sitewidePathNode, entranceNode, false,
                                 Coordinate.CalculateEucilidianDistance(entranceNodeCoord, coord), NodeArcType.Path, false);
@@ -204,9 +214,12 @@ namespace CM20314.Data
         {
             foreach (string buildingName in Constants.SourceFilePaths.BUILDING_NAMES)
             {
+                System.Diagnostics.Debug.WriteLine($"Extracting floors for {buildingName}");
+
                 List<int> floors = Constants.SourceFilePaths.BUILDING_FLOORS.ContainsKey(buildingName) ?
                     Constants.SourceFilePaths.BUILDING_FLOORS[buildingName] : new List<int>();
-                Building building = _context.Building.AsEnumerable().First(b => b.getShortName().Equals(buildingName));
+                if (floors.Count() == 0) continue;
+                Building building = _context.Building.AsEnumerable().First(b => b.ShortName.Equals(buildingName));
 
                 foreach (int floor in floors)
                 {
@@ -227,13 +240,17 @@ namespace CM20314.Data
             MapOffset mapOffset = ComputeMapOffset(building, floor, 1);
 
             //      Create floor, create polyline boundary.
+            System.Diagnostics.Debug.WriteLine($"Extracting floor boundaries for {building.LongName}");
             ProcessFloorBoundary(building, floor, mapOffset);
             //      Open paths, create all Nodes and NodeArcs, without duplicating Nodes.
-            ProcessPaths($"{building.getShortName()}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floor}\\{Constants.SourceFilePaths.FLOOR_FILENAME_PATHS}", floor, building.Id, mapOffset);
+            System.Diagnostics.Debug.WriteLine($"Extracting paths for {building.LongName}");
+            ProcessPaths($"{building.ShortName}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floor}\\{Constants.SourceFilePaths.FLOOR_FILENAME_PATHS}", floor, building.Id, mapOffset);
             //      Open containers, create Rooms and corridors, for rooms
+            System.Diagnostics.Debug.WriteLine($"Extracting floor containers for {building.LongName}");
             ProcessFloorContainers(building, floor, mapOffset);
             //      Open internal links (between floors), create Nodes and add flag
             //      Open external links, create NodeArcs to connect to outside nodes.
+            System.Diagnostics.Debug.WriteLine($"Extracting external floor links for {building.LongName}");
             ProcessExternalFloorLinks(building, floor, mapOffset);
         }
 
@@ -241,7 +258,7 @@ namespace CM20314.Data
         private MapOffset ComputeMapOffset(Building building, int floorNum, double scale)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_EXTERNAL_LINKS,
-                root: Constants.SourceFilePaths.ROOT + $"\\{building.getShortName()}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
+                root: Constants.SourceFilePaths.ROOT + $"\\{building.ShortName}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
             Stack<string> matchHandles = new Stack<string>();
             List<Coordinate> currentLineCoords = new List<Coordinate>();
 
@@ -277,18 +294,18 @@ namespace CM20314.Data
                 }
             }
 
-            Node matchingNode = _context.Node.AsEnumerable().First(n => n.getMatchHandle() == currentLineCoords[1].getMatchHandle());
+            Node matchingNode = _context.Node.AsEnumerable().First(n => n.MatchHandle == currentLineCoords[1].MatchHandle);
 
-            Coordinate n1coordinate = _context.Coordinate.First(c => c.Id == matchingNode.getCoordinateId());
+            Coordinate n1coordinate = _context.Coordinate.First(c => c.Id == matchingNode.CoordinateId);
 
-            return CalculateOffset(n1coordinate, currentLineCoords[1], scale);
+            return CalculateOffset(currentLineCoords[1], n1coordinate, scale);
         }
 
         // Computes offset between two coordinates.
         private MapOffset CalculateOffset(Coordinate src, Coordinate dst, double scale)
         {
-            double offsetX = dst.getX() - src.getX();
-            double offsetY = dst.getY() - src.getY();
+            double offsetX = dst.X - src.X;
+            double offsetY = dst.Y - src.Y;
 
             return new MapOffset(offsetX, offsetY, scale: scale);
         }
@@ -297,7 +314,7 @@ namespace CM20314.Data
         private void ProcessFloorBoundary(Building building, int floorNum, MapOffset mapOffset)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_BOUNDARY,
-                root: Constants.SourceFilePaths.ROOT + $"\\{building.getShortName()}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
+                root: Constants.SourceFilePaths.ROOT + $"\\{building.ShortName}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
             List<Coordinate> polylineCoords = new List<Coordinate>();
 
             foreach (string line in lines)
@@ -321,7 +338,7 @@ namespace CM20314.Data
         private void ProcessFloorContainers(Building building, int floorNum, MapOffset mapOffset)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_CONTAINERS,
-                root: Constants.SourceFilePaths.ROOT + $"\\{building.getShortName()}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
+                root: Constants.SourceFilePaths.ROOT + $"\\{building.ShortName}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
 
             List<Coordinate> currentLineCoords = new List<Coordinate>();
             string roomName = string.Empty;
@@ -344,12 +361,12 @@ namespace CM20314.Data
                     }
                     if (currentLineCoords.Count > 0)
                     {
-                        string separatorChar = building.getShortName().EndsWith(" ") ? "" : " ";
-                        string roomLongName = $"{building.getShortName()}{separatorChar}{roomName}";
+                        string separatorChar = building.ShortName.EndsWith(" ") ? "" : " ";
+                        string roomLongName = $"{building.ShortName}{separatorChar}{roomName}";
                         _context.Coordinate.AddRange(currentLineCoords);
                         _context.SaveChanges();
                         Polyline polyline = new Polyline(currentLineCoords);
-                        Room room = new Room(roomName, building.getShortName(), polyline.ToString(), floorNum, building.Id, roomName.StartsWith("C"));
+                        Room room = new Room(roomName, building.ShortName + " " + roomName, polyline.ToString(), floorNum, building.Id, roomName.StartsWith("C"));
                         _context.Room.Add(room);
                         _context.SaveChanges();
                         currentLineCoords = new List<Coordinate>();
@@ -362,7 +379,7 @@ namespace CM20314.Data
         private void ProcessExternalFloorLinks(Building building, int floorNum, MapOffset mapOffset)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_EXTERNAL_LINKS,
-                root: Constants.SourceFilePaths.ROOT + $"\\{building.getShortName()}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
+                root: Constants.SourceFilePaths.ROOT + $"\\{building.ShortName}{Constants.SourceFilePaths.BUILDING_FLOOR_SEPARATOR}{floorNum}");
             Stack<string> matchHandles = new Stack<string>();
             List<Coordinate> currentLineCoords = new List<Coordinate>();
 
@@ -409,21 +426,56 @@ namespace CM20314.Data
             // first should coincide with inside path node
             // second should coincide with sitewide path node
 
-            Node outsideNode = _context.Node.AsEnumerable().First(n => n.getMatchHandle() == coordinates[0].getMatchHandle());
+            Node outsideNode = _context.Node.AsEnumerable().First(n => n.MatchHandle == coordinates[0].MatchHandle);
 
             //Coordinate outsideNodeCoord = _context.Coordinate.AsEnumerable().First(c => c.getX() == coordinates[1].getX() && c.getY() == coordinates[1].getY());
             //Node? outsideNode = _context.Node.AsEnumerable().FirstOrDefault(n => n.getCoordinateId() == outsideNodeCoord.Id);
 
-            Node insideNode = _context.Node.AsEnumerable().Last(n => n.getMatchHandle() == coordinates[0].getMatchHandle());
+            Node insideNode = _context.Node.AsEnumerable().Last(n => n.MatchHandle == coordinates[0].MatchHandle);
 
             double cost = Coordinate.CalculateEucilidianDistance(
-            _context.Coordinate.First(c => c.Id == insideNode.getCoordinateId()),
-            _context.Coordinate.First(c => c.Id == outsideNode.getCoordinateId())
+            _context.Coordinate.First(c => c.Id == insideNode.CoordinateId),
+            _context.Coordinate.First(c => c.Id == outsideNode.CoordinateId)
             );
             NodeArc nodeArc = new NodeArc(insideNode, outsideNode, false, cost, NodeArcType.Path, false);
             _context.NodeArc.Add(nodeArc);
             _context.SaveChanges();
             System.Diagnostics.Debug.WriteLine("Added external link node arc");
+        }
+
+        // Scale and offset coordinates for use in client app
+        private void StandardiseCoordinates()
+        {
+            List<Coordinate> coordinates = _context.Coordinate.ToList();
+            StandardiseCoordinates(coordinates);
+            _context.SaveChanges();
+        }
+        public static void StandardiseCoordinates(List<Coordinate> coords)
+        {
+            var minCoordX = coords.Min(c => c.X);
+            var maxCoordX = coords.Max(c => c.X);
+            var minCoordY = coords.Min(c => c.Y);
+            var maxCoordY = coords.Max(c => c.Y);
+
+            var rangeX = maxCoordX - minCoordX;
+            var rangeY = maxCoordY - minCoordY;
+
+            var scale = Math.Min(Constants.COORDINATE_RANGE / rangeX, Constants.COORDINATE_RANGE / rangeY);
+            var offsetX = -1 * minCoordX;
+            var offsetY = -1 * minCoordY;
+
+            foreach (Coordinate coord in coords)
+            {
+                coord.X = (coord.X + offsetX) * scale;
+                coord.Y = (coord.Y + offsetY) * scale;
+            }
+
+            maxCoordY = coords.Max(c => c.Y);
+
+            foreach (Coordinate coord in coords)
+            {
+                coord.Y = Constants.COORDINATE_RANGE - coord.Y;
+            }
         }
 
         // Clears all rows from database tables.
@@ -445,5 +497,6 @@ namespace CM20314.Data
 
             _context.SaveChanges();
         }
+
     }
 }

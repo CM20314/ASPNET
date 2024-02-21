@@ -1,19 +1,40 @@
-﻿using CM20314.Models;
+﻿using Accord.Collections;
+using CM20314.Data;
+using CM20314.Models;
 using CM20314.Models.Database;
+using KdTree;
 
 namespace CM20314.Services
 {
+    // Handles routing at a higher level by using the PathfindingService
     public class RoutingService
     {
         private readonly PathfindingService _pathfindingService;
+        private readonly ApplicationDbContext _context;
+        private KDTree<Node> kdTree;
+
         public RoutingService(
-            PathfindingService pathfindingService)
+            PathfindingService pathfindingService,
+            ApplicationDbContext context)
         {
+            // Acquire services via dependency injection
             _pathfindingService = pathfindingService;
+            _context = context;
+
+            Node[] allNodes = _context.Node.ToArray();
+            foreach(Node node in allNodes)
+            {
+                node.Coordinate = _context.Coordinate.First(c => c.Id == node.CoordinateId);
+            }
+            var points = allNodes.Select(node => new double[] { node.Coordinate.X, node.Coordinate.Y }).ToArray();
+
+            kdTree = KDTree.FromData(points, allNodes);
+
         }
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
-            if(requestData.StartNode == null)
+            // Validates request and then calls PathfindingService methods
+            /*if(requestData.StartNode == null)
             {
                 if (requestData.StartCoordinate == null)
                     return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.");
@@ -21,7 +42,7 @@ namespace CM20314.Services
             }
 
             var nodes = _pathfindingService.FindShortestPath(
-                requestData.StartNode, requestData.EndContainer, requestData.AccessibilityLevel);
+                requestData.StartNode, requestData.EndContainer, requestData.AccessibilityLevel, _context.Node.ToList(), _context.NodeArc.ToList());
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 
@@ -32,16 +53,30 @@ namespace CM20314.Services
                 arcDirections.Add(nodeArcDirection);
             }
 
-            return new RouteResponseData(arcDirections, true, string.Empty);
+            return new RouteResponseData(arcDirections, true, string.Empty);*/
+            return new RouteResponseData(new List<NodeArcDirection>(), false, "Requires implementation");
         }
 
         public Node GetNearestNodeToCoordinate(Coordinate coords)
         {
-            return new Node(0, 0,0);
+            Node nearestNode = kdTree.Nearest(new double[] { coords.X, coords.Y }).Value;
+            return nearestNode;
+        }
+
+        // For unit testing
+        public static Node GetNearestNodeToCoordinate(Coordinate coords, List<Node> nodes)
+        {
+            Node[] allNodes = nodes.ToArray();
+            var points = nodes.Select(node => new double[] { node.Coordinate.X, node.Coordinate.Y }).ToArray();
+
+            KDTree<Node> kdTree = KDTree.FromData(points, allNodes);
+            Node nearestNode = kdTree.Nearest(new double[] { coords.X, coords.Y }).Value;
+            return nearestNode;
         }
 
         public string GetDirectionStringForNodeArc(NodeArc arc)
         {
+            // IMPLEMENT
             return string.Empty;
         }
     }

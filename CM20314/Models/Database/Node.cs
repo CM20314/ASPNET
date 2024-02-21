@@ -1,42 +1,34 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography;
+using KdTree;
+
 namespace CM20314.Models.Database
 {
 	public class Node : Entity
 	{
-		private int floor;
-		private int coordinateId;
-		private int buildingId;
-        private string matchHandle;
+        public int Floor { get; set; }
+        public int CoordinateId { get; set; }
+        public int BuildingId { get; set; }
+        [NotMapped]
+        public string MatchHandle { get; set; }
+        [NotMapped]
+        public Coordinate Coordinate { get; set; }
 
         public Node()
         {
             
         }
-        public Node(int floor, int buildingId, int coordinateId, string matchHandle = "")
+        public Node(int floor, int buildingId, int coordinateId, string matchHandle = "", Coordinate coordinate = null, int id = 0)
 		{
-			this.floor        = floor;
-            this.buildingId   = buildingId;
-			this.coordinateId = coordinateId;
-            this.matchHandle = matchHandle;
+		    Floor        = floor;
+            BuildingId   = buildingId;
+			CoordinateId = coordinateId;
+            MatchHandle = matchHandle;
+            if (coordinate != null) Coordinate = coordinate;
+            if (id != 0) Id = id;
 		}
-
-		public int getBuildingId() { return buildingId; }
-
-        //public Building getBuilding(int buildingID) { return ?; }
-
-        //public bool isOutside(int coordinateId) { return ?; }
-
-        public int getCoordinateId() { return coordinateId; }
-        public int getFloor() { return floor; }
-        public string getMatchHandle() { return matchHandle; }
-        public void setMatchHandle(string value) { matchHandle = value; }
-
-        //public Coordinate getCoordinate(int coordinateID) {return ?;}
-
-        //public Node[] getNeighbouringNodes() { return ?; }
-
-        //public NodeArc[] getNodeArcs(Node[] neighbouringNodes) { return ?; }
     }
 }
 

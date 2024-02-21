@@ -1,5 +1,6 @@
 ﻿namespace CM20314.Services
 {
+    // Handles local file read operations to extract raw data for database initialisation
     public class FileService
     {
         private readonly IWebHostEnvironment _hostingEnvironment;

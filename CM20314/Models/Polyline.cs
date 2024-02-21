@@ -4,19 +4,19 @@ namespace CM20314.Models
 {
     public class Polyline
     {
-        private List<Coordinate> coordinates;
+        public List<Coordinate> Coordinates { get; set; }
 
         public Polyline(IEnumerable<Coordinate> coordinates)
         {
-            this.coordinates = coordinates.ToList();
+            this.Coordinates = coordinates.ToList();
         }
 
-        public List<Coordinate> getCoordinates() { return coordinates; }
+        public List<Coordinate> getCoordinates() { return Coordinates; }
 
         //public int getBuildingID() { return ?; }
         public override string ToString()
         {
-            return string.Join(",", coordinates.Select(c => c.Id));
+            return string.Join(",", Coordinates.Select(c => c.Id));
         }
     }
 }

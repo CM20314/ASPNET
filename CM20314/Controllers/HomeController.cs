@@ -8,40 +8,46 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CM20314.Controllers
 {
+    // Home controller responsible for all calls to the API
     [Route("api")]
     [ApiController]
     public class HomeController : ControllerBase
     {
         private readonly RoutingService _routingService;
+        private readonly MapDataService _mapDataService;
         public HomeController(
-            RoutingService routingService)
+            RoutingService routingService,
+            MapDataService mapDataService)
         {
+            // Acquire services via dependency injection
             _routingService = routingService;
+            _mapDataService = mapDataService;
         }
 
-        // GET api/directions
-        [HttpGet("directions")]
+        // POST api/directions
+        [HttpPost("directions")]
         public RouteResponseData GetDirections([FromBody] RouteRequestData requestData)
         {
-            // IMPLEMENT: RouteRequestData and RouteResponseData classes
-            var routeResponse = _routingService.ComputeRoute(requestData);
-            return routeResponse;
+            // Make call to RoutingService 
+            return _routingService.ComputeRoute(requestData);
         }
 
         // GET api/map
         [HttpGet("map")]
-        public MapResponseData GetMap()
+        public MapResponseData GetMap(int buildingId = 0)
         {
-            // IMPLEMENT: Call MapDataService.GetMapData()
-            return new MapResponseData();
+            // Make call to MapDataService
+            return _mapDataService.GetMapData(buildingId);
         }
 
         // GET api/search?query=SEARCH_QUERY
         [HttpGet("search")]
-        public List<Container> SearchContainers(string query)
+        public SearchResponseData SearchContainers(string query)
         {
-            // IMPLEMENT: Call MapDataService.SearchContainers()
-            return new List<Container>();
+            return new SearchResponseData()
+            {
+                Results = _mapDataService.SearchContainers(query)
+            };
         }
     }
 }
