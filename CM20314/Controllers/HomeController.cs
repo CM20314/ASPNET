@@ -42,9 +42,12 @@ namespace CM20314.Controllers
 
         // GET api/search?query=SEARCH_QUERY
         [HttpGet("search")]
-        public List<Container> SearchContainers(string query)
+        public SearchResponseData SearchContainers(string query)
         {
-            return _mapDataService.SearchContainers(query);
+            return new SearchResponseData()
+            {
+                Results = _mapDataService.SearchContainers(query)
+            };
         }
     }
 }

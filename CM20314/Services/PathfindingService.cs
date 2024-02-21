@@ -7,12 +7,26 @@ namespace CM20314.Services
     // Handles path-finding and direction services
     public class PathfindingService
     {
-        public List<Node> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> nodeArcs)
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        private ApplicationDbContext _context;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
+        public void Initialise(ApplicationDbContext context)
         {
-            // IMPLEMENT: Call BreadthFirstSearch (change name/params if appropriate) to perform chosen pathfinding algorithm
-            //return BreadthFirstSearch(new Node(0, 0, 0),
-            //    new Node(0, 0,0), accessLevel);
-            return new List<Node>();
+            _context = context;
+        }
+
+            public List<Node> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel, List<Node> allNodes, List<NodeArc> allNodeArcs)
+        {
+            Node targetNode = RoutingService.GetNearestNodeToCoordinate(startNode.Coordinate, allNodes.Where(n => n.BuildingId == endContainer.Id).ToList());
+
+            return DijkstraPathSearch(
+                new DijkstraNode(startNode),
+                new DijkstraNode(targetNode),
+                accessLevel,
+                allNodes.Select(n => new DijkstraNode(n)).ToList(),
+                allNodeArcs.ToList()
+                ).Select(dn => _context.Node.First(n => n.Id == dn.Id)).ToList();
         }
 
         // Uses Dijkstra's Algorithm to perform path search

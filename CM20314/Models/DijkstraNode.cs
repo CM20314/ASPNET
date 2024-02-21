@@ -1,4 +1,6 @@
-﻿namespace CM20314.Models.Database
+﻿using CM20314.Models.Database;
+
+namespace CM20314.Models
 {
     public class DijkstraNode : Node
     {
@@ -7,10 +9,11 @@
         private Boolean visited;
         public DijkstraNode(int floor, int buildingId, int coordinateId, string matchHandle = "") : base(floor, buildingId, coordinateId, matchHandle)
         {
-            Floor = floor;
-            BuildingId = buildingId;
-            CoordinateId = coordinateId;
-            MatchHandle = matchHandle;
+        }
+
+        public DijkstraNode(Node node) : base(node.Floor, node.BuildingId, node.CoordinateId, node.MatchHandle)
+        {
+            Id = node.Id;
         }
 
         public double getDistanceFromStartNode() { return distanceFromStartNode; }
