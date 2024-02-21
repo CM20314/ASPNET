@@ -24,8 +24,8 @@ namespace CM20314.Controllers
             _mapDataService = mapDataService;
         }
 
-        // GET api/directions
-        [HttpGet("directions")]
+        // POST api/directions
+        [HttpPost("directions")]
         public RouteResponseData GetDirections([FromBody] RouteRequestData requestData)
         {
             // Make call to RoutingService 
@@ -44,8 +44,7 @@ namespace CM20314.Controllers
         [HttpGet("search")]
         public List<Container> SearchContainers(string query)
         {
-            // IMPLEMENT: Call MapDataService.SearchContainers()
-            return new List<Container>();
+            return _mapDataService.SearchContainers(query);
         }
     }
 }

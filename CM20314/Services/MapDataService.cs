@@ -56,6 +56,11 @@ namespace CM20314.Services
             return filteredResponseData;
         }
 
+        public List<Container> SearchContainers(string query)
+        {
+            return SearchContainers(query, mapResponseData.Buildings, mapResponseData.Rooms);
+        }
+
         public List<Container> SearchContainers(string query, List<Building> buildings, List<Room> rooms)
         {
             if (string.IsNullOrWhiteSpace(query))
