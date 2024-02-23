@@ -20,7 +20,7 @@ builder.Services.AddSingleton<PathfindingService>();
 builder.Services.AddSingleton<FileService>();
 builder.Services.AddSingleton<MapDataService>();
 builder.Services.AddScoped<DbInitialiser>();
-builder.Services.AddScoped<RoutingService>();
+builder.Services.AddSingleton<RoutingService>();
 
 var app = builder.Build();
 
@@ -32,6 +32,10 @@ using (var scope = app.Services.CreateScope())
     services.GetRequiredService<DbInitialiser>().Initialise(applicationDbContext);
     services.GetRequiredService<MapDataService>().Initialise(applicationDbContext);
     services.GetRequiredService<PathfindingService>().Initialise(applicationDbContext);
+    services.GetRequiredService<RoutingService>().Initialise(
+        services.GetRequiredService<PathfindingService>(),
+        services.GetRequiredService<MapDataService>(),
+        applicationDbContext);
 }
 
 // Configure the HTTP request pipeline.

@@ -9,12 +9,14 @@ namespace CM20314.Services
     // Handles routing at a higher level by using the PathfindingService
     public class RoutingService
     {
-        private readonly PathfindingService _pathfindingService;
-        private readonly MapDataService _mapDataService;
-        private readonly ApplicationDbContext _context;
+        private PathfindingService _pathfindingService;
+        private MapDataService _mapDataService;
+        private ApplicationDbContext _context;
         private KDTree<Node> kdTree;
+        private List<Node> allNodes;
+        private List<NodeArc> allNodeArcs;
 
-        public RoutingService(
+        public void Initialise(
             PathfindingService pathfindingService,
             MapDataService mapDataService,
             ApplicationDbContext context)
@@ -24,16 +26,25 @@ namespace CM20314.Services
             _mapDataService = mapDataService;
             _context = context;
 
-            Node[] allNodes = _context.Node.ToArray();
-            foreach(Node node in allNodes)
+            Node[] allNodesArr = _context.Node.ToArray();
+            foreach (Node node in allNodesArr)
             {
                 node.Coordinate = _context.Coordinate.First(c => c.Id == node.CoordinateId);
             }
-            var points = allNodes.Select(node => new double[] { node.Coordinate.X, node.Coordinate.Y }).ToArray();
+            var points = allNodesArr.Select(node => new double[] { node.Coordinate.X, node.Coordinate.Y }).ToArray();
 
-            kdTree = KDTree.FromData(points, allNodes);
+            allNodes = allNodesArr.ToList();
 
+            allNodeArcs = _context.NodeArc.ToList();
+            foreach (NodeArc arc in allNodeArcs)
+            {
+                arc.Node1 = _context.Node.First(n => n.Id == arc.Node1Id);
+                arc.Node2 = _context.Node.First(n => n.Id == arc.Node2Id);
+            }
+
+            kdTree = KDTree.FromData(points, allNodesArr);
         }
+
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
             // Validates request and then calls PathfindingService methods
@@ -45,7 +56,7 @@ namespace CM20314.Services
             Node startNode = GetNearestNodeToCoordinate(requestData.StartCoordinate);
 
             var nodes = _pathfindingService.FindShortestPath(
-                startNode, endContainer, requestData.AccessibilityLevel, _context.Node.ToList(), _context.NodeArc.ToList());
+                startNode, endContainer, requestData.AccessibilityLevel, allNodes, allNodeArcs);
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 

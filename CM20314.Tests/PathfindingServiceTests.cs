@@ -24,21 +24,20 @@ namespace CM20314.Tests
         {
             // Test the algorithm with a graph that contains a solution (should work for both undirected/directed)
             System.Diagnostics.Debug.WriteLine("FindPath1: ");
-            var pathfindingServiceMock = new Mock<PathfindingService>();
 
             // List is in reverse order; endNode, node_z, node_y, node_x, startNode
             // Print starting from the end of the list
-            List<DijkstraNode> output = pathfindingServiceMock.Object.DijkstraPathSearch(TestData.Nodes.testDijkstraNodes[0], TestData.Nodes.testDijkstraNodes[9], Models.AccessibilityLevel.None, 
-                TestData.Nodes.testDijkstraNodes, TestData.Nodes.testNodeArcs);
-            List<DijkstraNode> expected = new List<DijkstraNode>() { TestData.Nodes.testDijkstraNodes[9], TestData.Nodes.testDijkstraNodes[6], TestData.Nodes.testDijkstraNodes[3], TestData.Nodes.testDijkstraNodes[0] };
+            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.None, 
+                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
             
             Assert.AreEqual(expected.Count(), output.Count());
-            for(int i = 0; i < output.Count(); i++)
+            for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i], output[i]);
+                Assert.AreEqual(expected[i].Id, output[i].Id);
             }
 
-            foreach (DijkstraNode node in output)
+            foreach (Node node in output)
             {
                 System.Diagnostics.Debug.WriteLine(node.MatchHandle);
             }
@@ -50,19 +49,18 @@ namespace CM20314.Tests
         {
             // Test the algorithm with a graph that contains a solution (shouldn't work for directed, should for undirected)
             System.Diagnostics.Debug.WriteLine("FindPath2: ");
-            var pathfindingServiceMock = new Mock<PathfindingService>();
-
-            List<DijkstraNode> output = pathfindingServiceMock.Object.DijkstraPathSearch(TestData.Nodes.testDijkstraNodes[5], TestData.Nodes.testDijkstraNodes[1], Models.AccessibilityLevel.None,
-                TestData.Nodes.testDijkstraNodes, TestData.Nodes.testNodeArcs);
-            List<DijkstraNode> expected = new List<DijkstraNode>() { TestData.Nodes.testDijkstraNodes[1], TestData.Nodes.testDijkstraNodes[0], TestData.Nodes.testDijkstraNodes[2], TestData.Nodes.testDijkstraNodes[5] };
+            
+            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[1], Models.AccessibilityLevel.None,
+                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[2], TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1] };
 
             Assert.AreEqual(expected.Count(), output.Count());
             for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i].MatchHandle, output[i].MatchHandle);
+                Assert.AreEqual(expected[i].Id, output[i].Id);
             }
 
-            foreach (DijkstraNode node in output)
+            foreach (Node node in output)
             {
                 System.Diagnostics.Debug.WriteLine(node.MatchHandle);
             }
@@ -74,19 +72,18 @@ namespace CM20314.Tests
         {
             // Test the algorithm when the start node and end node are the same
             System.Diagnostics.Debug.WriteLine("FindPath3: ");
-            var pathfindingServiceMock = new Mock<PathfindingService>();
-
-            List<DijkstraNode> output = pathfindingServiceMock.Object.DijkstraPathSearch(TestData.Nodes.testDijkstraNodes[5], TestData.Nodes.testDijkstraNodes[5], Models.AccessibilityLevel.None,
-                TestData.Nodes.testDijkstraNodes, TestData.Nodes.testNodeArcs);
-            List<DijkstraNode> expected = new List<DijkstraNode>() { TestData.Nodes.testDijkstraNodes[5] };
+            
+            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[5], Models.AccessibilityLevel.None,
+                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[5] };
 
             Assert.AreEqual(expected.Count(), output.Count());
             for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i].MatchHandle, output[i].MatchHandle);
+                Assert.AreEqual(expected[i].Id, output[i].Id);
             }
 
-            foreach (DijkstraNode node in output)
+            foreach (Node node in output)
             {
                 System.Diagnostics.Debug.WriteLine(node.MatchHandle);
             }
@@ -98,19 +95,18 @@ namespace CM20314.Tests
             // For this function to pass, make the graph directed
             // Test the algorithm with a graph that doesn't have the solution (test with directed graph; should return an empty list, otherwise it will work with undirected)
             System.Diagnostics.Debug.WriteLine("FindPath4: ");
-            var pathfindingServiceMock = new Mock<PathfindingService>();
-
-            List<DijkstraNode> output = pathfindingServiceMock.Object.DijkstraPathSearch(TestData.Nodes.testDijkstraNodes[1], TestData.Nodes.testDijkstraNodes[10], Models.AccessibilityLevel.None,
-                TestData.Nodes.testDijkstraNodes, TestData.Nodes.testNodeArcs);
-            List<DijkstraNode> expected = new List<DijkstraNode>() { };
+            
+            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[10], Models.AccessibilityLevel.None,
+                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+            List<Node> expected = new List<Node>() { };
 
             Assert.AreEqual(expected.Count(), output.Count());
             for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i].MatchHandle, output[i].MatchHandle);
+                Assert.AreEqual(expected[i].Id, output[i].Id);
             }
 
-            foreach (DijkstraNode node in output)
+            foreach (Node node in output)
             {
                 System.Diagnostics.Debug.WriteLine(node.MatchHandle);
             }
@@ -122,20 +118,20 @@ namespace CM20314.Tests
         {
             // Test the algorithm with a step free accessibility level input
             System.Diagnostics.Debug.WriteLine("FindPath5: ");
-            TestData.Nodes.testNodeArcs[2] = new NodeArc(TestData.Nodes.testDijkstraNodes[0], TestData.Nodes.testDijkstraNodes[3], false, 11, NodeArcType.Path, false);
-            var pathfindingServiceMock = new Mock<PathfindingService>();
-
-            List<DijkstraNode> output = pathfindingServiceMock.Object.DijkstraPathSearch(TestData.Nodes.testDijkstraNodes[0], TestData.Nodes.testDijkstraNodes[9], Models.AccessibilityLevel.StepFree,
-                TestData.Nodes.testDijkstraNodes, TestData.Nodes.testNodeArcs);
-            List<DijkstraNode> expected = new List<DijkstraNode>() { TestData.Nodes.testDijkstraNodes[9], TestData.Nodes.testDijkstraNodes[6], TestData.Nodes.testDijkstraNodes[3], TestData.Nodes.testDijkstraNodes[1], TestData.Nodes.testDijkstraNodes[0] };
+            
+            TestData.Nodes.testNodeArcs[2].StepFree = false;
+            TestData.Nodes.testNodeArcs[3].StepFree = false;
+            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.StepFree,
+                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
 
             Assert.AreEqual(expected.Count(), output.Count());
             for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i].MatchHandle, output[i].MatchHandle);
+                Assert.AreEqual(expected[i].Id, output[i].Id);
             }
 
-            foreach (DijkstraNode node in output)
+            foreach (Node node in output)
             {
                 System.Diagnostics.Debug.WriteLine(node.MatchHandle);
             }
