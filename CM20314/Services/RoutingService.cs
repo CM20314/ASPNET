@@ -10,15 +10,18 @@ namespace CM20314.Services
     public class RoutingService
     {
         private readonly PathfindingService _pathfindingService;
+        private readonly MapDataService _mapDataService;
         private readonly ApplicationDbContext _context;
         private KDTree<Node> kdTree;
 
         public RoutingService(
             PathfindingService pathfindingService,
+            MapDataService mapDataService,
             ApplicationDbContext context)
         {
             // Acquire services via dependency injection
             _pathfindingService = pathfindingService;
+            _mapDataService = mapDataService;
             _context = context;
 
             Node[] allNodes = _context.Node.ToArray();
@@ -34,15 +37,15 @@ namespace CM20314.Services
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
             // Validates request and then calls PathfindingService methods
-            /*if(requestData.StartNode == null)
-            {
-                if (requestData.StartCoordinate == null)
-                    return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.");
-                requestData.StartNode = GetNearestNodeToCoordinate(requestData.StartCoordinate);
-            }
+            Container endContainer = _mapDataService.SearchContainers(requestData.EndContainerName).FirstOrDefault();
+            if(endContainer == null) return new RouteResponseData(new List<NodeArcDirection>(), false, "Cannot find destination");
+
+            if (requestData.StartCoordinate == null)
+                return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.");
+            Node startNode = GetNearestNodeToCoordinate(requestData.StartCoordinate);
 
             var nodes = _pathfindingService.FindShortestPath(
-                requestData.StartNode, requestData.EndContainer, requestData.AccessibilityLevel, _context.Node.ToList(), _context.NodeArc.ToList());
+                startNode, endContainer, requestData.AccessibilityLevel, _context.Node.ToList(), _context.NodeArc.ToList());
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 
@@ -53,8 +56,7 @@ namespace CM20314.Services
                 arcDirections.Add(nodeArcDirection);
             }
 
-            return new RouteResponseData(arcDirections, true, string.Empty);*/
-            return new RouteResponseData(new List<NodeArcDirection>(), false, "Requires implementation");
+            return new RouteResponseData(arcDirections, true, string.Empty);
         }
 
         public Node GetNearestNodeToCoordinate(Coordinate coords)

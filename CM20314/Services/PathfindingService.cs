@@ -32,7 +32,7 @@ namespace CM20314.Services
         // Uses Dijkstra's Algorithm to perform path search
         public List<DijkstraNode> DijkstraPathSearch(DijkstraNode startNode, DijkstraNode endNode, AccessibilityLevel accessLevel, List<DijkstraNode> nodes, List<NodeArc> nodeArcs)
         {
-            if (startNode.MatchHandle.Equals(endNode.MatchHandle)) { return new List<DijkstraNode>() { startNode }; }
+            //if (startNode.MatchHandle.Equals(endNode.MatchHandle)) { return new List<DijkstraNode>() { startNode }; }
 
             List<DijkstraNode> shortestPath = new List<DijkstraNode>();
             bool unvisitedVertexExists = true;
