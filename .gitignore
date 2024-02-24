@@ -120,3 +120,6 @@ src/.vs/config/applicationhost.config
 
 # Mac-specific
 .DS_Store
+
+CM20314/Data/CM_DB.db-shm
+CM20314/Data/CM_DB.db-wal
