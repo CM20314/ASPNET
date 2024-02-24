@@ -16,7 +16,7 @@ namespace CM20314.Services
             _context = context;
         }
 
-            public List<Node> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel, List<Node> allNodes, List<NodeArc> allNodeArcs)
+            public List<NodeArc> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel, List<Node> allNodes, List<NodeArc> allNodeArcs)
         {
             Node targetNode = RoutingService.GetNearestNodeToCoordinate(startNode.Coordinate, allNodes.Where(n => n.BuildingId == endContainer.Id).ToList());
 
@@ -25,7 +25,7 @@ namespace CM20314.Services
         }
 
         // Uses Dijkstra's Algorithm to perform path search
-        public static List<Node> AStarSearch(Node startNode, Node goalNode, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> arcs)
+        public static List<NodeArc> AStarSearch(Node startNode, Node goalNode, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> arcs)
         {
             // Initialize open and closed sets
             var openSet = new List<Node> { startNode };
@@ -59,7 +59,7 @@ namespace CM20314.Services
                 if (currentNode == goalNode)
                 {
                     // Reconstruct and return the path
-                    return ReconstructPath(startNode, goalNode, parents);
+                    return ReconstructPath(startNode, goalNode, parents, arcs);
                 }
 
                 // Generate q's successors and set their parents to q
@@ -93,7 +93,7 @@ namespace CM20314.Services
             }
 
             // No path found
-            return new List<Node>();
+            return new List<NodeArc>();
         }
 
         private static Node GetLowestFValueNode(List<Node> openSet, Dictionary<Node, double> fValues)
@@ -113,15 +113,31 @@ namespace CM20314.Services
             return lowestFValueNode;
         }
 
-        private static List<Node> ReconstructPath(Node startNode, Node goalNode, Dictionary<Node, Node> parents)
+        private static List<NodeArc> ReconstructPath(Node startNode, Node goalNode, Dictionary<Node, Node> parents, List<NodeArc> nodeArcs)
         {
-            var path = new List<Node>();
+            var path = new List<NodeArc>();
             var currentNode = goalNode;
+            var nextNode = parents.ContainsKey(currentNode) ? parents[currentNode] : null;
 
-            while (currentNode != null)
+            while (currentNode != null && nextNode != null)
             {
-                path.Insert(0, currentNode);
-                currentNode = parents.ContainsKey(currentNode) ? parents[currentNode] : null;
+                var arc1 = nodeArcs.FirstOrDefault(
+                    a => a.Node1.Id == currentNode.Id && a.Node2.Id == nextNode.Id); 
+                var arc2 = nodeArcs.FirstOrDefault(
+                    a => a.Node2.Id == currentNode.Id && a.Node1.Id == nextNode.Id);
+
+                if(arc1 != null && arc2 == null)
+                {
+                    arc2 = arc1;
+                    Node temp = arc2.Node1;
+                    arc2.Node1 = arc2.Node2;
+                    arc2.Node2 = temp;
+                }
+
+                path.Insert(0, arc2);
+
+                currentNode = nextNode;
+                nextNode = parents.ContainsKey(currentNode) ? parents[currentNode] : null;
             }
 
             return path;

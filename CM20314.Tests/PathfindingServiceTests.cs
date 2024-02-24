@@ -27,21 +27,16 @@ namespace CM20314.Tests
 
             // List is in reverse order; endNode, node_z, node_y, node_x, startNode
             // Print starting from the end of the list
-            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.None, 
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.None, 
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
-            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
-            
-            Assert.AreEqual(expected.Count(), output.Count());
+            List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
+
+            Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
             for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i].Id, output[i].Id);
+                Assert.AreEqual(expectedNodes[i].Id, output[i].Node1Id);
             }
-
-            foreach (Node node in output)
-            {
-                System.Diagnostics.Debug.WriteLine(node.MatchHandle);
-            }
-
+            Assert.AreEqual(expectedNodes.Last().Id, output.Last().Node2Id);
         }
 
         [TestMethod]
@@ -50,20 +45,16 @@ namespace CM20314.Tests
             // Test the algorithm with a graph that contains a solution (shouldn't work for directed, should for undirected)
             System.Diagnostics.Debug.WriteLine("FindPath2: ");
             
-            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[1], Models.AccessibilityLevel.None,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[1], Models.AccessibilityLevel.None,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
-            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[2], TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1] };
+            List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[2], TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1] };
 
-            Assert.AreEqual(expected.Count(), output.Count());
+            Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
             for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i].Id, output[i].Id);
+                Assert.AreEqual(expectedNodes[i].Id, output[i].Node1Id);
             }
-
-            foreach (Node node in output)
-            {
-                System.Diagnostics.Debug.WriteLine(node.MatchHandle);
-            }
+            Assert.AreEqual(expectedNodes.Last().Id, output.Last().Node2Id);
 
         }
 
@@ -73,20 +64,11 @@ namespace CM20314.Tests
             // Test the algorithm when the start node and end node are the same
             System.Diagnostics.Debug.WriteLine("FindPath3: ");
             
-            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[5], Models.AccessibilityLevel.None,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[5], Models.AccessibilityLevel.None,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
-            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[5] };
+            List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[5] };
 
-            Assert.AreEqual(expected.Count(), output.Count());
-            for (int i = 0; i < output.Count(); i++)
-            {
-                Assert.AreEqual(expected[i].Id, output[i].Id);
-            }
-
-            foreach (Node node in output)
-            {
-                System.Diagnostics.Debug.WriteLine(node.MatchHandle);
-            }
+            Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
         }
 
         [TestMethod]
@@ -96,21 +78,11 @@ namespace CM20314.Tests
             // Test the algorithm with a graph that doesn't have the solution (test with directed graph; should return an empty list, otherwise it will work with undirected)
             System.Diagnostics.Debug.WriteLine("FindPath4: ");
             
-            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[10], Models.AccessibilityLevel.None,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[10], Models.AccessibilityLevel.None,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
-            List<Node> expected = new List<Node>() { };
+            List<Node> expectedNodes = new List<Node>() { };
 
-            Assert.AreEqual(expected.Count(), output.Count());
-            for (int i = 0; i < output.Count(); i++)
-            {
-                Assert.AreEqual(expected[i].Id, output[i].Id);
-            }
-
-            foreach (Node node in output)
-            {
-                System.Diagnostics.Debug.WriteLine(node.MatchHandle);
-            }
-
+            Assert.AreEqual(expectedNodes.Count(), output.Count());
         }
 
         [TestMethod]
@@ -121,20 +93,16 @@ namespace CM20314.Tests
             
             TestData.Nodes.testNodeArcs[2].StepFree = false;
             TestData.Nodes.testNodeArcs[3].StepFree = false;
-            List<Node> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.StepFree,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.StepFree,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
-            List<Node> expected = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
+            List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
 
-            Assert.AreEqual(expected.Count(), output.Count());
+            Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
             for (int i = 0; i < output.Count(); i++)
             {
-                Assert.AreEqual(expected[i].Id, output[i].Id);
+                Assert.AreEqual(expectedNodes[i].Id, output[i].Node1Id);
             }
-
-            foreach (Node node in output)
-            {
-                System.Diagnostics.Debug.WriteLine(node.MatchHandle);
-            }
+            Assert.AreEqual(expectedNodes.Last().Id, output.Last().Node2Id);
         }
     }
 }

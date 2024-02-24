@@ -55,15 +55,14 @@ namespace CM20314.Services
                 return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.");
             Node startNode = GetNearestNodeToCoordinate(requestData.StartCoordinate);
 
-            var nodes = _pathfindingService.FindShortestPath(
+            var nodeArcs = _pathfindingService.FindShortestPath(
                 startNode, endContainer, requestData.AccessibilityLevel, allNodes, allNodeArcs);
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 
-            for(int i = 0; i < nodes.Count - 1; i++)
+            for(int i = 0; i < nodeArcs.Count - 1; i++)
             {
-                NodeArc arc = new NodeArc(nodes.ElementAt(i), nodes.ElementAt(i + 1), false, 0, NodeArcType.Path, false);
-                NodeArcDirection nodeArcDirection = new NodeArcDirection(arc, GetDirectionStringForNodeArc(arc));
+                NodeArcDirection nodeArcDirection = new NodeArcDirection(nodeArcs.ElementAt(i), GetDirectionStringForNodeArc(nodeArcs.ElementAt(i)));
                 arcDirections.Add(nodeArcDirection);
             }
 
