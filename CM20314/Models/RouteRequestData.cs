@@ -6,7 +6,7 @@ namespace CM20314.Models
     {
         public Coordinate? StartCoordinate { get; set; }
         public string EndContainerName { get; set; }
-        public AccessibilityLevel? AccessibilityLevel { get; set; }
+        public AccessibilityLevel AccessibilityLevel { get; set; }
 
 
     }
