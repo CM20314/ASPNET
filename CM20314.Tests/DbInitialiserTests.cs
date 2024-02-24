@@ -1,4 +1,5 @@
 ﻿using CM20314.Data;
+using CM20314.Models;
 using CM20314.Models.Database;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,13 @@ namespace CM20314.Tests
             Assert.AreEqual(1000, coordinates[3].Y);
             Assert.AreEqual(40, coordinates[4].X);
             Assert.AreEqual(900, coordinates[4].Y);
+        }
+        [TestMethod]
+        public void NodeArcSplitTest()
+        {
+            NodeArcSplitSet result = DbInitialiser.SplitNodeArc(TestData.Nodes.longNodeArc1);
+            Assert.AreEqual(result.Nodes.Count(), 2);
+            Assert.AreEqual(result.NodeArcs.Count(), 3);
         }
     }
 }

@@ -14,6 +14,12 @@ namespace CM20314.Tests.TestData
         public static List<NodeArc> testNodeArcs = new List<NodeArc>();
         private static List<Coordinate> testCoordinates = new List<Coordinate>();
 
+        public static NodeArc longNodeArc1 = new NodeArc(
+            new Node(0, 0, 0, "", new Coordinate(0, 0), 101),
+            new Node(0, 0, 0, "", new Coordinate(3000, 4000), 102),
+            true,
+            5000, NodeArcType.Path, true, true);
+
         public static void Initialise()
         {
             testNodes = new List<Node>();

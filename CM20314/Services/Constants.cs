@@ -34,5 +34,6 @@ namespace CM20314.Services
         }
 
         public const int COORDINATE_RANGE = 1000;
+        public const int MAX_NODE_ARC_LENGTH = 2500;
     }
 }

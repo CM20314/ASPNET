@@ -36,7 +36,7 @@ namespace CM20314.Services
             allNodes = allNodesArr.ToList();
 
             allNodeArcs = _context.NodeArc.ToList();
-            foreach (NodeArc arc in allNodeArcs.Take(1000))
+            foreach (NodeArc arc in allNodeArcs)
             {
                 arc.Node1 = _context.Node.First(n => n.Id == arc.Node1Id);
                 arc.Node2 = _context.Node.First(n => n.Id == arc.Node2Id);
