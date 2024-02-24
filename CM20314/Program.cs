@@ -31,7 +31,6 @@ using (var scope = app.Services.CreateScope())
     ApplicationDbContext applicationDbContext = services.GetRequiredService<ApplicationDbContext>();
     services.GetRequiredService<DbInitialiser>().Initialise(applicationDbContext);
     services.GetRequiredService<MapDataService>().Initialise(applicationDbContext);
-    services.GetRequiredService<PathfindingService>().Initialise(applicationDbContext);
     services.GetRequiredService<RoutingService>().Initialise(
         services.GetRequiredService<PathfindingService>(),
         services.GetRequiredService<MapDataService>(),

@@ -20,6 +20,15 @@ namespace CM20314.Tests
 
             Assert.AreEqual(outputNode.Id, expectedNode.Id);
         }
+
+        [TestMethod]
+        public void FindNearestNeighbour2()
+        {
+            Node outputNode = RoutingService.GetNearestNodeToCoordinate(new Coordinate(56, 20), TestData.Nodes.testNodes.Select(n => new Node(n.Floor, n.BuildingId, n.CoordinateId, coordinate: n.Coordinate, id: n.Id)).ToList());
+            Node expectedNode = TestData.Nodes.testNodes.First(n => n.Coordinate.X == 100.0 && n.Coordinate.Y == 1.0);
+
+            Assert.AreEqual(outputNode.Id, expectedNode.Id);
+        }
     }
 }
 
