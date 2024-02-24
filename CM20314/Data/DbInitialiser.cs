@@ -92,6 +92,7 @@ namespace CM20314.Data
                 else if (lines[i].StartsWith("LWPOLYLINE"))
                 {
                     CreateNodeArcsForPath(currentLineNodes, stepFree);
+                    currentLineNodes.Clear();
                 }
                 else if (lines[i].StartsWith("# NOT STEP FREE"))
                 {
