@@ -1,0 +1,70 @@
+WH
+Wessex House
+          at point  X=343777857.943  Y=226153956.719  Z=    0.000
+          at point  X=343796252.824  Y=226153956.719  Z=    0.000
+          at point  X=343796252.824  Y=226145556.719  Z=    0.000
+          at point  X=343804152.824  Y=226145556.719  Z=    0.000
+          at point  X=343804152.824  Y=226137156.719  Z=    0.000
+          at point  X=343810152.824  Y=226137156.719  Z=    0.000
+          at point  X=343810193.236  Y=226128956.719  Z=    0.000
+          at point  X=343792052.824  Y=226128956.719  Z=    0.000
+          at point  X=343792052.824  Y=226099279.883  Z=    0.000
+          at point  X=343794300.000  Y=226099279.883  Z=    0.000
+          at point  X=343794300.000  Y=226091844.224  Z=    0.000
+          at point  X=343809677.354  Y=226091844.224  Z=    0.000
+          at point  X=343809677.354  Y=226086708.735  Z=    0.000
+          at point  X=343796198.430  Y=226086708.735  Z=    0.000
+          at point  X=343796198.430  Y=226080352.960  Z=    0.000
+          at point  X=343793524.633  Y=226080352.960  Z=    0.000
+          at point  X=343793524.633  Y=226078141.946  Z=    0.000
+          at point  X=343783833.839  Y=226078141.946  Z=    0.000
+          at point  X=343783833.839  Y=226080349.361  Z=    0.000
+          at point  X=343772007.085  Y=226080349.361  Z=    0.000
+          at point  X=343772007.085  Y=226085611.811  Z=    0.000
+          at point  X=343753715.435  Y=226085611.811  Z=    0.000
+          at point  X=343753715.435  Y=226098942.629  Z=    0.000
+          at point  X=343781452.225  Y=226098942.629  Z=    0.000
+          at point  X=343781452.225  Y=226128337.962  Z=    0.000
+          at point  X=343756868.228  Y=226128294.728  Z=    0.000
+          at point  X=343756868.228  Y=226135156.719  Z=    0.000
+          at point  X=343765552.824  Y=226135156.719  Z=    0.000
+          at point  X=343765552.824  Y=226138456.719  Z=    0.000
+          at point  X=343777857.943  Y=226138456.719  Z=    0.000
+          at point  X=343777857.943  Y=226153956.719  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b80
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3482.725
+          at point  X=343788708.865  Y=226126682.725  Z=    0.000
+          at point  X=343788708.865  Y=226123200.000  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b84
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4417.275
+          at point  X=343794316.221  Y=226126682.725  Z=    0.000
+          at point  X=343794316.221  Y=226131100.000  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b83
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3534.338
+          at point  X=343790600.000  Y=226100634.338  Z=    0.000
+          at point  X=343790600.000  Y=226097100.000  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c98
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3900.000
+          at point  X=343782700.000  Y=226077200.000  Z=    0.000
+          at point  X=343782700.000  Y=226081100.000  Z=    1

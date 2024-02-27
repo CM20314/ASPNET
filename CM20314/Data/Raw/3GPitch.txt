@@ -1,0 +1,27 @@
+3G
+3G Football Pitch
+          at point  X=344414199.948  Y=225853392.802  Z=    0.000
+          at point  X=344462105.561  Y=225853392.802  Z=    0.000
+          at point  X=344462105.561  Y=225780216.000  Z=    0.000
+          at point  X=344462105.561  Y=225780216.000  Z=    0.000
+          at point  X=344414199.948  Y=225780216.000  Z=    0.000
+          at point  X=344414199.948  Y=225853392.802  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c00
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3400.000
+          at point  X=344419800.000  Y=225854600.000  Z=    0.000
+          at point  X=344419800.000  Y=225851200.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c01
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5400.000
+          at point  X=344412200.000  Y=225784400.000  Z=    0.000
+          at point  X=344417600.000  Y=225784400.000  Z=    1

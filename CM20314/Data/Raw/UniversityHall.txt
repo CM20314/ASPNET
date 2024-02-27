@@ -1,0 +1,27 @@
+UH
+University Hall
+          at point  X=343860970.066  Y=226069481.379  Z=    0.000
+          at point  X=343860970.066  Y=226070120.139  Z=    0.000
+          at point  X=343879867.269  Y=226070120.139  Z=    0.000
+          at point  X=343879867.269  Y=226062398.047  Z=    0.000
+          at point  X=343891590.809  Y=226062398.047  Z=    0.000
+          at point  X=343891590.809  Y=226070046.486  Z=    0.000
+          at point  X=343899668.063  Y=226070046.486  Z=    0.000
+          at point  X=343899668.063  Y=226062579.751  Z=    0.000
+          at point  X=343893698.822  Y=226062579.751  Z=    0.000
+          at point  X=343893698.822  Y=226049055.006  Z=    0.000
+          at point  X=343860954.907  Y=226049055.006  Z=    0.000
+          at point  X=343860954.907  Y=226053720.307  Z=    0.000
+          at point  X=343853554.907  Y=226053720.307  Z=    0.000
+          at point  X=343853554.907  Y=226069481.379  Z=    0.000
+          at point  X=343860970.066  Y=226069481.379  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c8d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3476.864
+          at point  X=343881899.941  Y=226046923.136  Z=    0.000
+          at point  X=343881899.941  Y=226050400.000  Z=    1

@@ -1,0 +1,26 @@
+Astro
+Astro Pitch
+          at point  X=344280825.265  Y=225880369.306  Z=    0.000
+          at point  X=344340584.749  Y=225880369.306  Z=    0.000
+          at point  X=344340584.749  Y=225785963.053  Z=    0.000
+          at point  X=344280825.265  Y=225785963.053  Z=    0.000
+          at point  X=344280825.265  Y=225880369.306  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a9d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6218.481
+          at point  X=344344218.481  Y=225790200.000  Z=    0.000
+          at point  X=344338000.000  Y=225790200.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bf7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   10200.000
+          at point  X=344344500.000  Y=225874000.000  Z=    0.000
+          at point  X=344334300.000  Y=225874000.000  Z=    1

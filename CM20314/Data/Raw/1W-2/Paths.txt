@@ -1,0 +1,670 @@
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dbc
+              Open
+    Constant width     0.000
+              area   96917989.932
+            length   48099.681
+
+          at point  X=24082.254  Y=2074.326  Z=    0.000
+          at point  X=24082.487  Y=3955.795  Z=    0.000
+          at point  X=24082.487  Y=8355.264  Z=    0.000
+          at point  X=24082.487  Y=10370.712  Z=    0.000
+          at point  X=24082.487  Y=12417.191  Z=    0.000
+          at point  X=24082.487  Y=13052.367  Z=    0.000
+          at point  X=25252.904  Y=14140.000  Z=    0.000
+          at point  X=25252.904  Y=14740.000  Z=    0.000
+          at point  X=25252.904  Y=17812.625  Z=    0.000
+          at point  X=25252.904  Y=19849.812  Z=    0.000
+          at point  X=25252.904  Y=21921.837  Z=    0.000
+          at point  X=25252.904  Y=25178.230  Z=    0.000
+          at point  X=25252.904  Y=28271.334  Z=    0.000
+          at point  X=25542.798  Y=28271.334  Z=    0.000
+          at point  X=25542.798  Y=28897.828  Z=    0.000
+          at point  X=25542.798  Y=30861.646  Z=    0.000
+          at point  X=25542.798  Y=32454.645  Z=    0.000
+          at point  X=25542.798  Y=34684.525  Z=    0.000
+          at point  X=25542.798  Y=35990.609  Z=    0.000
+          at point  X=25542.798  Y=37635.408  Z=    0.000
+          at point  X=25624.904  Y=40072.268  Z=    0.000
+          at point  X=25624.904  Y=40378.932  Z=    0.000
+          at point  X=25624.904  Y=42332.645  Z=    0.000
+          at point  X=23570.277  Y=42332.645  Z=    0.000
+          at point  X=21343.155  Y=42332.645  Z=    0.000
+          at point  X=21343.155  Y=39574.430  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dbd
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2758.059
+
+          at point  X=25542.798  Y=28897.828  Z=    0.000
+          at point  X=24252.028  Y=28897.828  Z=    0.000
+          at point  X=22784.739  Y=28897.828  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dbe
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2385.796
+
+          at point  X=25252.904  Y=21921.837  Z=    0.000
+          at point  X=24252.028  Y=21921.837  Z=    0.000
+          at point  X=22867.108  Y=21921.837  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dc2
+              Open
+Press ENTER to continue:
+    Constant width     0.000
+              area   0.000
+            length   2910.118
+
+          at point  X=24082.487  Y= 8355.264  Z=    0.000
+          at point  X=21830.737  Y= 8355.264  Z=    0.000
+          at point  X=21172.368  Y= 8355.264  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dc4
+              Open
+    Constant width     0.000
+              area   12183231.326
+            length   15306.245
+
+          at point  X=21172.368  Y= 8355.264  Z=    0.000
+          at point  X=21172.368  Y= 6899.893  Z=    0.000
+          at point  X=19821.500  Y= 6899.893  Z=    0.000
+          at point  X=17121.500  Y= 6899.893  Z=    0.000
+          at point  X=17121.500  Y= 4059.430  Z=    0.000
+          at point  X=16063.698  Y= 4059.430  Z=    0.000
+          at point  X=14092.721  Y= 4059.430  Z=    0.000
+          at point  X=13964.816  Y= 4059.430  Z=    0.000
+          at point  X=12076.554  Y= 4059.430  Z=    0.000
+          at point  X=12067.671  Y= 4059.430  Z=    0.000
+          at point  X=10240.238  Y= 4059.430  Z=    0.000
+          at point  X=10161.958  Y= 4059.430  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dc5
+              Open
+    Constant width     0.000
+              area   5753171.189
+            length   6891.332
+
+          at point  X=21172.368  Y= 6899.893  Z=    0.000
+          at point  X=21172.368  Y= 4059.430  Z=    0.000
+          at point  X=21107.790  Y= 4059.430  Z=    0.000
+          at point  X=17952.411  Y= 4059.430  Z=    0.000
+          at point  X=17121.500  Y= 4059.430  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dc6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2428.116
+
+          at point  X=19821.500  Y= 6899.893  Z=    0.000
+          at point  X=19821.500  Y= 8160.923  Z=    0.000
+          at point  X=19821.500  Y= 9328.009  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dc7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2428.116
+
+          at point  X=17121.500  Y= 6899.893  Z=    0.000
+          at point  X=17121.500  Y= 8160.923  Z=    0.000
+          at point  X=17121.500  Y= 9328.009  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+Press ENTER to continue:
+                            Space: Model space
+                   Handle = 39dc8
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1982.692
+
+          at point  X=21107.790  Y= 4059.430  Z=    0.000
+          at point  X=21107.790  Y= 2757.923  Z=    0.000
+          at point  X=21107.790  Y= 2076.739  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dc9
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1982.692
+
+          at point  X=17952.411  Y= 4059.430  Z=    0.000
+          at point  X=17952.411  Y= 2757.923  Z=    0.000
+          at point  X=17952.411  Y= 2076.739  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dca
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1982.692
+
+          at point  X=16063.698  Y= 4059.430  Z=    0.000
+          at point  X=16063.698  Y= 2757.923  Z=    0.000
+          at point  X=16063.698  Y= 2076.739  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dcb
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1982.692
+
+          at point  X=14092.721  Y= 4059.430  Z=    0.000
+          at point  X=14092.721  Y= 2757.923  Z=    0.000
+          at point  X=14092.721  Y= 2076.739  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dcc
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1910.631
+
+          at point  X=13964.816  Y= 4059.430  Z=    0.000
+          at point  X=13964.816  Y= 5130.923  Z=    0.000
+          at point  X=13964.816  Y= 5970.061  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dcd
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1910.631
+
+          at point  X=12067.671  Y= 4059.430  Z=    0.000
+          at point  X=12067.671  Y= 5130.923  Z=    0.000
+Press ENTER to continue:
+          at point  X=12067.671  Y= 5970.061  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dce
+              Open
+    Constant width     0.000
+              area   37391.177
+            length   1949.771
+
+          at point  X=10201.098  Y= 4059.430  Z=    0.000
+          at point  X=10161.958  Y= 4059.430  Z=    0.000
+          at point  X=10161.958  Y= 5130.923  Z=    0.000
+          at point  X=10161.958  Y= 5970.061  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd0
+              Open
+    Constant width     0.000
+              area   3025.532
+            length   1982.722
+
+          at point  X=12067.671  Y= 4059.430  Z=    0.000
+          at point  X=12076.554  Y= 2757.923  Z=    0.000
+          at point  X=12076.554  Y= 2076.739  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1982.692
+
+          at point  X=10240.238  Y= 4059.430  Z=    0.000
+          at point  X=10240.238  Y= 2757.923  Z=    0.000
+          at point  X=10240.238  Y= 2076.739  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd2
+              Open
+    Constant width     0.000
+              area   738347.969
+            length   2652.178
+
+          at point  X=10161.958  Y= 4059.430  Z=    0.000
+          at point  X= 9392.105  Y= 4059.430  Z=    0.000
+          at point  X= 8679.590  Y= 4059.430  Z=    0.000
+          at point  X= 8305.005  Y= 4059.430  Z=    0.000
+          at point  X= 8305.005  Y= 3264.205  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd3
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2541.101
+
+          at point  X= 8679.590  Y= 4059.430  Z=    0.000
+          at point  X= 8679.590  Y= 2757.923  Z=    0.000
+          at point  X= 8679.590  Y= 1518.329  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd4
+Press ENTER to continue:
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3261.575
+
+          at point  X= 8305.005  Y= 3264.205  Z=    0.000
+          at point  X= 6843.237  Y= 3264.205  Z=    0.000
+          at point  X= 5043.431  Y= 3264.205  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd5
+              Open
+    Constant width     0.000
+              area   999725.177
+            length   3874.607
+
+          at point  X= 8305.005  Y= 4059.430  Z=    0.000
+          at point  X= 8305.005  Y= 4672.462  Z=    0.000
+          at point  X= 6843.237  Y= 4672.462  Z=    0.000
+          at point  X= 5043.431  Y= 4672.462  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1297.599
+
+          at point  X= 8305.005  Y= 4672.462  Z=    0.000
+          at point  X= 8305.005  Y= 5130.923  Z=    0.000
+          at point  X= 8305.005  Y= 5970.061  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2976.822
+
+          at point  X=24082.487  Y= 8355.264  Z=    0.000
+          at point  X=27059.309  Y= 8355.264  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd8
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2215.925
+
+          at point  X=27059.309  Y= 8355.264  Z=    0.000
+          at point  X=27059.309  Y= 7289.995  Z=    0.000
+          at point  X=27059.309  Y= 6139.339  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dd9
+              Open
+    Constant width     0.000
+              area   30291.512
+            length   3834.393
+
+          at point  X=27059.309  Y= 8355.264  Z=    0.000
+          at point  X=29253.991  Y= 8318.310  Z=    0.000
+          at point  X=30893.390  Y= 8318.310  Z=    0.000
+
+Press ENTER to continue:
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dda
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5098.761
+
+          at point  X=25252.904  Y=14140.000  Z=    0.000
+          at point  X=26973.904  Y=14140.000  Z=    0.000
+          at point  X=30351.664  Y=14140.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39de9
+              Open
+    Constant width     0.000
+              area   32381882.474
+            length   22585.204
+
+          at point  X=25542.798  Y=28271.334  Z=    0.000
+          at point  X=33161.718  Y=28271.334  Z=    0.000
+          at point  X=36542.968  Y=28271.334  Z=    0.000
+          at point  X=39924.218  Y=28271.334  Z=    0.000
+          at point  X=42299.138  Y=28271.334  Z=    0.000
+          at point  X=44757.464  Y=28271.334  Z=    0.000
+          at point  X=44757.464  Y=31641.872  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39deb
+              Open
+    Constant width     0.000
+              area   0.000
+            length   17590.958
+
+          at point  X=36542.968  Y=28271.334  Z=    0.000
+          at point  X=36542.968  Y=39239.420  Z=    0.000
+          at point  X=36542.968  Y=44417.340  Z=    0.000
+          at point  X=36542.968  Y=45862.292  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39dec
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4024.294
+
+          at point  X=39924.218  Y=28271.334  Z=    0.000
+          at point  X=39924.218  Y=26818.102  Z=    0.000
+          at point  X=39924.218  Y=24247.040  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39ded
+              Open
+    Constant width     0.000
+              area   0.000
+            length   11067.497
+
+          at point  X=42299.138  Y=28271.334  Z=    0.000
+          at point  X=42299.138  Y=22266.907  Z=    0.000
+          at point  X=42299.138  Y=20467.895  Z=    0.000
+          at point  X=42299.138  Y=17203.836  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+Press ENTER to continue:
+                   Handle = 39dee
+              Open
+    Constant width     0.000
+              area   1774.407
+            length   2636.173
+
+          at point  X=44757.464  Y=28271.334  Z=    0.000
+          at point  X=44754.464  Y=26818.102  Z=    0.000
+          at point  X=44754.464  Y=25635.164  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39def
+              Open
+    Constant width     0.000
+              area   586819.664
+            length   8422.137
+
+          at point  X=44757.464  Y=31641.872  Z=    0.000
+          at point  X=46610.704  Y=31641.872  Z=    0.000
+          at point  X=48093.752  Y=31641.872  Z=    0.000
+          at point  X=48812.876  Y=31944.159  Z=    0.000
+          at point  X=50098.210  Y=31944.159  Z=    0.000
+          at point  X=52183.917  Y=31944.159  Z=    0.000
+          at point  X=53118.650  Y=31944.159  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39df1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4953.079
+
+          at point  X=48812.876  Y=31944.159  Z=    0.000
+          at point  X=48812.876  Y=34650.403  Z=    0.000
+          at point  X=48812.876  Y=35256.042  Z=    0.000
+          at point  X=48812.876  Y=36897.238  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39df3
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4953.079
+
+          at point  X=50098.210  Y=31944.159  Z=    0.000
+          at point  X=50098.210  Y=33964.054  Z=    0.000
+          at point  X=50098.210  Y=35256.042  Z=    0.000
+          at point  X=50098.210  Y=36897.238  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39df4
+              Open
+    Constant width     0.000
+              area   5699.740
+            length   2830.910
+
+          at point  X=48812.876  Y=34650.403  Z=    0.000
+          at point  X=47829.915  Y=34656.572  Z=    0.000
+          at point  X=45981.984  Y=34656.572  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39df5
+              Open
+Press ENTER to continue:
+    Constant width     0.000
+              area   0.000
+            length   2806.696
+
+          at point  X=50098.210  Y=33964.054  Z=    0.000
+          at point  X=51095.289  Y=33964.054  Z=    0.000
+          at point  X=52904.906  Y=33964.054  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e20
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2767.541
+
+          at point  X=21343.155  Y=39574.430  Z=    0.000
+          at point  X=20588.028  Y=39574.430  Z=    0.000
+          at point  X=18575.614  Y=39574.430  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e21
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4067.844
+
+          at point  X=23570.277  Y=42332.645  Z=    0.000
+          at point  X=23570.277  Y=40526.432  Z=    0.000
+          at point  X=23570.277  Y=38264.801  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e23
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2648.789
+
+          at point  X=25542.798  Y=32454.645  Z=    0.000
+          at point  X=24252.028  Y=32454.645  Z=    0.000
+          at point  X=22894.009  Y=32454.645  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e24
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3990.365
+
+          at point  X=25542.798  Y=37635.408  Z=    0.000
+          at point  X=26773.904  Y=37635.408  Z=    0.000
+          at point  X=29533.162  Y=37635.408  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e26
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3990.365
+
+          at point  X=25542.798  Y=35990.609  Z=    0.000
+          at point  X=26773.904  Y=35990.609  Z=    0.000
+          at point  X=29533.162  Y=35990.609  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+Press ENTER to continue:
+                            Space: Model space
+                   Handle = 39e29
+              Open
+    Constant width     0.000
+              area   965612.113
+            length   3234.830
+
+          at point  X=21343.155  Y=45183.846  Z=    0.000
+          at point  X=22020.492  Y=44506.459  Z=    0.000
+          at point  X=21343.155  Y=42332.645  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e2a
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2669.701
+
+          at point  X=23570.277  Y=42332.645  Z=    0.000
+          at point  X=22020.492  Y=44506.459  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e2b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6908.477
+
+          at point  X=36542.968  Y=44417.340  Z=    0.000
+          at point  X=40809.803  Y=44417.340  Z=    0.000
+          at point  X=43451.446  Y=44417.340  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e2d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3106.199
+
+          at point  X=25252.904  Y=25178.230  Z=    0.000
+          at point  X=26765.808  Y=25178.230  Z=    0.000
+          at point  X=28359.103  Y=25178.230  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e4b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3334.987
+
+          at point  X=42801.736  Y=  910.513  Z=    0.000
+          at point  X=46136.723  Y=  910.513  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e4c
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7636.605
+
+          at point  X=42801.736  Y=  910.513  Z=    0.000
+          at point  X=39496.141  Y=  910.513  Z=    0.000
+          at point  X=35165.131  Y=  910.513  Z=    0.000
+
+Press ENTER to continue:
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e4d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4117.410
+
+          at point  X=46136.723  Y=  910.513  Z=    0.000
+          at point  X=46136.723  Y= 1889.423  Z=    0.000
+          at point  X=46136.723  Y= 5027.922  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e4e
+              Open
+    Constant width     0.000
+              area   33933.555
+            length   4832.418
+
+          at point  X=46136.723  Y=  910.513  Z=    0.000
+          at point  X=46383.916  Y=  895.710  Z=    0.000
+          at point  X=46896.301  Y=  895.710  Z=    0.000
+          at point  X=50968.698  Y=  895.710  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e62
+              Open
+    Constant width     0.000
+              area   2592499.012
+            length   5889.734
+
+          at point  X=22020.492  Y=44506.459  Z=    0.000
+          at point  X=23029.033  Y=45617.874  Z=    0.000
+          at point  X=25065.407  Y=47512.248  Z=    0.000
+          at point  X=26673.070  Y=47512.248  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATHS"
+                            Space: Model space
+                   Handle = 39e63
+              Open
+    Constant width     0.000
+              area   6765341.707
+            length   10547.717
+
+          at point  X=36542.968  Y=45862.292  Z=    0.000
+          at point  X=32154.599  Y=45862.292  Z=    0.000
+          at point  X=28342.334  Y=45862.292  Z=    0.000
+          at point  X=26673.070  Y=47512.248  Z=    0.000

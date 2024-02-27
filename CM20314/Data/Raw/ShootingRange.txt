@@ -1,0 +1,17 @@
+Shooting Range
+Shooting Range
+          at point  X=344654942.679  Y=225888378.363  Z=    0.000
+          at point  X=344623746.139  Y=225888378.363  Z=    0.000
+          at point  X=344623746.139  Y=225855954.302  Z=    0.000
+          at point  X=344654876.547  Y=225855954.302  Z=    0.000
+          at point  X=344654942.679  Y=225888378.363  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394be0
+              Open
+    Constant width     0.000
+              area   0.000
+            length   83400.000
+          at point  X=344630250.000  Y=225776900.000  Z=    0.000
+          at point  X=344630250.000  Y=225860300.000  Z=    1

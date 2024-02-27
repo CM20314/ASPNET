@@ -1,0 +1,26 @@
+FH
+Foundler's Hall
+          at point  X=344025052.824  Y=226157156.719  Z=    0.000
+          at point  X=344037352.824  Y=226157156.719  Z=    0.000
+          at point  X=344037352.824  Y=226149556.719  Z=    0.000
+          at point  X=344041552.824  Y=226149556.719  Z=    0.000
+          at point  X=344041552.824  Y=226150956.719  Z=    0.000
+          at point  X=344074447.645  Y=226150956.719  Z=    0.000
+          at point  X=344074452.824  Y=226115056.719  Z=    0.000
+          at point  X=344040652.824  Y=226115056.721  Z=    0.000
+          at point  X=344040652.824  Y=226116556.719  Z=    0.000
+          at point  X=344034352.824  Y=226116556.719  Z=    0.000
+          at point  X=344034352.824  Y=226114756.719  Z=    0.000
+          at point  X=344026019.471  Y=226114756.719  Z=    0.000
+          at point  X=344025052.824  Y=226114756.719  Z=    0.000
+          at point  X=344025052.824  Y=226157156.719  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0aa6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2800.000
+          at point  X=344024500.000  Y=226130400.000  Z=    0.000
+          at point  X=344027300.000  Y=226130400.000  Z=    1

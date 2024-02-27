@@ -1,0 +1,38 @@
+8W
+8W (Addition)
+          at point  X=343697300.000  Y=226102300.000  Z=    0.000
+          at point  X=343690800.000  Y=226108900.000  Z=    0.000
+          at point  X=343697300.000  Y=226115500.000  Z=    0.000
+          at point  X=343724600.000  Y=226115500.000  Z=    0.000
+          at point  X=343724600.000  Y=226103600.000  Z=    0.000
+          at point  X=343718400.000  Y=226103600.000  Z=    0.000
+          at point  X=343718400.000  Y=226102300.000  Z=    0.000
+          at point  X=343697300.000  Y=226102300.000  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b4c
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3394.020
+          at point  X=343691180.796  Y=226106722.474  Z=    0.000
+          at point  X=343693598.432  Y=226109104.575  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394cb1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3365.662
+          at point  X=343701300.000  Y=226100634.338  Z=    0.000
+          at point  X=343701300.000  Y=226104000.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394cb3
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3365.662
+          at point  X=343716200.000  Y=226100634.338  Z=    0.000
+          at point  X=343716200.000  Y=226104000.000  Z=    1

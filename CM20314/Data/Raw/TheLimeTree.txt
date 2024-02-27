@@ -1,0 +1,45 @@
+Lime Tree
+The Lime Tree
+          at point  X=344143106.033  Y=226167678.991  Z=    0.000
+          at point  X=344156542.463  Y=226171501.422  Z=    0.000
+          at point  X=344164050.761  Y=226158707.101  Z=    0.000
+          at point  X=344163128.138  Y=226158179.272  Z=    0.000
+          at point  X=344164385.051  Y=226156056.345  Z=    0.000
+          at point  X=344152256.642  Y=226148924.117  Z=    0.000
+          at point  X=344157800.420  Y=226139470.799  Z=    0.000
+          at point  X=344170885.198  Y=226147155.140  Z=    0.000
+          at point  X=344179580.338  Y=226132406.105  Z=    0.000
+          at point  X=344178617.424  Y=226131848.705  Z=    0.000
+          at point  X=344178982.166  Y=226131221.113  Z=    0.000
+          at point  X=344175227.243  Y=226129019.594  Z=    0.000
+          at point  X=344175677.840  Y=226118458.787  Z=    0.000
+          at point  X=344163698.043  Y=226111571.306  Z=    0.000
+          at point  X=344161042.119  Y=226112882.188  Z=    0.000
+          at point  X=344161042.119  Y=226127121.831  Z=    0.000
+          at point  X=344159224.682  Y=226127121.831  Z=    0.000
+          at point  X=344159224.682  Y=226132559.419  Z=    0.000
+          at point  X=344140914.065  Y=226141523.428  Z=    0.000
+          at point  X=344140914.065  Y=226159677.971  Z=    0.000
+          at point  X=344143062.836  Y=226159677.971  Z=    0.000
+          at point  X=344143062.836  Y=226167673.862  Z=    0.000
+          at point  X=344143106.033  Y=226167673.862  Z=    0.000
+          at point  X=344143106.033  Y=226167678.991  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bc5
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3300.000
+          at point  X=344142300.000  Y=226162200.000  Z=    0.000
+          at point  X=344142300.000  Y=226158900.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bc7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3000.000
+          at point  X=344160300.000  Y=226125700.000  Z=    0.000
+          at point  X=344160300.000  Y=226128700.000  Z=    1

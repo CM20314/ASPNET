@@ -1,0 +1,26 @@
+Estates
+Department of Campus Infrastructure
+          at point  X=344036920.579  Y=226225490.698  Z=    0.000
+          at point  X=344064232.577  Y=226225490.698  Z=    0.000
+          at point  X=344064255.097  Y=226223174.481  Z=    0.000
+          at point  X=344063136.519  Y=226220744.935  Z=    0.000
+          at point  X=344060795.386  Y=226220730.113  Z=    0.000
+          at point  X=344060849.459  Y=226214505.737  Z=    0.000
+          at point  X=344036379.171  Y=226214427.306  Z=    0.000
+          at point  X=344036330.162  Y=226220564.584  Z=    0.000
+          at point  X=344034794.697  Y=226220564.584  Z=    0.000
+          at point  X=344034783.666  Y=226222137.411  Z=    0.000
+          at point  X=344035147.098  Y=226222143.720  Z=    0.000
+          at point  X=344035573.466  Y=226223850.373  Z=    0.000
+          at point  X=344036931.063  Y=226223885.341  Z=    0.000
+          at point  X=344036931.063  Y=226225490.719  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394ba4
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2500.000
+          at point  X=344046400.000  Y=226226500.000  Z=    0.000
+          at point  X=344046400.000  Y=226224000.000  Z=    1

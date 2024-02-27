@@ -1,0 +1,65 @@
+STV
+Sports Training Village
+          at point  X=344228109.237  Y=225866274.510  Z=    0.000
+          at point  X=344228103.524  Y=225882348.472  Z=    0.000
+          at point  X=344247448.524  Y=225882348.481  Z=    0.000
+          at point  X=344247448.525  Y=225900268.476  Z=    0.000
+          at point  X=344241773.525  Y=225900262.507  Z=    0.000
+          at point  X=344241758.187  Y=225949858.562  Z=    0.000
+          at point  X=344252839.636  Y=225949858.561  Z=    0.000
+          at point  X=344252838.220  Y=225890263.003  Z=    0.000
+          at point  X=344289552.896  Y=225890262.826  Z=    0.000
+          at point  X=344289553.693  Y=225923779.186  Z=    0.000
+          at point  X=344298659.893  Y=225923778.969  Z=    0.000
+          at point  X=344298660.300  Y=225940901.636  Z=    0.000
+          at point  X=344302558.527  Y=225940885.860  Z=    0.000
+          at point  X=344302547.911  Y=225908138.235  Z=    0.000
+          at point  X=344313007.876  Y=225908138.235  Z=    0.000
+          at point  X=344313088.528  Y=226061293.471  Z=    0.000
+          at point  X=344302400.527  Y=226061293.471  Z=    0.000
+          at point  X=344302558.527  Y=225985883.471  Z=    0.000
+          at point  X=344292208.678  Y=225985883.717  Z=    0.000
+          at point  X=344292210.061  Y=226044105.418  Z=    0.000
+          at point  X=344252863.653  Y=226044125.017  Z=    0.000
+          at point  X=344252862.107  Y=225979037.581  Z=    0.000
+          at point  X=344278391.452  Y=225979036.974  Z=    0.000
+          at point  X=344278390.939  Y=225957658.610  Z=    0.000
+          at point  X=344241758.514  Y=225957658.666  Z=    0.000
+          at point  X=344241773.525  Y=225959843.475  Z=    0.000
+          at point  X=344225578.526  Y=225959828.480  Z=    0.000
+          at point  X=344225578.526  Y=225959828.480  Z=    0.000
+          at point  X=344225578.530  Y=225997808.466  Z=    0.000
+          at point  X=344165588.524  Y=225997808.466  Z=    0.000
+          at point  X=344165580.009  Y=225959288.333  Z=    0.000
+          at point  X=344166119.983  Y=225959288.345  Z=    0.000
+          at point  X=344166116.123  Y=225942008.345  Z=    0.000
+          at point  X=344163006.039  Y=225942009.035  Z=    0.000
+          at point  X=344162989.238  Y=225866289.035  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c28
+              Open
+    Constant width     0.000
+              area   0.000
+            length   10092.503
+          at point  X=344160107.497  Y=225951000.000  Z=    0.000
+          at point  X=344170200.000  Y=225951000.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c32
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5600.000
+          at point  X=344293100.000  Y=225920600.000  Z=    0.000
+          at point  X=344287500.000  Y=225920600.000  Z=    0
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c16
+              Open
+    Constant width     0.000
+              area   0.000
+            length   14100.000
+          at point  X=344310500.000  Y=225966100.000  Z=    0.000
+          at point  X=344296400.000  Y=225966100.000  Z=    1

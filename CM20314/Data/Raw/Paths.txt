@@ -1,0 +1,4115 @@
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948e5
+              Open
+    Constant width     0.000
+              area   406073752.150
+            length   67051.888
+
+          at point  X=344027169.551  Y=226096884.091  Z=    0.000
+          at point  X=344014373.308  Y=226096884.091  Z=    0.000
+          at point  X=344001577.064  Y=226096884.091  Z=    0.000
+          at point  X=344001577.064  Y=226104505.794  Z=    0.000
+          at point  X=344001577.064  Y=226112751.003  Z=    0.000
+          at point  X=344014373.308  Y=226112751.003  Z=    0.000
+          at point  X=344027169.551  Y=226112751.003  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948e6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   25592.488
+
+          at point  X=344001577.064  Y=226104505.794  Z=    0.000
+          at point  X=344014373.308  Y=226104505.794  Z=    0.000
+          at point  X=344027169.551  Y=226104505.794  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948e7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   15866.912
+
+          at point  X=344014373.308  Y=226096884.091  Z=    0.000
+          at point  X=344014373.308  Y=226104505.794  Z=    0.000
+          at point  X=344014373.308  Y=226112751.003  Z=    0.000
+
+                                                     LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948e8
+              Open
+    Constant width     0.000
+              area   1735205683.304
+            length   304579.983
+          at point  X=344001577.064  Y=226112751.003  Z=    0.000
+          at point  X=343985159.107  Y=226112751.003  Z=    0.000
+          at point  X=343945084.069  Y=226112751.003  Z=    0.000
+          at point  X=343945084.069  Y=226121826.016  Z=    0.000
+          at point  X=343924392.035  Y=226121826.016  Z=    0.000
+          at point  X=343903700.000  Y=226121826.016  Z=    0.000
+          at point  X=343902664.841  Y=226121826.016  Z=    0.000
+          at point  X=343902664.841  Y=226126123.559  Z=    0.000
+          at point  X=343889706.736  Y=226126123.559  Z=    0.000
+          at point  X=343873379.310  Y=226126123.559  Z=    0.000
+          at point  X=343870987.254  Y=226126123.559  Z=    0.000
+          at point  X=343844093.779  Y=226126123.559  Z=    0.000
+          at point  X=343844093.779  Y=226112751.003  Z=    0.000
+          at point  X=343844093.779  Y=226103070.355  Z=    0.000
+          at point  X=343873379.310  Y=226103070.355  Z=    0.000
+          at point  X=343877000.000  Y=226103070.355  Z=    0.000
+          at point  X=343882300.000  Y=226103070.355  Z=    0.000
+          at point  X=343902664.841  Y=226103070.355  Z=    0.000
+          at point  X=343902664.841  Y=226112751.003  Z=    0.000
+          at point  X=343945084.069  Y=226112751.003  Z=    0.000
+
+          LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949a3
+              Open
+    Constant width     0.000
+              area   2941341418.735
+            length   152244.269
+
+          at point  X=343836955.671  Y=226204713.068  Z=    0.000
+          at point  X=343841200.000  Y=226204713.068  Z=    0.000
+          at point  X=343843400.000  Y=226208100.000  Z=    0.000
+          at point  X=343846700.000  Y=226209300.000  Z=    0.000
+          at point  X=343855899.999  Y=226209301.003  Z=    0.000
+          at point  X=343871094.288  Y=226209310.530  Z=    0.000
+          at point  X=343884100.114  Y=226209318.684  Z=    0.000
+          at point  X=343890300.000  Y=226209318.684  Z=    0.000
+          at point  X=343903700.000  Y=226209318.684  Z=    0.000
+          at point  X=343903700.000  Y=226157000.000  Z=    0.000
+          at point  X=343903700.000  Y=226128100.000  Z=    0.000
+          at point  X=343902664.841  Y=226126123.559  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948e9
+              Open
+    Constant width     0.000
+              area   0.000
+            length   23053.204
+
+          at point  X=343873379.310  Y=226126123.559  Z=    0.000
+          at point  X=343873379.310  Y=226112751.003  Z=    0.000
+          at point  X=343873379.310  Y=226103070.355  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948eb
+              Open
+    Constant width     0.000
+              area   0.000
+            length   58571.062
+
+          at point  X=343902664.841  Y=226112751.003  Z=    0.000
+          at point  X=343873379.310  Y=226112751.003  Z=    0.000
+          at point  X=343844093.779  Y=226112751.003  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948ec
+              Open
+    Constant width     0.000
+              area   0.000
+            length   9075.013
+
+          at point  X=343902664.841  Y=226121826.016  Z=    0.000
+          at point  X=343902664.841  Y=226112751.003  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948ed
+              Open
+    Constant width     0.000
+              area   125930496.778
+            length   33692.963
+
+          at point  X=343902664.841  Y=226103070.355  Z=    0.000
+          at point  X=343909000.000  Y=226103070.355  Z=    0.000
+          at point  X=343925163.131  Y=226103070.355  Z=    0.000
+          at point  X=343925163.131  Y=226091875.683  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948ee
+              Open
+    Constant width     0.000
+              area   51714177.395
+            length   20433.745
+
+Press ENTER to continue:
+          at point  X=343925163.131  Y=226091875.683  Z=    0.000
+          at point  X=343915924.062  Y=226091875.683  Z=    0.000
+          at point  X=343915915.259  Y=226103070.355  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f1
+              Open
+    Constant width     0.000
+              area   203494626.078
+            length   83876.296
+
+          at point  X=344001577.064  Y=226096884.091  Z=    0.000
+          at point  X=343994900.000  Y=226096877.297  Z=    0.000
+          at point  X=343968100.000  Y=226096877.297  Z=    0.000
+          at point  X=343951024.833  Y=226099183.065  Z=    0.000
+          at point  X=343935190.199  Y=226099183.065  Z=    0.000
+          at point  X=343935190.199  Y=226091875.683  Z=    0.000
+          at point  X=343925163.131  Y=226091875.683  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   10754.214
+
+          at point  X=343935190.199  Y=226099183.065  Z=    0.000
+          at point  X=343925163.131  Y=226103070.355  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f3
+              Open
+    Constant width     0.000
+              area   158638291.502
+            length   68226.817
+
+          at point  X=344001577.064  Y=226104505.794  Z=    0.000
+          at point  X=343994956.074  Y=226104505.794  Z=    0.000
+          at point  X=343941969.187  Y=226104505.794  Z=    0.000
+          at point  X=343935190.199  Y=226099183.065  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f4
+              Open
+    Constant width     0.000
+              area   0.000
+            length   16867.247
+
+          at point  X=343941969.187  Y=226104505.794  Z=    0.000
+          at point  X=343925163.131  Y=226103070.355  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f5
+              Open
+    Constant width     0.000
+              area   733461069.949
+            length   130202.569
+
+Press ENTER to continue:
+          at point  X=343844093.779  Y=226103070.355  Z=    0.000
+          at point  X=343822473.860  Y=226105791.710  Z=    0.000
+          at point  X=343822473.860  Y=226126682.725  Z=    0.000
+          at point  X=343794316.221  Y=226126682.725  Z=    0.000
+          at point  X=343794316.221  Y=226100634.338  Z=    0.000
+          at point  X=343798400.000  Y=226100634.338  Z=    0.000
+          at point  X=343822473.860  Y=226100634.338  Z=    0.000
+          at point  X=343822473.860  Y=226105791.710  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   21756.725
+
+          at point  X=343844093.779  Y=226103070.355  Z=    0.000
+          at point  X=343822473.860  Y=226100634.338  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f7
+              Open
+    Constant width     0.000
+              area   2699751821.749
+            length   167409.145
+
+          at point  X=343794316.221  Y=226126682.725  Z=    0.000
+          at point  X=343788708.865  Y=226126682.725  Z=    0.000
+          at point  X=343783101.510  Y=226126682.725  Z=    0.000
+          at point  X=343783101.510  Y=226131411.486  Z=    0.000
+          at point  X=343781053.590  Y=226131411.486  Z=    0.000
+          at point  X=343775758.385  Y=226131411.486  Z=    0.000
+          at point  X=343775758.385  Y=226137282.106  Z=    0.000
+          at point  X=343775758.385  Y=226153150.468  Z=    0.000
+          at point  X=343775758.385  Y=226158273.551  Z=    0.000
+          at point  X=343780137.254  Y=226158273.551  Z=    0.000
+          at point  X=343780137.254  Y=226170451.362  Z=    0.000
+          at point  X=343784078.914  Y=226173281.915  Z=    0.000
+          at point  X=343788313.134  Y=226176112.472  Z=    0.000
+          at point  X=343793277.391  Y=226177834.148  Z=    0.000
+          at point  X=343798954.469  Y=226179803.041  Z=    0.000
+          at point  X=343801629.022  Y=226182415.560  Z=    0.000
+          at point  X=343803556.326  Y=226186617.618  Z=    0.000
+          at point  X=343805845.782  Y=226191609.267  Z=    0.000
+          at point  X=343807029.684  Y=226194190.501  Z=    0.000
+          at point  X=343807447.346  Y=226197932.609  Z=    0.000
+          at point  X=343807447.346  Y=226201443.945  Z=    0.000
+          at point  X=343808442.202  Y=226205295.833  Z=    0.000
+          at point  X=343811224.082  Y=226207367.148  Z=    0.000
+          at point  X=343812910.034  Y=226208622.462  Z=    0.000
+          at point  X=343819159.160  Y=226209614.615  Z=    0.000
+          at point  X=343829963.716  Y=226209614.615  Z=    0.000
+          at point  X=343834473.540  Y=226209119.395  Z=    0.000
+          at point  X=343836254.834  Y=226207572.804  Z=    0.000
+          at point  X=343836955.671  Y=226204713.068  Z=    0.000
+          at point  X=343836955.671  Y=226201300.000  Z=    0.000
+          at point  X=343836955.671  Y=226197184.379  Z=    0.000
+          at point  X=343836955.671  Y=226185708.989  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+Press ENTER to continue:
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f8
+              Open
+    Constant width     0.000
+              area   477353436.207
+            length   63898.019
+
+          at point  X=343945084.069  Y=226121826.016  Z=    0.000
+          at point  X=343945084.069  Y=226129200.000  Z=    0.000
+          at point  X=343985159.107  Y=226129200.000  Z=    0.000
+          at point  X=343985159.107  Y=226112751.003  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948f9
+              Open
+    Constant width     0.000
+              area   8117506.737
+            length   8363.000
+
+          at point  X=343781057.888  Y=226140345.604  Z=    0.000
+          at point  X=343781057.888  Y=226137282.106  Z=    0.000
+          at point  X=343775758.385  Y=226137282.106  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948fa
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5870.622
+
+          at point  X=343781057.888  Y=226137282.106  Z=    0.000
+          at point  X=343781053.590  Y=226131411.486  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948fb
+              Open
+    Constant width     0.000
+              area   1114854083.299
+            length   138376.335
+
+          at point  X=343794316.221  Y=226100634.338  Z=    0.000
+          at point  X=343790600.000  Y=226100634.338  Z=    0.000
+          at point  X=343752100.000  Y=226100634.338  Z=    0.000
+          at point  X=343750600.000  Y=226100634.338  Z=    0.000
+          at point  X=343731000.000  Y=226100634.338  Z=    0.000
+          at point  X=343716200.000  Y=226100634.338  Z=    0.000
+          at point  X=343701300.000  Y=226100634.338  Z=    0.000
+          at point  X=343685001.842  Y=226100634.338  Z=    0.000
+          at point  X=343673599.960  Y=226089400.040  Z=    0.000
+          at point  X=343664300.364  Y=226080237.130  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948fc
+              Open
+    Constant width     0.000
+              area   132867501.045
+            length   42758.163
+
+          at point  X=343807447.346  Y=226197932.609  Z=    0.000
+          at point  X=343813675.998  Y=226201235.984  Z=    0.000
+Press ENTER to continue:
+          at point  X=343815055.615  Y=226201235.984  Z=    0.000
+          at point  X=343815055.615  Y=226166907.854  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948fd
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7508.088
+
+          at point  X=343813675.998  Y=226201235.984  Z=    0.000
+          at point  X=343813675.998  Y=226208744.072  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948fe
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6603.261
+
+          at point  X=343813675.998  Y=226201235.984  Z=    0.000
+          at point  X=343811224.082  Y=226207367.148  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3948ff
+              Open
+    Constant width     0.000
+              area   0.000
+            length   41962.225
+
+          at point  X=343780137.254  Y=226170451.362  Z=    0.000
+          at point  X=343780137.254  Y=226205811.973  Z=    0.000
+          at point  X=343780137.254  Y=226212413.587  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394900
+              Open
+    Constant width     0.000
+              area   86904321.171
+            length   27053.377
+
+          at point  X=343775758.385  Y=226153150.468  Z=    0.000
+          at point  X=343759226.357  Y=226152639.342  Z=    0.000
+          at point  X=343759226.357  Y=226142125.892  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394901
+              Open
+    Constant width     0.000
+              area   197964495.585
+            length   58656.670
+
+          at point  X=343759226.357  Y=226152639.342  Z=    0.000
+          at point  X=343759226.357  Y=226179745.632  Z=    0.000
+          at point  X=343766161.965  Y=226165110.131  Z=    0.000
+          at point  X=343773646.333  Y=226156335.755  Z=    0.000
+          at point  X=343775758.385  Y=226153150.468  Z=    0.000
+
+Press ENTER to continue:
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394902
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2866.324
+
+          at point  X=343773646.333  Y=226156335.755  Z=    0.000
+          at point  X=343775758.385  Y=226158273.551  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394903
+              Open
+    Constant width     0.000
+              area   123900348.152
+            length   45531.673
+
+          at point  X=344098840.549  Y=226091335.162  Z=    0.000
+          at point  X=344119707.298  Y=226082796.654  Z=    0.000
+          at point  X=344142553.539  Y=226085323.539  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394905
+              Open
+    Constant width     0.000
+              area   2974159019.549
+            length   151165.874
+
+          at point  X=344160107.497  Y=225905323.241  Z=    0.000
+          at point  X=344153945.008  Y=225905071.101  Z=    0.000
+          at point  X=344147201.258  Y=225902105.186  Z=    0.000
+          at point  X=344141299.627  Y=225896483.553  Z=    0.000
+          at point  X=344137411.168  Y=225890382.781  Z=    0.000
+          at point  X=344135924.669  Y=225885227.697  Z=    0.000
+          at point  X=344135267.201  Y=225879558.674  Z=    0.000
+          at point  X=344135718.456  Y=225873987.605  Z=    0.000
+          at point  X=344136770.402  Y=225869257.160  Z=    0.000
+          at point  X=344138780.379  Y=225865033.549  Z=    0.000
+          at point  X=344141693.648  Y=225860813.459  Z=    0.000
+          at point  X=344144830.713  Y=225857528.428  Z=    0.000
+          at point  X=344150860.638  Y=225853661.479  Z=    0.000
+          at point  X=344210514.009  Y=225825838.299  Z=    0.000
+          at point  X=344215372.177  Y=225838331.358  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394906
+              Open
+    Constant width     0.000
+              area   108309473.331
+            length   54970.412
+
+          at point  X=344210514.009  Y=225825838.299  Z=    0.000
+          at point  X=344220423.894  Y=225820173.721  Z=    0.000
+          at point  X=344225845.079  Y=225816048.565  Z=    0.000
+          at point  X=344229973.138  Y=225811327.002  Z=    0.000
+          at point  X=344233902.256  Y=225805810.228  Z=    0.000
+          at point  X=344237184.807  Y=225798852.135  Z=    0.000
+          at point  X=344238459.971  Y=225795090.484  Z=    0.000
+          at point  X=344239889.357  Y=225794053.438  Z=    0.000
+Press ENTER to continue:
+          at point  X=344250156.943  Y=225794053.438  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394907
+              Open
+    Constant width     0.000
+              area   1985777284.359
+            length   204433.752
+
+          at point  X=344250156.925  Y=225793997.836  Z=    0.000
+          at point  X=344250156.925  Y=225784584.838  Z=    0.000
+          at point  X=344242366.503  Y=225784584.838  Z=    0.000
+          at point  X=344239086.772  Y=225758029.185  Z=    0.000
+          at point  X=344271288.872  Y=225758029.185  Z=    0.000
+          at point  X=344271288.872  Y=225776158.859  Z=    0.000
+          at point  X=344271288.872  Y=225879900.000  Z=    0.000
+          at point  X=344271288.872  Y=225886300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394908
+              Open
+    Constant width     0.000
+              area   322847967.729
+            length   81783.295
+
+          at point  X=344271288.872  Y=225776158.859  Z=    0.000
+          at point  X=344344218.481  Y=225776158.859  Z=    0.000
+          at point  X=344344218.481  Y=225785012.546  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39490a
+              Open
+    Constant width     0.000
+              area   0.000
+            length   20608.118
+
+          at point  X=344084301.692  Y=226017125.454  Z=    0.000
+          at point  X=344084301.692  Y=225996517.336  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39490b
+              Open
+    Constant width     0.000
+              area   721017150.809
+            length   90582.207
+
+          at point  X=344134629.823  Y=226017125.454  Z=    0.000
+          at point  X=344134629.823  Y=225996517.336  Z=    0.000
+          at point  X=344123524.826  Y=225996517.336  Z=    0.000
+          at point  X=344117720.702  Y=225996517.336  Z=    0.000
+          at point  X=344111916.578  Y=225996517.336  Z=    0.000
+          at point  X=344098857.295  Y=225996517.336  Z=    0.000
+          at point  X=344084301.692  Y=225996517.336  Z=    0.000
+          at point  X=344064655.735  Y=225996517.336  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39490c
+Press ENTER to continue:
+              Open
+    Constant width     0.000
+              area   0.000
+            length   35294.401
+
+          at point  X=344098840.549  Y=226052419.855  Z=    0.000
+          at point  X=344098840.549  Y=226017125.454  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39490d
+              Open
+    Constant width     0.000
+              area   266852793.360
+            length   51530.898
+
+          at point  X=344084301.692  Y=226017125.454  Z=    0.000
+          at point  X=344084301.692  Y=226024100.000  Z=    0.000
+          at point  X=344084301.692  Y=226050813.506  Z=    0.000
+          at point  X=344093694.094  Y=226059356.401  Z=    0.000
+          at point  X=344098840.549  Y=226059361.281  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39490f
+              Open
+    Constant width     0.000
+              area   0.000
+            length   20608.119
+
+          at point  X=344111910.767  Y=226017125.454  Z=    0.000
+          at point  X=344111913.672  Y=226006821.395  Z=    0.000
+          at point  X=344111916.578  Y=225996517.336  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394910
+              Open
+    Constant width     0.000
+              area   0.000
+            length   20608.118
+
+          at point  X=344123524.826  Y=225996517.336  Z=    0.000
+          at point  X=344123524.826  Y=226006821.395  Z=    0.000
+          at point  X=344123524.826  Y=226017125.454  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394913
+              Open
+    Constant width     0.000
+              area   0.000
+            length   20608.125
+
+          at point  X=344098840.549  Y=226017125.454  Z=    0.000
+          at point  X=344098848.922  Y=226006821.395  Z=    0.000
+          at point  X=344098857.295  Y=225996517.336  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394914
+              Open
+    Constant width     0.000
+Press ENTER to continue:
+              area   0.000
+            length   50328.132
+
+          at point  X=344134629.823  Y=226006821.395  Z=    0.000
+          at point  X=344123524.826  Y=226006821.395  Z=    0.000
+          at point  X=344111913.672  Y=226006821.395  Z=    0.000
+          at point  X=344098848.922  Y=226006821.395  Z=    0.000
+          at point  X=344084301.692  Y=226006821.395  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394915
+              Open
+    Constant width     0.000
+              area   0.000
+            length   19645.957
+
+          at point  X=344084301.692  Y=226006821.395  Z=    0.000
+          at point  X=344064655.735  Y=226006821.395  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39491a
+              Open
+    Constant width     0.000
+              area   0.000
+            length   41034.837
+
+          at point  X=344107510.866  Y=226112751.003  Z=    0.000
+          at point  X=344107510.866  Y=226124300.000  Z=    0.000
+          at point  X=344107510.866  Y=226153785.840  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394923
+              Open
+    Constant width     0.000
+              area   435320987.737
+            length   69135.434
+
+          at point  X=343973105.432  Y=225997243.480  Z=    0.000
+          at point  X=343967245.612  Y=225997243.480  Z=    0.000
+          at point  X=343967245.612  Y=226025304.511  Z=    0.000
+          at point  X=343932031.029  Y=226025304.511  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394924
+              Open
+    Constant width     0.000
+              area   0.000
+            length   10061.534
+
+          at point  X=343973105.432  Y=226017125.454  Z=    0.000
+          at point  X=343967245.612  Y=226025304.511  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394928
+              Open
+    Constant width     0.000
+              area   3637803693.919
+            length   235994.928
+Press ENTER to continue:
+          at point  X=343925163.131  Y=226047033.156  Z=    0.000
+          at point  X=343881899.941  Y=226046923.136  Z=    0.000
+          at point  X=343861054.907  Y=226046870.127  Z=    0.000
+          at point  X=343861054.907  Y=226036900.000  Z=    0.000
+          at point  X=343861054.907  Y=225951458.893  Z=    0.000
+          at point  X=343861054.907  Y=225913914.077  Z=    0.000
+          at point  X=343827554.842  Y=225913914.077  Z=    0.000
+          at point  X=343822283.723  Y=225915219.582  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39492a
+              Open
+    Constant width     0.000
+              area   145789502.531
+            length   43811.267
+
+          at point  X=343960207.924  Y=225937505.712  Z=    0.000
+          at point  X=343953215.297  Y=225930086.889  Z=    0.000
+          at point  X=343941008.064  Y=225922705.916  Z=    0.000
+          at point  X=343960207.924  Y=225920290.487  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39492b
+              Open
+    Constant width     0.000
+              area   227160103.374
+            length   107165.090
+
+          at point  X=343941008.064  Y=225922705.916  Z=    0.000
+          at point  X=343919090.309  Y=225925463.267  Z=    0.000
+          at point  X=343888080.619  Y=225948295.127  Z=    0.000
+          at point  X=343861054.907  Y=225951458.893  Z=    0.000
+          at point  X=343844326.328  Y=225961195.775  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39492c
+              Open
+    Constant width     0.000
+              area   736263004.100
+            length   167221.972
+
+          at point  X=343960207.924  Y=225920290.487  Z=    0.000
+          at point  X=343967279.003  Y=225918430.263  Z=    0.000
+          at point  X=343997938.582  Y=225898751.230  Z=    0.000
+          at point  X=344007510.578  Y=225892607.388  Z=    0.000
+          at point  X=344028211.767  Y=225884400.927  Z=    0.000
+          at point  X=344063941.968  Y=225878214.404  Z=    0.000
+          at point  X=344083198.465  Y=225868222.105  Z=    0.000
+          at point  X=344092278.418  Y=225861328.553  Z=    0.000
+          at point  X=344101947.981  Y=225851430.118  Z=    0.000
+          at point  X=344103127.195  Y=225849250.104  Z=    0.000
+          at point  X=344103245.651  Y=225845088.746  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39492e
+              Open
+    Constant width     0.000
+              area   0.000
+            length   28284.091
+Press ENTER to continue:
+
+          at point  X=343960207.924  Y=225862200.943  Z=    0.000
+          at point  X=343981000.000  Y=225843025.975  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39492f
+              Open
+    Constant width     0.000
+              area   0.000
+            length   35329.519
+
+          at point  X=343846610.520  Y=225896113.167  Z=    0.000
+          at point  X=343846610.520  Y=225860783.648  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394930
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5277.435
+
+          at point  X=343909054.143  Y=225873606.742  Z=    0.000
+          at point  X=343903776.709  Y=225873606.742  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394932
+              Open
+    Constant width     0.000
+              area   23626811.359
+            length   42807.599
+
+          at point  X=343960207.924  Y=225843025.975  Z=    0.000
+          at point  X=343958782.355  Y=225833471.337  Z=    0.000
+          at point  X=343958782.355  Y=225814283.179  Z=    0.000
+          at point  X=343958782.355  Y=225800324.140  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394934
+              Open
+    Constant width     0.000
+              area   360423290.333
+            length   82335.942
+
+          at point  X=343827554.842  Y=225913914.077  Z=    0.000
+          at point  X=343831339.928  Y=225908170.391  Z=    0.000
+          at point  X=343833403.782  Y=225905038.593  Z=    0.000
+          at point  X=343833403.782  Y=225897488.773  Z=    0.000
+          at point  X=343830671.856  Y=225897488.773  Z=    0.000
+          at point  X=343830671.856  Y=225891543.975  Z=    0.000
+          at point  X=343823331.719  Y=225874729.808  Z=    0.000
+          at point  X=343822580.329  Y=225873008.587  Z=    0.000
+          at point  X=343820915.191  Y=225869194.232  Z=    0.000
+          at point  X=343816924.061  Y=225865772.075  Z=    0.000
+          at point  X=343818830.815  Y=225863382.379  Z=    0.000
+          at point  X=343817121.213  Y=225860211.980  Z=    0.000
+          at point  X=343810911.752  Y=225845965.958  Z=    0.000
+          at point  X=343809458.761  Y=225842632.443  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+Press ENTER to continue:
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394936
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2621.213
+
+          at point  X=343817121.213  Y=225860211.980  Z=    0.000
+          at point  X=343814500.000  Y=225860211.980  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394937
+              Open
+    Constant width     0.000
+              area   17977569.573
+            length   29724.199
+
+          at point  X=343810911.752  Y=225845965.958  Z=    0.000
+          at point  X=343822993.648  Y=225840654.785  Z=    0.000
+          at point  X=343821696.420  Y=225837648.208  Z=    0.000
+          at point  X=343826560.801  Y=225835465.686  Z=    0.000
+          at point  X=343827901.633  Y=225838548.517  Z=    0.000
+          at point  X=343832076.736  Y=225836718.427  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394939
+              Open
+    Constant width     0.000
+              area   1906148.586
+            length   4029.105
+
+          at point  X=343867277.652  Y=225913914.077  Z=    0.000
+          at point  X=343868796.095  Y=225913914.077  Z=    0.000
+          at point  X=343868796.095  Y=225916424.739  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39493c
+              Open
+    Constant width     0.000
+              area   67620728.962
+            length   23258.675
+
+          at point  X=343878912.277  Y=225912349.668  Z=    0.000
+          at point  X=343878912.277  Y=225900725.618  Z=    0.000
+          at point  X=343867277.652  Y=225900725.618  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39493d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   21417.751
+
+          at point  X=343878912.277  Y=225900725.618  Z=    0.000
+          at point  X=343900330.028  Y=225900725.618  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+Press ENTER to continue:
+                   Handle = 39493f
+              Open
+    Constant width     0.000
+              area   7188490777.648
+            length   398533.153
+
+          at point  X=344271288.872  Y=225758029.185  Z=    0.000
+          at point  X=344271288.872  Y=225745500.000  Z=    0.000
+          at point  X=344605900.000  Y=225745500.000  Z=    0.000
+          at point  X=344608600.000  Y=225774400.000  Z=    0.000
+          at point  X=344612600.000  Y=225776900.000  Z=    0.000
+          at point  X=344630250.000  Y=225776900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394940
+              Open
+    Constant width     0.000
+              area   3934437764.896
+            length   222844.879
+
+          at point  X=344605900.000  Y=225745500.000  Z=    0.000
+          at point  X=344614791.103  Y=225745626.304  Z=    0.000
+          at point  X=344642478.908  Y=225746019.629  Z=    0.000
+          at point  X=344644800.000  Y=225754100.000  Z=    0.000
+          at point  X=344646700.000  Y=225758100.000  Z=    0.000
+          at point  X=344649300.000  Y=225761500.000  Z=    0.000
+          at point  X=344653600.000  Y=225764100.000  Z=    0.000
+          at point  X=344657800.000  Y=225765900.000  Z=    0.000
+          at point  X=344662241.379  Y=225767803.448  Z=    0.000
+          at point  X=344665400.000  Y=225770900.000  Z=    0.000
+          at point  X=344666600.000  Y=225773500.000  Z=    0.000
+          at point  X=344668045.854  Y=225776632.683  Z=    0.000
+          at point  X=344668045.854  Y=225779900.000  Z=    0.000
+          at point  X=344667800.000  Y=225784500.000  Z=    0.000
+          at point  X=344667200.000  Y=225798300.000  Z=    0.000
+          at point  X=344668400.000  Y=225821300.000  Z=    0.000
+          at point  X=344671900.000  Y=225891600.000  Z=    0.000
+          at point  X=344672800.000  Y=225898500.000  Z=    0.000
+          at point  X=344674400.000  Y=225903000.000  Z=    0.000
+          at point  X=344679000.000  Y=225908900.000  Z=    0.000
+          at point  X=344682200.000  Y=225912200.000  Z=    0.000
+          at point  X=344683600.000  Y=225914700.000  Z=    0.000
+          at point  X=344683600.000  Y=225916900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394941
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8150.000
+
+          at point  X=344630250.000  Y=225776900.000  Z=    0.000
+          at point  X=344638400.000  Y=225776900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394945
+              Open
+    Constant width     0.000
+              area   18748084999.999
+            length   503257.234
+
+Press ENTER to continue:
+          at point  X=344396800.000  Y=226203300.000  Z=    0.000
+          at point  X=344408888.106  Y=226188151.123  Z=    0.000
+          at point  X=344428000.000  Y=226164200.000  Z=    0.000
+          at point  X=344471100.000  Y=226118900.000  Z=    0.000
+          at point  X=344593900.000  Y=225974100.000  Z=    0.000
+          at point  X=344604700.000  Y=225921400.000  Z=    0.000
+          at point  X=344606485.591  Y=225854096.965  Z=    0.000
+          at point  X=344608600.000  Y=225774400.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394946
+              Open
+    Constant width     0.000
+              area   899900046.221
+            length   311464.480
+
+          at point  X=344408888.106  Y=226188151.123  Z=    0.000
+          at point  X=344393600.000  Y=226188200.000  Z=    0.000
+          at point  X=344387900.000  Y=226181300.000  Z=    0.000
+          at point  X=344371103.804  Y=226168305.920  Z=    0.000
+          at point  X=344364903.742  Y=226163727.625  Z=    0.000
+          at point  X=344331003.237  Y=226138063.631  Z=    0.000
+          at point  X=344327296.798  Y=226135257.713  Z=    0.000
+          at point  X=344326042.284  Y=226134307.998  Z=    0.000
+          at point  X=344324787.770  Y=226133358.282  Z=    0.000
+          at point  X=344297434.457  Y=226112650.765  Z=    0.000
+          at point  X=344270000.000  Y=226093500.000  Z=    0.000
+          at point  X=344270000.000  Y=226085100.000  Z=    0.000
+          at point  X=344258900.000  Y=226085100.000  Z=    0.000
+          at point  X=344228630.187  Y=226064828.382  Z=    0.000
+          at point  X=344221283.083  Y=226061086.672  Z=    0.000
+          at point  X=344198462.812  Y=226047530.947  Z=    0.000
+          at point  X=344187300.000  Y=226040900.000  Z=    0.000
+          at point  X=344187300.000  Y=226034400.000  Z=    0.000
+          at point  X=344174100.000  Y=226034400.000  Z=    0.000
+          at point  X=344160107.497  Y=226025100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394947
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13992.503
+
+          at point  X=344174100.000  Y=226034400.000  Z=    0.000
+          at point  X=344160107.497  Y=226034400.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394948
+              Open
+    Constant width     0.000
+              area   0.000
+            length   14713.599
+
+          at point  X=344174100.000  Y=226034400.000  Z=    0.000
+          at point  X=344187300.000  Y=226040900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Press ENTER to continue:
+                   Handle = 394949
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13920.129
+
+          at point  X=344270000.000  Y=226093500.000  Z=    0.000
+          at point  X=344258900.000  Y=226085100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39494a
+              Open
+    Constant width     0.000
+              area   0.000
+            length   15059.112
+
+          at point  X=344326042.284  Y=226134307.998  Z=    0.000
+          at point  X=344336100.000  Y=226123100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39494b
+              Open
+    Constant width     0.000
+              area   13741827.643
+            length   25435.680
+
+          at point  X=344331003.237  Y=226138063.631  Z=    0.000
+          at point  X=344339206.848  Y=226137500.000  Z=    0.000
+          at point  X=344344500.000  Y=226136000.000  Z=    0.000
+          at point  X=344349800.000  Y=226133400.000  Z=    0.000
+          at point  X=344355600.000  Y=226133700.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39494c
+              Open
+    Constant width     0.000
+              area   608410527.794
+            length   113048.124
+
+          at point  X=344297434.457  Y=226112650.765  Z=    0.000
+          at point  X=344305700.000  Y=226100439.161  Z=    0.000
+          at point  X=344310500.000  Y=226089000.000  Z=    0.000
+          at point  X=344310500.000  Y=226079000.000  Z=    0.000
+          at point  X=344328700.000  Y=226077100.000  Z=    0.000
+          at point  X=344337024.115  Y=226076230.999  Z=    0.000
+          at point  X=344343500.000  Y=226073000.000  Z=    0.000
+          at point  X=344344800.000  Y=226070500.000  Z=    0.000
+          at point  X=344344800.000  Y=226068600.000  Z=    0.000
+          at point  X=344344100.000  Y=226067500.000  Z=    0.000
+          at point  X=344328394.315  Y=226064504.382  Z=    0.000
+          at point  X=344322400.000  Y=226060300.000  Z=    0.000
+          at point  X=344319600.000  Y=226056300.000  Z=    0.000
+          at point  X=344318300.000  Y=226053000.000  Z=    0.000
+          at point  X=344317800.000  Y=226048800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39494e
+              Open
+    Constant width     0.000
+Press ENTER to continue:
+              area   3748492866.331
+            length   323804.795
+
+          at point  X=344271288.872  Y=225745500.000  Z=    0.000
+          at point  X=344247500.000  Y=225710100.000  Z=    0.000
+          at point  X=344191900.000  Y=225600400.000  Z=    0.000
+          at point  X=344176600.000  Y=225528300.000  Z=    0.000
+          at point  X=344146700.000  Y=225488100.000  Z=    0.000
+          at point  X=344153900.000  Y=225454500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394952
+              Open
+    Constant width     0.000
+              area   0.000
+            length   29326.304
+
+          at point  X=344614791.103  Y=225745626.304  Z=    0.000
+          at point  X=344614791.103  Y=225716300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394953
+              Open
+    Constant width     0.000
+              area   6129753480.312
+            length   331591.103
+
+          at point  X=344614791.103  Y=225716300.000  Z=    0.000
+          at point  X=344572400.000  Y=225716300.000  Z=    0.000
+          at point  X=344572400.000  Y=225427100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394955
+              Open
+    Constant width     0.000
+              area   128040000.000
+            length   61960.311
+
+          at point  X=344146700.000  Y=225488100.000  Z=    0.000
+          at point  X=344124500.000  Y=225494700.000  Z=    0.000
+          at point  X=344085700.000  Y=225494700.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394957
+              Open
+    Constant width     0.000
+              area   1693049532.078
+            length   173422.362
+
+          at point  X=344086800.000  Y=226111156.719  Z=    0.000
+          at point  X=344086800.000  Y=226150300.000  Z=    0.000
+          at point  X=344098900.000  Y=226148700.000  Z=    0.000
+          at point  X=344107510.866  Y=226153785.840  Z=    0.000
+          at point  X=344131200.000  Y=226167400.000  Z=    0.000
+          at point  X=344131183.644  Y=226152500.018  Z=    0.000
+          at point  X=344131173.654  Y=226143399.479  Z=    0.000
+          at point  X=344142600.000  Y=226131600.000  Z=    0.000
+          at point  X=344144400.000  Y=226128300.000  Z=    0.000
+          at point  X=344144900.000  Y=226125500.000  Z=    0.000
+          at point  X=344142900.000  Y=226124300.000  Z=    0.000
+Press ENTER to continue:
+          at point  X=344107510.866  Y=226124300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394958
+              Open
+    Constant width     0.000
+              area   10914465.746
+            length   15905.259
+
+          at point  X=344146588.454  Y=226111260.188  Z=    0.000
+          at point  X=344144900.000  Y=226116800.000  Z=    0.000
+          at point  X=344147300.000  Y=226123000.000  Z=    0.000
+          at point  X=344144900.000  Y=226125500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394959
+              Open
+    Constant width     0.000
+              area   106508042.854
+            length   30265.086
+
+          at point  X=344160107.497  Y=226103415.607  Z=    0.000
+          at point  X=344158700.000  Y=226122200.000  Z=    0.000
+          at point  X=344147300.000  Y=226123000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39495a
+              Open
+    Constant width     0.000
+              area   65697419.445
+            length   35884.519
+
+          at point  X=344158700.000  Y=226122200.000  Z=    0.000
+          at point  X=344154900.000  Y=226129900.000  Z=    0.000
+          at point  X=344131173.654  Y=226143399.479  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39495b
+              Open
+    Constant width     0.000
+              area   17780000.000
+            length   21190.189
+
+          at point  X=344147300.000  Y=226123000.000  Z=    0.000
+          at point  X=344154900.000  Y=226129900.000  Z=    0.000
+          at point  X=344144900.000  Y=226125500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39495c
+              Open
+    Constant width     0.000
+              area   0.000
+            length   9708.843
+
+          at point  X=344150063.760  Y=226108204.071  Z=    0.000
+          at point  X=344159620.390  Y=226109916.514  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+Press ENTER to continue:
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39495d
+              Open
+    Constant width     0.000
+              area   791733349.766
+            length   257852.601
+
+          at point  X=344159620.390  Y=226109916.514  Z=    0.000
+          at point  X=344170460.698  Y=226111858.978  Z=    0.000
+          at point  X=344228800.000  Y=226146000.000  Z=    0.000
+          at point  X=344225700.000  Y=226151600.000  Z=    0.000
+          at point  X=344292693.885  Y=226190610.501  Z=    0.000
+          at point  X=344346600.000  Y=226222000.000  Z=    0.000
+          at point  X=344357000.000  Y=226222900.000  Z=    0.000
+          at point  X=344376400.000  Y=226234300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39495e
+              Open
+    Constant width     0.000
+              area   1268457871.788
+            length   320521.517
+
+          at point  X=344396800.000  Y=226203300.000  Z=    0.000
+          at point  X=344393900.000  Y=226212700.000  Z=    0.000
+          at point  X=344376400.000  Y=226234300.000  Z=    0.000
+          at point  X=344272429.560  Y=226356325.187  Z=    0.000
+          at point  X=344242800.000  Y=226391100.000  Z=    0.000
+          at point  X=344228800.000  Y=226405400.000  Z=    0.000
+          at point  X=344199421.199  Y=226433717.188  Z=    0.000
+          at point  X=344189300.000  Y=226446200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39495f
+              Open
+    Constant width     0.000
+              area: please use AREA command for self-intersecting polylines
+            length   1081909.624
+
+          at point  X=344199421.199  Y=226433717.188  Z=    0.000
+          at point  X=344162700.000  Y=226412100.000  Z=    0.000
+          at point  X=344153700.000  Y=226404500.000  Z=    0.000
+          at point  X=344134700.000  Y=226395300.000  Z=    0.000
+          at point  X=344108800.000  Y=226383200.000  Z=    0.000
+          at point  X=344086400.000  Y=226373000.000  Z=    0.000
+          at point  X=344026000.000  Y=226355600.000  Z=    0.000
+          at point  X=343994679.547  Y=226345261.884  Z=    0.000
+          at point  X=343983600.000  Y=226341600.000  Z=    0.000
+          at point  X=343968800.000  Y=226333700.000  Z=    0.000
+          at point  X=343955200.000  Y=226329000.000  Z=    0.000
+          at point  X=343936800.000  Y=226324700.000  Z=    0.000
+          at point  X=343911000.000  Y=226316300.000  Z=    0.000
+          at point  X=343903100.000  Y=226315100.000  Z=    0.000
+          at point  X=343890200.000  Y=226319800.000  Z=    0.000
+          at point  X=343869400.000  Y=226330000.000  Z=    0.000
+          at point  X=343857400.000  Y=226335000.000  Z=    0.000
+          at point  X=343848200.000  Y=226337600.000  Z=    0.000
+          at point  X=343836700.000  Y=226336900.000  Z=    0.000
+          at point  X=343820100.000  Y=226330600.000  Z=    0.000
+          at point  X=343807900.000  Y=226323000.000  Z=    0.000
+          at point  X=343799600.000  Y=226321000.000  Z=    0.000
+Press ENTER to continue:
+          at point  X=343784200.000  Y=226318900.000  Z=    0.000
+          at point  X=343768000.000  Y=226314200.000  Z=    0.000
+          at point  X=343752200.000  Y=226310500.000  Z=    0.000
+          at point  X=343744200.000  Y=226305100.000  Z=    0.000
+          at point  X=343727800.000  Y=226300500.000  Z=    0.000
+          at point  X=343716700.000  Y=226301700.000  Z=    0.000
+          at point  X=343698100.000  Y=226306600.000  Z=    0.000
+          at point  X=343690200.000  Y=226309700.000  Z=    0.000
+          at point  X=343674500.000  Y=226305600.000  Z=    0.000
+          at point  X=343664200.000  Y=226302000.000  Z=    0.000
+          at point  X=343652600.000  Y=226295800.000  Z=    0.000
+          at point  X=343638000.000  Y=226287600.000  Z=    0.000
+          at point  X=343622706.448  Y=226279010.471  Z=    0.000
+          at point  X=343615400.000  Y=226273700.000  Z=    0.000
+          at point  X=343605300.000  Y=226264800.000  Z=    0.000
+          at point  X=343596200.000  Y=226257800.000  Z=    0.000
+          at point  X=343591000.000  Y=226252300.000  Z=    0.000
+          at point  X=343585000.000  Y=226244600.000  Z=    0.000
+          at point  X=343578300.000  Y=226233000.000  Z=    0.000
+          at point  X=343571736.651  Y=226221636.590  Z=    0.000
+          at point  X=343563478.607  Y=226207339.081  Z=    0.000
+          at point  X=343541500.000  Y=226177100.000  Z=    0.000
+          at point  X=343527300.000  Y=226148567.347  Z=    0.000
+          at point  X=343526300.000  Y=226136800.000  Z=    0.000
+          at point  X=343502000.000  Y=226114600.000  Z=    0.000
+          at point  X=343487400.000  Y=226094900.000  Z=    0.000
+          at point  X=343466700.000  Y=226064300.000  Z=    0.000
+          at point  X=343444900.000  Y=226029700.000  Z=    0.000
+          at point  X=343440500.000  Y=226009300.000  Z=    0.000
+          at point  X=343442200.000  Y=225990100.000  Z=    0.000
+          at point  X=343446900.000  Y=225976800.000  Z=    0.000
+          at point  X=343454500.000  Y=225960000.000  Z=    0.000
+          at point  X=343458700.000  Y=225948000.000  Z=    0.000
+          at point  X=343462700.000  Y=225931600.000  Z=    0.000
+          at point  X=343462900.000  Y=225919600.000  Z=    0.000
+          at point  X=343458300.000  Y=225906900.000  Z=    0.000
+          at point  X=343451600.000  Y=225901200.000  Z=    0.000
+          at point  X=343438800.000  Y=225900400.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394960
+              Open
+    Constant width     0.000
+              area   20421031628.227
+            length   434002.744
+
+          at point  X=343545087.772  Y=226182036.205  Z=    0.000
+          at point  X=343533700.000  Y=226175200.000  Z=    0.000
+          at point  X=343486600.000  Y=226115400.000  Z=    0.000
+          at point  X=343467500.000  Y=226084400.000  Z=    0.000
+          at point  X=343434200.000  Y=226031400.000  Z=    0.000
+          at point  X=343473900.000  Y=226014700.000  Z=    0.000
+          at point  X=343544200.000  Y=225976800.000  Z=    0.000
+          at point  X=343556200.000  Y=225973600.000  Z=    0.000
+          at point  X=343568500.000  Y=225973100.000  Z=    0.000
+          at point  X=343572500.000  Y=225977300.000  Z=    0.000
+          at point  X=343581000.000  Y=225987700.000  Z=    0.000
+          at point  X=343593000.000  Y=225994300.000  Z=    0.000
+          at point  X=343606021.113  Y=226001461.612  Z=    0.000
+          at point  X=343608000.000  Y=226003000.000  Z=    0.000
+          at point  X=343608000.000  Y=226017200.000  Z=    0.000
+          at point  X=343608000.000  Y=226050636.040  Z=    0.000
+          Press ENTER to continue:
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39496c
+              Open
+    Constant width     0.000
+              area   4476503556.642
+            length   219635.649
+
+          at point  X=343526300.000  Y=226136800.000  Z=    0.000
+          at point  X=343539700.000  Y=226141500.000  Z=    0.000
+          at point  X=343557600.000  Y=226146200.000  Z=    0.000
+          at point  X=343576000.000  Y=226147700.000  Z=    0.000
+          at point  X=343596100.000  Y=226144900.000  Z=    0.000
+          at point  X=343615100.000  Y=226139000.000  Z=    0.000
+          at point  X=343631297.595  Y=226133970.221  Z=    0.000
+          at point  X=343646300.000  Y=226128800.000  Z=    0.000
+          at point  X=343651100.000  Y=226127800.000  Z=    0.000
+          at point  X=343657100.000  Y=226130000.000  Z=    0.000
+          at point  X=343661570.802  Y=226135811.687  Z=    0.000
+          at point  X=343660400.000  Y=226145000.000  Z=    0.000
+          at point  X=343660400.000  Y=226165600.000  Z=    0.000
+          at point  X=343660400.000  Y=226203200.000  Z=    0.000
+          at point  X=343658200.000  Y=226206000.000  Z=    0.000
+          at point  X=343652400.000  Y=226206000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39496d
+              Open
+    Constant width     0.000
+              area   79777924.875
+            length   60770.073
+
+          at point  X=343652400.000  Y=226206000.000  Z=    0.000
+          at point  X=343641961.294  Y=226202400.147  Z=    0.000
+          at point  X=343614885.564  Y=226202400.147  Z=    0.000
+          at point  X=343609200.000  Y=226194600.000  Z=    0.000
+          at point  X=343596200.000  Y=226194600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39496e
+              Open
+    Constant width     0.000
+              area   486030610.948
+            length   67899.633
+
+          at point  X=343652400.000  Y=226206000.000  Z=    0.000
+          at point  X=343616900.000  Y=226206000.000  Z=    0.000
+          at point  X=343612297.362  Y=226218613.432  Z=    0.000
+          at point  X=343602400.000  Y=226234800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39496f
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4125.154
+
+          at point  X=343614885.564  Y=226202400.147  Z=    0.000
+          at point  X=343616900.000  Y=226206000.000  Z=    0.000
+Press ENTER to continue:
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394970
+              Open
+    Constant width     0.000
+              area   38132456.412
+            length   25088.113
+
+          at point  X=343614885.564  Y=226202400.147  Z=    0.000
+          at point  X=343593700.000  Y=226202400.147  Z=    0.000
+          at point  X=343592193.033  Y=226206000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394971
+              Open
+    Constant width     0.000
+              area   58395000.000
+            length   24670.654
+
+          at point  X=343616900.000  Y=226206000.000  Z=    0.000
+          at point  X=343603700.000  Y=226206000.000  Z=    0.000
+          at point  X=343603700.000  Y=226215100.000  Z=    0.000
+          at point  X=343601600.000  Y=226216200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394973
+              Open
+    Constant width     0.000
+              area   0.000
+            length   11506.967
+
+          at point  X=343603700.000  Y=226206000.000  Z=    0.000
+          at point  X=343592193.033  Y=226206000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394974
+              Open
+    Constant width     0.000
+              area   0.000
+            length   11750.565
+
+          at point  X=343603700.000  Y=226206000.000  Z=    0.000
+          at point  X=343614885.564  Y=226202400.147  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394975
+              Open
+    Constant width     0.000
+              area   670933967.496
+            length   103756.681
+
+          at point  X=343612297.362  Y=226218622.718  Z=    0.000
+          at point  X=343617000.000  Y=226218608.269  Z=    0.000
+          at point  X=343620136.289  Y=226214109.911  Z=    0.000
+          at point  X=343624900.000  Y=226213100.000  Z=    0.000
+          at point  X=343676900.000  Y=226213100.000  Z=    0.000
+          at point  X=343645573.429  Y=226232220.305  Z=    0.000
+
+Press ENTER to continue:
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39497a
+              Open
+    Constant width     0.000
+              area   203825481.371
+            length   51142.903
+
+          at point  X=343641312.723  Y=226234820.845  Z=    0.000
+          at point  X=343641312.723  Y=226244700.000  Z=    0.000
+          at point  X=343682576.471  Y=226244694.118  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39497c
+              Open
+    Constant width     0.000
+              area   2208953055.594
+            length   156778.452
+
+          at point  X=343682576.471  Y=226244694.118  Z=    0.000
+          at point  X=343684200.000  Y=226254267.943  Z=    0.000
+          at point  X=343736700.000  Y=226254267.943  Z=    0.000
+          at point  X=343736700.000  Y=226213100.000  Z=    0.000
+          at point  X=343683300.000  Y=226213100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39497d
+              Open
+    Constant width     0.000
+              area   356557031.661
+            length   59394.952
+
+          at point  X=343734100.000  Y=226254267.943  Z=    0.000
+          at point  X=343734100.000  Y=226267600.000  Z=    0.000
+          at point  X=343775792.549  Y=226268200.000  Z=    0.000
+          at point  X=343779300.000  Y=226265600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39497f
+              Open
+    Constant width     0.000
+              area   875538917.755
+            length   84547.110
+
+          at point  X=343736700.000  Y=226254267.943  Z=    0.000
+          at point  X=343779300.000  Y=226254267.943  Z=    0.000
+          at point  X=343779300.000  Y=226227200.000  Z=    0.000
+          at point  X=343779300.000  Y=226216145.987  Z=    0.000
+          at point  X=343780137.254  Y=226212413.587  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394980
+              Open
+    Constant width     0.000
+              area   276909520.504
+            length   149482.241
+
+          at point  X=343736700.000  Y=226213100.000  Z=    0.000
+          at point  X=343779988.869  Y=226213075.071  Z=    0.000
+Press ENTER to continue:
+          at point  X=343784000.000  Y=226215100.000  Z=    0.000
+          at point  X=343833276.346  Y=226215099.921  Z=    0.000
+          at point  X=343836177.307  Y=226215099.909  Z=    0.000
+          at point  X=343868055.546  Y=226215099.909  Z=    0.000
+          at point  X=343868055.546  Y=226220500.000  Z=    0.000
+          at point  X=343880300.000  Y=226220500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394982
+              Open
+    Constant width     0.000
+              area   203977021.944
+            length   47332.057
+
+          at point  X=343779300.000  Y=226254267.943  Z=    0.000
+          at point  X=343779300.000  Y=226265600.000  Z=    0.000
+          at point  X=343787700.000  Y=226265600.000  Z=    0.000
+          at point  X=343815300.000  Y=226265600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394984
+              Open
+    Constant width     0.000
+              area   296022170.974
+            length   60152.783
+
+          at point  X=343783800.000  Y=226227200.000  Z=    0.000
+          at point  X=343830200.000  Y=226227200.000  Z=    0.000
+          at point  X=343834700.000  Y=226221900.000  Z=    0.000
+          at point  X=343834700.000  Y=226215099.915  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394985
+              Open
+    Constant width     0.000
+              area   160244389.223
+            length   52829.235
+
+          at point  X=343830200.000  Y=226227200.000  Z=    0.000
+          at point  X=343819600.000  Y=226239956.719  Z=    0.000
+          at point  X=343819600.000  Y=226241500.000  Z=    0.000
+          at point  X=343834700.000  Y=226241500.000  Z=    0.000
+          at point  X=343834700.000  Y=226221900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394987
+              Open
+    Constant width     0.000
+              area   694125000.000
+            length   71231.566
+
+          at point  X=343834700.000  Y=226241500.000  Z=    0.000
+          at point  X=343840800.000  Y=226241500.000  Z=    0.000
+          at point  X=343850800.000  Y=226249400.000  Z=    0.000
+          at point  X=343862800.000  Y=226250800.000  Z=    0.000
+          at point  X=343880300.000  Y=226240500.000  Z=    0.000
+          at point  X=343880300.000  Y=226228500.000  Z=    0.000
+          at point  X=343880300.000  Y=226220500.000  Z=    0.000
+
+Press ENTER to continue:
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394988
+              Open
+    Constant width     0.000
+              area   18490000.000
+            length   17605.632
+
+          at point  X=343833700.000  Y=226265600.000  Z=    0.000
+          at point  X=343838000.000  Y=226265600.000  Z=    0.000
+          at point  X=343848152.824  Y=226274200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39498a
+              Open
+    Constant width     0.000
+              area   0.000
+            length   37490.893
+
+          at point  X=343890200.000  Y=226319800.000  Z=    0.000
+          at point  X=343901338.283  Y=226284001.876  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39498d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   15033.723
+
+          at point  X=343830267.942  Y=226266866.277  Z=    0.000
+          at point  X=343830267.942  Y=226281900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39498f
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5800.000
+
+          at point  X=343901900.000  Y=226248000.000  Z=    0.000
+          at point  X=343897900.000  Y=226243800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394990
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5658.622
+
+          at point  X=343906300.000  Y=226244100.000  Z=    0.000
+          at point  X=343902400.000  Y=226240000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394991
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5658.622
+            Press ENTER to continue:
+
+          at point  X=343902400.000  Y=226240000.000  Z=    0.000
+          at point  X=343906300.000  Y=226235900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394992
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6081.118
+
+          at point  X=343897900.000  Y=226236000.000  Z=    0.000
+          at point  X=343902200.000  Y=226231700.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394993
+              Open
+    Constant width     0.000
+              area   156253916.275
+            length   47939.200
+
+          at point  X=343880300.000  Y=226220500.000  Z=    0.000
+          at point  X=343880300.000  Y=226215800.000  Z=    0.000
+          at point  X=343893600.000  Y=226215800.000  Z=    0.000
+          at point  X=343900200.000  Y=226215800.000  Z=    0.000
+          at point  X=343922843.510  Y=226221455.947  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394994
+              Open
+    Constant width     0.000
+              area   0.000
+            length   18389.671
+
+          at point  X=343880300.000  Y=226228500.000  Z=    0.000
+          at point  X=343893600.000  Y=226215800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394995
+              Open
+    Constant width     0.000
+              area   2618241400.142
+            length   187129.864
+
+          at point  X=343473900.000  Y=226014700.000  Z=    0.000
+          at point  X=343493068.172  Y=226047952.738  Z=    0.000
+          at point  X=343510798.714  Y=226050727.489  Z=    0.000
+          at point  X=343608000.000  Y=226050636.040  Z=    0.000
+          at point  X=343619500.575  Y=226050728.445  Z=    0.000
+          at point  X=343641600.000  Y=226050744.335  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394996
+              Open
+    Constant width     0.000
+              area   2424865565.630
+            length   233865.575
+
+Press ENTER to continue:
+          at point  X=343664300.364  Y=226080237.130  Z=    0.000
+          at point  X=343660200.000  Y=226080237.130  Z=    0.000
+          at point  X=343653900.000  Y=226077500.000  Z=    0.000
+          at point  X=343641600.000  Y=226077500.000  Z=    0.000
+          at point  X=343641600.000  Y=226050748.000  Z=    0.000
+          at point  X=343641600.000  Y=226048300.000  Z=    0.000
+          at point  X=343664800.000  Y=226048300.000  Z=    0.000
+          at point  X=343664800.000  Y=225994900.000  Z=    0.000
+          at point  X=343683000.000  Y=225994900.000  Z=    0.000
+          at point  X=343683000.000  Y=226036400.000  Z=    0.000
+          at point  X=343685600.000  Y=226037300.000  Z=    0.000
+          at point  X=343687300.000  Y=226045000.000  Z=    0.000
+          at point  X=343688400.000  Y=226056100.000  Z=    0.000
+          at point  X=343687800.000  Y=226069900.000  Z=    0.000
+          at point  X=343685100.000  Y=226079000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394998
+              Open
+    Constant width     0.000
+              area   915042779.415
+            length   131050.099
+
+          at point  X=343718100.000  Y=226050300.000  Z=    0.000
+          at point  X=343737685.942  Y=226053670.308  Z=    0.000
+          at point  X=343747501.232  Y=226058596.782  Z=    0.000
+          at point  X=343766700.000  Y=226067200.000  Z=    0.000
+          at point  X=343768900.000  Y=226068900.000  Z=    0.000
+          at point  X=343766100.000  Y=226071100.000  Z=    0.000
+          at point  X=343758932.549  Y=226073329.080  Z=    0.000
+          at point  X=343754200.000  Y=226080400.000  Z=    0.000
+          at point  X=343754200.000  Y=226107200.000  Z=    0.000
+          at point  X=343784200.000  Y=226107200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394999
+              Open
+    Constant width     0.000
+              area   191619038.945
+            length   68011.604
+
+          at point  X=343768900.000  Y=226068900.000  Z=    0.000
+          at point  X=343773784.889  Y=226064853.206  Z=    0.000
+          at point  X=343777900.000  Y=226058400.000  Z=    0.000
+          at point  X=343782787.368  Y=226046957.404  Z=    0.000
+          at point  X=343784200.000  Y=226035400.000  Z=    0.000
+          at point  X=343786800.000  Y=226022300.000  Z=    0.000
+          at point  X=343789900.000  Y=226014000.000  Z=    0.000
+          at point  X=343797400.000  Y=226015800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39499a
+              Open
+    Constant width     0.000
+              area   1808764874.379
+            length   143069.400
+
+          at point  X=343789900.000  Y=226014000.000  Z=    0.000
+          at point  X=343795100.000  Y=225998900.000  Z=    0.000
+          at point  X=343801600.000  Y=225986200.000  Z=    0.000
+Press ENTER to continue:
+          at point  X=343811100.000  Y=225968800.000  Z=    0.000
+          at point  X=343820700.000  Y=225954700.000  Z=    0.000
+          at point  X=343826600.000  Y=225946800.000  Z=    0.000
+          at point  X=343828200.000  Y=225935400.000  Z=    0.000
+          at point  X=343818676.510  Y=225916461.526  Z=    0.000
+          at point  X=343814329.393  Y=225907816.820  Z=    0.000
+          at point  X=343805300.000  Y=225885900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 39499c
+              Open
+    Constant width     0.000
+              area   155590000.000
+            length   46044.332
+
+          at point  X=343828200.000  Y=225935400.000  Z=    0.000
+          at point  X=343822400.000  Y=225938100.000  Z=    0.000
+          at point  X=343817800.000  Y=225938100.000  Z=    0.000
+          at point  X=343814700.000  Y=225936900.000  Z=    0.000
+          at point  X=343813200.000  Y=225935400.000  Z=    0.000
+          at point  X=343812700.000  Y=225933100.000  Z=    0.000
+          at point  X=343812800.000  Y=225931500.000  Z=    0.000
+          at point  X=343813900.000  Y=225929800.000  Z=    0.000
+          at point  X=343816100.000  Y=225927300.000  Z=    0.000
+          at point  X=343817800.000  Y=225924500.000  Z=    0.000
+          at point  X=343818000.000  Y=225922500.000  Z=    0.000
+          at point  X=343817600.000  Y=225920100.000  Z=    0.000
+          at point  X=343811700.000  Y=225909000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 241,235,31    Linetype: "BYLAYER"
+                   Handle = 39499d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2910.640
+
+          at point  X=343811700.000  Y=225909000.000  Z=    0.000
+          at point  X=343814359.307  Y=225907816.820  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949a0
+              Open
+    Constant width     0.000
+              area   848092093.083
+            length   123599.056
+
+          at point  X=343619500.575  Y=226050728.445  Z=    0.000
+          at point  X=343619500.575  Y=226054400.000  Z=    0.000
+          at point  X=343625059.188  Y=226059397.248  Z=    0.000
+          at point  X=343628600.000  Y=226068200.000  Z=    0.000
+          at point  X=343634900.000  Y=226076000.000  Z=    0.000
+          at point  X=343642800.000  Y=226082100.000  Z=    0.000
+          at point  X=343649800.000  Y=226082700.000  Z=    0.000
+          at point  X=343654600.021  Y=226087402.062  Z=    0.000
+          at point  X=343664500.000  Y=226097100.000  Z=    0.000
+          at point  X=343662124.813  Y=226101455.806  Z=    0.000
+          at point  X=343664700.000  Y=226106900.000  Z=    0.000
+          at point  X=343660700.000  Y=226113200.000  Z=    0.000
+          at point  X=343659600.000  Y=226115700.000  Z=    0.000
+          at point  X=343660300.000  Y=226117600.000  Z=    0.000
+Press ENTER to continue:
+          at point  X=343670500.000  Y=226116100.000  Z=    0.000
+          at point  X=343671200.000  Y=226112900.000  Z=    0.000
+          at point  X=343674200.000  Y=226109100.000  Z=    0.000
+          at point  X=343680900.000  Y=226103900.000  Z=    0.000
+          at point  X=343685001.842  Y=226100634.338  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949a5
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6273.984
+
+          at point  X=343903700.000  Y=226128100.000  Z=    0.000
+          at point  X=343903700.000  Y=226121826.016  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949a7
+              Open
+    Constant width     0.000
+              area   2011566389.663
+            length   148328.996
+
+          at point  X=343903700.000  Y=226209318.684  Z=    0.000
+          at point  X=343919214.174  Y=226214712.128  Z=    0.000
+          at point  X=343936700.000  Y=226217800.000  Z=    0.000
+          at point  X=343975505.882  Y=226221643.554  Z=    0.000
+          at point  X=344007393.437  Y=226224966.377  Z=    0.000
+          at point  X=344007600.000  Y=226223700.000  Z=    0.000
+          at point  X=344000300.000  Y=226217000.000  Z=    0.000
+          at point  X=344000300.000  Y=226187600.000  Z=    0.000
+          at point  X=343997800.000  Y=226187600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949a8
+              Open
+    Constant width     0.000
+              area   86206421.267
+            length   56654.851
+Press ENTER to continue:
+
+          at point  X=343906770.104  Y=226210385.994  Z=    0.000
+          at point  X=343945084.069  Y=226175000.000  Z=    0.000
+          at point  X=343945084.069  Y=226170500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949ab
+              Open
+    Constant width     0.000
+              area   44977721.561
+            length   36649.199
+
+          at point  X=343975505.882  Y=226221643.554  Z=    0.000
+          at point  X=343975582.614  Y=226220222.021  Z=    0.000
+          at point  X=343952442.123  Y=226201656.158  Z=    0.000
+          at point  X=343958000.000  Y=226201656.158  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949ad
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2615.931
+
+          at point  X=343945084.069  Y=226175000.000  Z=    0.000
+          at point  X=343947700.000  Y=226175000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949ae
+              Open
+    Constant width     0.000
+              area   128700000.000
+            length   33700.000
+
+          at point  X=344064800.000  Y=226162000.000  Z=    0.000
+          at point  X=344086800.000  Y=226162000.000  Z=    0.000
+          at point  X=344086800.000  Y=226150300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949af
+              Open
+    Constant width     0.000
+              area   2085940000.000
+            length   143378.102
+
+          at point  X=344086800.000  Y=226162000.000  Z=    0.000
+          at point  X=344086800.000  Y=226187500.000  Z=    0.000
+          at point  X=344086800.000  Y=226213000.000  Z=    0.000
+          at point  X=344107000.000  Y=226224800.000  Z=    0.000
+          at point  X=344137100.000  Y=226173100.000  Z=    0.000
+          at point  X=344131200.000  Y=226169800.000  Z=    0.000
+          at point  X=344131200.000  Y=226167400.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b0
+              Open
+    Constant width     0.000
+    Press ENTER to continue:
+              area   2886624805.847
+            length   152348.408
+
+          at point  X=344078600.000  Y=226162000.000  Z=    0.000
+          at point  X=344078600.000  Y=226187450.000  Z=    0.000
+          at point  X=344078600.000  Y=226212900.000  Z=    0.000
+          at point  X=344077500.000  Y=226216800.000  Z=    0.000
+          at point  X=344077500.000  Y=226237800.000  Z=    0.000
+          at point  X=344076100.000  Y=226240900.000  Z=    0.000
+          at point  X=344073500.000  Y=226242600.000  Z=    0.000
+          at point  X=344069800.000  Y=226242600.000  Z=    0.000
+          at point  X=344052200.000  Y=226237900.000  Z=    0.000
+          at point  X=344050700.000  Y=226235800.000  Z=    0.000
+          at point  X=344041000.000  Y=226233100.000  Z=    0.000
+          at point  X=344037600.000  Y=226232300.000  Z=    0.000
+          at point  X=344034600.000  Y=226233300.000  Z=    0.000
+          at point  X=344029476.554  Y=226231778.977  Z=    0.000
+          at point  X=344022300.000  Y=226229000.000  Z=    0.000
+          at point  X=344016732.042  Y=226226290.940  Z=    0.000
+          at point  X=344010696.972  Y=226225327.687  Z=    0.000
+          at point  X=344007393.436  Y=226224966.377  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b2
+              Open
+    Constant width     0.000
+              area   8286435142.691
+            length   442740.201
+
+          at point  X=343922843.510  Y=226221455.947  Z=    0.000
+          at point  X=343936900.000  Y=226224300.000  Z=    0.000
+          at point  X=343969800.000  Y=226227400.000  Z=    0.000
+          at point  X=344001858.559  Y=226230420.715  Z=    0.000
+          at point  X=344007800.000  Y=226233200.000  Z=    0.000
+          at point  X=344012600.000  Y=226237800.000  Z=    0.000
+          at point  X=344015899.243  Y=226238006.565  Z=    0.000
+          at point  X=344019198.487  Y=226238213.130  Z=    0.000
+          at point  X=344022857.734  Y=226236603.890  Z=    0.000
+          at point  X=344023323.434  Y=226236399.088  Z=    0.000
+          at point  X=344071394.788  Y=226248719.447  Z=    0.000
+          at point  X=344075800.000  Y=226249900.000  Z=    0.000
+          at point  X=344077600.000  Y=226252700.000  Z=    0.000
+          at point  X=344076970.593  Y=226257724.559  Z=    0.000
+          at point  X=344078500.000  Y=226268400.000  Z=    0.000
+          at point  X=344087136.228  Y=226282616.574  Z=    0.000
+          at point  X=344083600.000  Y=226291500.000  Z=    0.000
+          at point  X=344087800.000  Y=226302600.000  Z=    0.000
+          at point  X=344118317.011  Y=226319922.373  Z=    0.000
+          at point  X=344174300.000  Y=226351700.000  Z=    0.000
+          at point  X=344214800.000  Y=226383000.000  Z=    0.000
+          at point  X=344221584.854  Y=226378079.117  Z=    0.000
+          at point  X=344227589.831  Y=226373723.859  Z=    0.000
+          at point  X=344229100.000  Y=226373723.859  Z=    0.000
+          at point  X=344238500.000  Y=226382100.000  Z=    0.000
+          at point  X=344256200.000  Y=226371100.000  Z=    0.000
+          at point  X=344266600.000  Y=226356700.000  Z=    0.000
+          at point  X=344268791.278  Y=226353665.923  Z=    0.000
+          at point  X=344272429.560  Y=226356325.187  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b3
+Press ENTER to continue:
+              Open
+    Constant width     0.000
+              area   4849670895.019
+            length   293592.178
+
+          at point  X=344118317.011  Y=226319922.373  Z=    0.000
+          at point  X=344125100.000  Y=226307600.000  Z=    0.000
+          at point  X=344174800.000  Y=226335600.000  Z=    0.000
+          at point  X=344181900.000  Y=226339500.000  Z=    0.000
+          at point  X=344185300.000  Y=226338900.000  Z=    0.000
+          at point  X=344191000.000  Y=226330500.000  Z=    0.000
+          at point  X=344203500.000  Y=226310400.000  Z=    0.000
+          at point  X=344202200.000  Y=226305600.000  Z=    0.000
+          at point  X=344197500.000  Y=226302400.000  Z=    0.000
+          at point  X=344165300.000  Y=226284500.000  Z=    0.000
+          at point  X=344112200.000  Y=226255400.000  Z=    0.000
+          at point  X=344099211.079  Y=226253809.520  Z=    0.000
+          at point  X=344091283.012  Y=226252838.736  Z=    0.000
+          at point  X=344087700.000  Y=226252400.000  Z=    0.000
+          at point  X=344085515.705  Y=226253674.757  Z=    0.000
+          at point  X=344085300.000  Y=226260900.000  Z=    0.000
+          at point  X=344092620.080  Y=226263709.638  Z=    0.000
+          at point  X=344095075.783  Y=226267117.451  Z=    0.000
+          at point  X=344096600.000  Y=226276400.000  Z=    0.000
+          at point  X=344094700.000  Y=226281600.000  Z=    0.000
+          at point  X=344087136.228  Y=226282616.574  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b4
+              Open
+    Constant width     0.000
+              area   15744892.619
+            length   14937.317
+
+          at point  X=344095075.783  Y=226267117.451  Z=    0.000
+          at point  X=344098100.000  Y=226265000.000  Z=    0.000
+          at point  X=344099211.079  Y=226253809.520  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b5
+              Open
+    Constant width     0.000
+              area   659323210.856
+            length   161169.902
+
+          at point  X=344202200.000  Y=226305600.000  Z=    0.000
+          at point  X=344205712.125  Y=226302555.119  Z=    0.000
+          at point  X=344244300.000  Y=226235800.000  Z=    0.000
+          at point  X=344249200.000  Y=226238500.000  Z=    0.000
+          at point  X=344255435.367  Y=226241935.815  Z=    0.000
+          at point  X=344264500.000  Y=226240800.000  Z=    0.000
+          at point  X=344272400.000  Y=226226900.000  Z=    0.000
+          at point  X=344292693.885  Y=226190610.501  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b6
+              Open
+    Constant width     0.000
+              area   166102931.035
+            length   79265.288
+
+Press ENTER to continue:
+          at point  X=344203500.000  Y=226310400.000  Z=    0.000
+          at point  X=344214800.000  Y=226312800.000  Z=    0.000
+          at point  X=344268791.278  Y=226353665.923  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b7
+              Open
+    Constant width     0.000
+              area   113729094.327
+            length   54573.561
+
+          at point  X=344185300.000  Y=226338900.000  Z=    0.000
+          at point  X=344188200.000  Y=226348300.000  Z=    0.000
+          at point  X=344221584.854  Y=226378079.117  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949b9
+              Open
+    Constant width     0.000
+              area   963150921.006
+            length   120329.954
+
+          at point  X=344015899.243  Y=226238006.565  Z=    0.000
+          at point  X=344015899.243  Y=226251700.000  Z=    0.000
+          at point  X=344008400.000  Y=226266600.000  Z=    0.000
+          at point  X=343994900.000  Y=226275500.000  Z=    0.000
+          at point  X=343988300.000  Y=226284400.000  Z=    0.000
+          at point  X=343985600.000  Y=226301000.000  Z=    0.000
+          at point  X=343987800.000  Y=226321800.000  Z=    0.000
+          at point  X=343994200.000  Y=226337100.000  Z=    0.000
+          at point  X=343995400.000  Y=226342600.000  Z=    0.000
+          at point  X=343994679.547  Y=226345261.884  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949ba
+              Open
+    Constant width     0.000
+              area   1034175790.382
+            length   131607.227
+
+          at point  X=343995400.000  Y=226342600.000  Z=    0.000
+          at point  X=343999200.000  Y=226341500.000  Z=    0.000
+          at point  X=344005400.000  Y=226335600.000  Z=    0.000
+          at point  X=344008200.000  Y=226329400.000  Z=    0.000
+          at point  X=344011700.000  Y=226325300.000  Z=    0.000
+          at point  X=344021100.000  Y=226320900.000  Z=    0.000
+          at point  X=344023300.000  Y=226320500.000  Z=    0.000
+          at point  X=344023300.000  Y=226308200.000  Z=    0.000
+          at point  X=344015600.000  Y=226304400.000  Z=    0.000
+          at point  X=344015600.000  Y=226288600.000  Z=    0.000
+          at point  X=344024100.000  Y=226284900.000  Z=    0.000
+          at point  X=344024300.000  Y=226272000.000  Z=    0.000
+          at point  X=344022857.734  Y=226236603.890  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949bb
+              Open
+    Constant width     0.000
+Press ENTER to continue:
+              area   0.000
+            length   124189.895
+
+          at point  X=344137100.000  Y=226173100.000  Z=    0.000
+          at point  X=344244300.000  Y=226235800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949bc
+              Open
+    Constant width     0.000
+              area   65595254.255
+            length   42897.618
+
+          at point  X=344086800.000  Y=226213000.000  Z=    0.000
+          at point  X=344086600.000  Y=226242800.000  Z=    0.000
+          at point  X=344088200.000  Y=226245900.000  Z=    0.000
+          at point  X=344091511.618  Y=226246624.485  Z=    0.000
+          at point  X=344091283.012  Y=226252838.736  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949bd
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7975.496
+
+          at point  X=344077600.000  Y=226252700.000  Z=    0.000
+          at point  X=344085515.705  Y=226253674.757  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949be
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6471.441
+
+          at point  X=344073500.000  Y=226242600.000  Z=    0.000
+          at point  X=344071394.788  Y=226248719.447  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949bf
+              Open
+    Constant width     0.000
+              area   0.000
+            length   10670.520
+
+          at point  X=344076100.000  Y=226240900.000  Z=    0.000
+          at point  X=344086600.000  Y=226242800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949c0
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8200.610
+
+          at point  X=344078600.000  Y=226212900.000  Z=    0.000
+          at point  X=344086800.000  Y=226213000.000  Z=    0.000
+
+Press ENTER to continue:
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949c1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   19987.316
+
+          at point  X=344140120.180  Y=226027900.000  Z=    0.000
+          at point  X=344160107.497  Y=226027900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949c2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   15435.349
+
+          at point  X=344396800.000  Y=226203300.000  Z=    0.000
+          at point  X=344393600.000  Y=226188200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949c3
+              Open
+    Constant width     0.000
+              area   285121581.859
+            length   74067.228
+
+          at point  X=344198462.812  Y=226047530.947  Z=    0.000
+          at point  X=344193100.000  Y=226056300.000  Z=    0.000
+          at point  X=344194100.000  Y=226059500.000  Z=    0.000
+          at point  X=344167400.000  Y=226105200.000  Z=    0.000
+          at point  X=344160107.497  Y=226103415.607  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949c4
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7328.701
+
+          at point  X=344170460.698  Y=226111858.978  Z=    0.000
+          at point  X=344167400.000  Y=226105200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949c5
+              Open
+    Constant width     0.000
+              area   0.000
+            length   9097.683
+
+          at point  X=344159620.390  Y=226109916.514  Z=    0.000
+          at point  X=344167400.000  Y=226105200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949c6
+              Open
+              Press ENTER to continue:
+    Constant width     0.000
+              area   17600323.268
+            length   37029.807
+
+          at point  X=344193100.000  Y=226056300.000  Z=    0.000
+          at point  X=344182400.000  Y=226052400.000  Z=    0.000
+          at point  X=344169000.000  Y=226046800.000  Z=    0.000
+          at point  X=344167200.000  Y=226043200.000  Z=    0.000
+          at point  X=344160107.497  Y=226043100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949ce
+              Open
+    Constant width     0.000
+              area   1074517738.198
+            length   87789.070
+
+          at point  X=343828200.000  Y=225935400.000  Z=    0.000
+          at point  X=343834006.110  Y=225946946.068  Z=    0.000
+          at point  X=343838500.000  Y=225958600.000  Z=    0.000
+          at point  X=343839700.000  Y=225964300.000  Z=    0.000
+          at point  X=343840000.000  Y=225968000.000  Z=    0.000
+          at point  X=343837400.000  Y=225974900.000  Z=    0.000
+          at point  X=343833000.000  Y=225979400.000  Z=    0.000
+          at point  X=343828798.839  Y=225983696.642  Z=    0.000
+          at point  X=343817200.000  Y=225986400.000  Z=    0.000
+          at point  X=343797463.811  Y=225994281.478  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949d0
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5571.277
+
+          at point  X=343844326.328  Y=225961195.775  Z=    0.000
+          at point  X=343839700.000  Y=225964300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949d1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8282.588
+
+          at point  X=343829500.000  Y=225992300.000  Z=    0.000
+          at point  X=343828905.690  Y=225984038.762  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949d3
+              Open
+    Constant width     0.000
+              area   486214355.371
+            length   88651.671
+
+          at point  X=343829400.000  Y=226071000.000  Z=    0.000
+          at point  X=343817400.000  Y=226068500.000  Z=    0.000
+          at point  X=343814700.000  Y=226068500.000  Z=    0.000
+          at point  X=343814700.000  Y=226083500.000  Z=    0.000
+          at point  X=343814700.000  Y=226085800.000  Z=    0.000
+Press ENTER to continue:
+          at point  X=343797100.000  Y=226085800.000  Z=    0.000
+          at point  X=343797100.000  Y=226080100.000  Z=    0.000
+          at point  X=343794100.000  Y=226077200.000  Z=    0.000
+          at point  X=343782700.000  Y=226077200.000  Z=    0.000
+          at point  X=343776300.000  Y=226077200.000  Z=    0.000
+          at point  X=343771700.000  Y=226071900.000  Z=    0.000
+          at point  X=343768900.000  Y=226068900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949db
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13736.084
+
+          at point  X=343660300.000  Y=226117600.000  Z=    0.000
+          at point  X=343651100.000  Y=226127800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949dc
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12806.248
+
+          at point  X=343660300.000  Y=226117600.000  Z=    0.000
+          at point  X=343657100.000  Y=226130000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949e6
+              Open
+    Constant width     0.000
+              area   10058089072.130
+            length   344248.619
+
+          at point  X=343544200.000  Y=225976800.000  Z=    0.000
+          at point  X=343591700.000  Y=225948000.000  Z=    0.000
+          at point  X=343617334.720  Y=225932457.264  Z=    0.000
+          at point  X=343655800.000  Y=225901300.000  Z=    0.000
+          at point  X=343682600.000  Y=225879100.000  Z=    0.000
+          at point  X=343700161.139  Y=225864553.087  Z=    0.000
+          at point  X=343724200.000  Y=225845800.000  Z=    0.000
+          at point  X=343774500.000  Y=225827100.000  Z=    0.000
+          at point  X=343783891.774  Y=225835203.507  Z=    0.000
+          at point  X=343795400.000  Y=225862200.000  Z=    0.000
+          at point  X=343798125.715  Y=225870057.600  Z=    0.000
+          at point  X=343801549.741  Y=225878076.157  Z=    0.000
+          at point  X=343805300.000  Y=225885900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949e7
+              Open
+    Constant width     0.000
+              area   23891408.322
+            length   27832.687
+
+          at point  X=343783891.774  Y=225835203.507  Z=    0.000
+          at point  X=343799289.125  Y=225838788.326  Z=    0.000
+          at point  X=343807669.392  Y=225839492.855  Z=    0.000
+Press ENTER to continue:
+          at point  X=343809458.761  Y=225842632.443  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949e8
+              Open
+    Constant width     0.000
+              area   10758855.132
+            length   21768.001
+
+          at point  X=343822580.329  Y=225873008.587  Z=    0.000
+          at point  X=343805781.997  Y=225876033.183  Z=    0.000
+          at point  X=343801549.741  Y=225878076.157  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949f3
+              Open
+    Constant width     0.000
+              area   2465209403.225
+            length   215391.479
+
+          at point  X=343703523.467  Y=225861930.082  Z=    0.000
+          at point  X=343702400.000  Y=225873200.000  Z=    0.000
+          at point  X=343703900.000  Y=225884700.000  Z=    0.000
+          at point  X=343702300.000  Y=225893300.000  Z=    0.000
+          at point  X=343711500.000  Y=225907200.000  Z=    0.000
+          at point  X=343730400.000  Y=225932300.000  Z=    0.000
+          at point  X=343758781.191  Y=225951647.582  Z=    0.000
+          at point  X=343759700.000  Y=225974300.000  Z=    0.000
+          at point  X=343772500.000  Y=225977400.000  Z=    0.000
+          at point  X=343775500.000  Y=225984000.000  Z=    0.000
+          at point  X=343766000.000  Y=225990100.000  Z=    0.000
+          at point  X=343730900.000  Y=226001100.000  Z=    0.000
+          at point  X=343734100.000  Y=226010700.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949f4
+              Open
+    Constant width     0.000
+              area   90640000.000
+            length   74597.917
+
+          at point  X=343759700.000  Y=225974300.000  Z=    0.000
+          at point  X=343727800.000  Y=225981000.000  Z=    0.000
+          at point  X=343688200.000  Y=225995000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 3949f5
+              Open
+    Constant width     0.000
+              area   159550117.034
+            length   50866.817
+
+          at point  X=343730900.000  Y=226001100.000  Z=    0.000
+          at point  X=343713400.000  Y=226004300.000  Z=    0.000
+          at point  X=343696000.000  Y=226001700.000  Z=    0.000
+          at point  X=343688200.000  Y=225995000.000  Z=    0.000
+          at point  X=343683000.000  Y=225994900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+Press ENTER to continue:
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a55
+              Open
+    Constant width     0.000
+              area   0.000
+            length   124419.742
+
+          at point  X=343960207.924  Y=225967445.717  Z=    0.000
+          at point  X=343960207.924  Y=225937505.712  Z=    0.000
+          at point  X=343960207.924  Y=225920290.487  Z=    0.000
+          at point  X=343960207.924  Y=225873100.000  Z=    0.000
+          at point  X=343960207.924  Y=225862200.943  Z=    0.000
+          at point  X=343960207.924  Y=225843025.975  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a57
+              Open
+    Constant width     0.000
+              area   0.000
+            length   33052.376
+
+          at point  X=343900330.028  Y=225912349.668  Z=    0.000
+          at point  X=343878912.277  Y=225912349.668  Z=    0.000
+          at point  X=343867277.652  Y=225912349.668  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a58
+              Open
+    Constant width     0.000
+              area   55385264.741
+            length   24023.655
+
+          at point  X=343861054.907  Y=225913914.077  Z=    0.000
+          at point  X=343867277.652  Y=225913914.077  Z=    0.000
+          at point  X=343867277.652  Y=225912349.668  Z=    0.000
+          at point  X=343867277.652  Y=225900725.618  Z=    0.000
+          at point  X=343867277.652  Y=225896113.167  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a59
+              Open
+    Constant width     0.000
+              area   0.000
+            length   75464.445
+
+          at point  X=344064655.735  Y=226017125.454  Z=    0.000
+          at point  X=344074478.713  Y=226017125.454  Z=    0.000
+          at point  X=344084301.692  Y=226017125.454  Z=    0.000
+          at point  X=344098840.549  Y=226017125.454  Z=    0.000
+          at point  X=344111910.767  Y=226017125.454  Z=    0.000
+          at point  X=344123524.826  Y=226017125.454  Z=    0.000
+          at point  X=344134629.823  Y=226017125.454  Z=    0.000
+          at point  X=344140120.180  Y=226017125.454  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a5a
+              Open
+    Constant width     0.000
+    Press ENTER to continue:
+              area   0.000
+            length   18000.000
+
+          at point  X=344160107.497  Y=226043100.000  Z=    0.000
+          at point  X=344160107.497  Y=226034400.000  Z=    0.000
+          at point  X=344160107.497  Y=226027900.000  Z=    0.000
+          at point  X=344160107.497  Y=226025100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a5b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   119776.759
+
+          at point  X=344160107.497  Y=226025100.000  Z=    0.000
+          at point  X=344160107.497  Y=225951000.000  Z=    0.000
+          at point  X=344160107.497  Y=225905323.241  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a5c
+              Open
+    Constant width     0.000
+              area   3652524115.747
+            length   197722.644
+
+          at point  X=344160107.497  Y=225905323.241  Z=    0.000
+          at point  X=344160107.497  Y=225864200.000  Z=    0.000
+          at point  X=344215372.177  Y=225838331.358  Z=    0.000
+          at point  X=344221900.000  Y=225836400.000  Z=    0.000
+          at point  X=344227200.000  Y=225838000.000  Z=    0.000
+          at point  X=344231200.000  Y=225844400.000  Z=    0.000
+          at point  X=344231200.000  Y=225880000.000  Z=    0.000
+          at point  X=344271288.872  Y=225879900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a5e
+              Open
+    Constant width     0.000
+              area   302897029.156
+            length   71442.422
+
+          at point  X=344150063.760  Y=226108204.071  Z=    0.000
+          at point  X=344160107.497  Y=226103415.607  Z=    0.000
+          at point  X=344160107.497  Y=226043100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a60
+              Open
+    Constant width     0.000
+              area   149685918.822
+            length   35165.686
+
+          at point  X=344086800.000  Y=226111156.719  Z=    0.000
+          at point  X=344107510.866  Y=226111156.719  Z=    0.000
+          at point  X=344107512.045  Y=226096701.899  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+Press ENTER to continue:
+                   Handle = 394a62
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1594.284
+
+          at point  X=344107510.866  Y=226112751.003  Z=    0.000
+          at point  X=344107510.866  Y=226111156.719  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a63
+              Open
+    Constant width     0.000
+              area   36631277.765
+            length   19898.311
+
+          at point  X=344029476.554  Y=226231778.977  Z=    0.000
+          at point  X=344031100.000  Y=226227600.000  Z=    0.000
+          at point  X=344036300.000  Y=226226500.000  Z=    0.000
+          at point  X=344046400.000  Y=226226500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a64
+              Open
+    Constant width     0.000
+              area   0.000
+            length   22800.000
+
+          at point  X=343947700.000  Y=226193300.000  Z=    0.000
+          at point  X=343947700.000  Y=226175000.000  Z=    0.000
+          at point  X=343947700.000  Y=226170500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a65
+              Open
+    Constant width     0.000
+              area   4030804.678
+            length   8276.192
+
+          at point  X=343947700.000  Y=226195400.000  Z=    0.000
+          at point  X=343947700.000  Y=226197100.000  Z=    0.000
+          at point  X=343952442.123  Y=226201656.158  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a66
+              Open
+    Constant width     0.000
+              area   0.000
+            length   15866.912
+
+          at point  X=344027169.551  Y=226112751.003  Z=    0.000
+          at point  X=344027169.551  Y=226104505.794  Z=    0.000
+          at point  X=344027169.551  Y=226098600.000  Z=    0.000
+          at point  X=344027169.551  Y=226096884.091  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a67
+              Open
+Press ENTER to continue:
+    Constant width     0.000
+              area   0.000
+            length   62531.992
+
+          at point  X=344032900.000  Y=226098600.000  Z=    0.000
+          at point  X=344044597.622  Y=226098225.676  Z=    0.000
+          at point  X=344095400.000  Y=226096600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a68
+              Open
+    Constant width     0.000
+              area   32059271.244
+            length   28599.699
+
+          at point  X=344095400.000  Y=226096600.000  Z=    0.000
+          at point  X=344107512.045  Y=226096701.899  Z=    0.000
+          at point  X=344098840.549  Y=226091335.162  Z=    0.000
+          at point  X=344095400.000  Y=226096600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a69
+              Open
+    Constant width     0.000
+              area   0.000
+            length   18495.406
+
+          at point  X=344107512.045  Y=226096701.899  Z=    0.000
+          at point  X=344119707.298  Y=226082796.654  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a6b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   38915.307
+
+          at point  X=344098840.549  Y=226091335.162  Z=    0.000
+          at point  X=344098840.549  Y=226059361.281  Z=    0.000
+          at point  X=344098840.549  Y=226052419.855  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a6c
+              Open
+    Constant width     0.000
+              area   465220942.504
+            length   64497.726
+
+          at point  X=344098840.549  Y=226052419.855  Z=    0.000
+          at point  X=344137200.000  Y=226041400.000  Z=    0.000
+          at point  X=344140120.180  Y=226027900.000  Z=    0.000
+          at point  X=344140120.180  Y=226017125.454  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a6d
+              Open
+    Constant width     0.000
+              area   765232741.261
+            length   195322.019
+Press ENTER to continue:
+
+          at point  X=343960207.924  Y=225843025.975  Z=    0.000
+          at point  X=343981000.000  Y=225843025.975  Z=    0.000
+          at point  X=344103245.651  Y=225845088.746  Z=    0.000
+          at point  X=344107733.781  Y=225845120.108  Z=    0.000
+          at point  X=344145254.918  Y=225845071.262  Z=    0.000
+          at point  X=344150860.638  Y=225853661.479  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a75
+              Open
+    Constant width     0.000
+              area   15234850.693
+            length   21153.853
+
+          at point  X=343744200.786  Y=226267745.361  Z=    0.000
+          at point  X=343744200.786  Y=226269300.000  Z=    0.000
+          at point  X=343763800.000  Y=226269300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a85
+              Open
+    Constant width     0.000
+              area   0.000
+            length   18400.000
+
+          at point  X=343897900.000  Y=226230700.000  Z=    0.000
+          at point  X=343897900.000  Y=226236000.000  Z=    0.000
+          at point  X=343897900.000  Y=226240000.000  Z=    0.000
+          at point  X=343897900.000  Y=226243800.000  Z=    0.000
+          at point  X=343897900.000  Y=226249100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a86
+              Open
+    Constant width     0.000
+              area   4725000.000
+            length   22138.827
+
+          at point  X=343880300.000  Y=226240500.000  Z=    0.000
+          at point  X=343883500.000  Y=226240000.000  Z=    0.000
+          at point  X=343897900.000  Y=226240000.000  Z=    0.000
+          at point  X=343902400.000  Y=226240000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a8e
+              Open
+    Constant width     0.000
+              area   37150191.353
+            length   18871.760
+
+          at point  X=343823500.000  Y=226278800.000  Z=    0.000
+          at point  X=343823500.000  Y=226273000.000  Z=    0.000
+          at point  X=343830267.942  Y=226266866.277  Z=    0.000
+          at point  X=343831600.000  Y=226265600.000  Z=    0.000
+          at point  X=343833700.000  Y=226265600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+Press ENTER to continue:
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a96
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12900.000
+
+          at point  X=343818700.000  Y=226265600.000  Z=    0.000
+          at point  X=343831600.000  Y=226265600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394a99
+              Open
+    Constant width     0.000
+              area   6850817.919
+            length   19093.543
+
+          at point  X=343834700.000  Y=226241500.000  Z=    0.000
+          at point  X=343834700.000  Y=226255201.636  Z=    0.000
+          at point  X=343833700.000  Y=226260500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394aa2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   21800.000
+
+          at point  X=343683300.000  Y=226241800.000  Z=    0.000
+          at point  X=343683300.000  Y=226224500.000  Z=    0.000
+          at point  X=343683300.000  Y=226220000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394aa3
+              Open
+    Constant width     0.000
+              area   12160000.000
+            length   10200.000
+
+          at point  X=343683300.000  Y=226216900.000  Z=    0.000
+          at point  X=343683300.000  Y=226213100.000  Z=    0.000
+          at point  X=343676900.000  Y=226213100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394aa5
+              Open
+    Constant width     0.000
+              area   0.000
+            length   23700.000
+
+          at point  X=343880300.000  Y=226240500.000  Z=    0.000
+          at point  X=343880300.000  Y=226264200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394aa9
+              Open
+    Constant width     0.000
+              area   0.000
+            length   15268.982
+            Press ENTER to continue:
+
+          at point  X=344027169.551  Y=226096884.091  Z=    0.000
+          at point  X=344042400.000  Y=226095800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ab2
+              Open
+    Constant width     0.000
+              area   130545221.993
+            length   36294.338
+
+          at point  X=343960207.924  Y=225967445.717  Z=    0.000
+          at point  X=343973105.432  Y=225977000.000  Z=    0.000
+          at point  X=343973105.432  Y=225997243.480  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ab3
+              Open
+    Constant width     0.000
+              area   0.001
+            length   91550.313
+
+          at point  X=343973105.432  Y=225997243.480  Z=    0.000
+          at point  X=344026300.056  Y=225997218.216  Z=    0.000
+          at point  X=344064655.735  Y=225997200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ab4
+              Open
+    Constant width     0.000
+              area   0.000
+            length   20608.118
+
+          at point  X=344064655.735  Y=226017125.454  Z=    0.000
+          at point  X=344064655.735  Y=226006821.395  Z=    0.000
+          at point  X=344064655.735  Y=225997200.000  Z=    0.000
+          at point  X=344064655.735  Y=225996517.336  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ab5
+              Open
+    Constant width     0.000
+              area   1458684140.657
+            length   166638.774
+
+          at point  X=343846610.520  Y=225896113.167  Z=    0.000
+          at point  X=343867277.652  Y=225896113.167  Z=    0.000
+          at point  X=343867277.652  Y=225894600.000  Z=    0.000
+          at point  X=343909054.143  Y=225894600.000  Z=    0.000
+          at point  X=343909054.143  Y=225873606.742  Z=    0.000
+          at point  X=343909100.000  Y=225843025.975  Z=    0.000
+          at point  X=343960207.924  Y=225843025.975  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ab6
+              Open
+    Constant width     0.000
+Press ENTER to continue:
+              area   0.000
+            length   51153.781
+
+          at point  X=343960207.924  Y=225873606.742  Z=    0.000
+          at point  X=343909054.143  Y=225873606.742  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ac2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6960.009
+
+          at point  X=343962100.000  Y=226170460.009  Z=    0.000
+          at point  X=343962100.000  Y=226163500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ac3
+              Open
+    Constant width     0.000
+              area   0.000
+            length   61830.449
+
+          at point  X=344027169.551  Y=226112751.003  Z=    0.000
+          at point  X=344089000.000  Y=226112751.003  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ac5
+              Open
+    Constant width     0.000
+              area   57122336.887
+            length   43733.931
+
+          at point  X=344107510.866  Y=226112751.003  Z=    0.000
+          at point  X=344146588.454  Y=226111260.188  Z=    0.000
+          at point  X=344150063.760  Y=226108204.071  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ac6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5730.449
+
+          at point  X=344032900.000  Y=226098600.000  Z=    0.000
+          at point  X=344027169.551  Y=226098600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ac9
+              Open
+    Constant width     0.000
+              area   126134900.280
+            length   31252.821
+
+          at point  X=343747501.232  Y=226058596.782  Z=    0.000
+          at point  X=343748100.000  Y=226054100.000  Z=    0.000
+          at point  X=343748100.000  Y=226048500.000  Z=    0.000
+          at point  X=343746300.000  Y=226043600.000  Z=    0.000
+          at point  X=343744400.000  Y=226040300.000  Z=    0.000
+Press ENTER to continue:
+          at point  X=343740700.000  Y=226038200.000  Z=    0.000
+          at point  X=343733100.000  Y=226036300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394acb
+              Open
+    Constant width     0.000
+              area   755808783.784
+            length   86394.108
+
+          at point  X=343730000.000  Y=226024800.000  Z=    0.000
+          at point  X=343731700.000  Y=226016400.000  Z=    0.000
+          at point  X=343734100.000  Y=226010700.000  Z=    0.000
+          at point  X=343739500.000  Y=226008700.000  Z=    0.000
+          at point  X=343751000.000  Y=226005600.000  Z=    0.000
+          at point  X=343760200.000  Y=226001600.000  Z=    0.000
+          at point  X=343768123.847  Y=225998154.849  Z=    0.000
+          at point  X=343773200.000  Y=225992400.000  Z=    0.000
+          at point  X=343779700.000  Y=225988500.000  Z=    0.000
+          at point  X=343785500.000  Y=225988500.000  Z=    0.000
+          at point  X=343789500.000  Y=225991700.000  Z=    0.000
+          at point  X=343795100.000  Y=225998900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394acc
+              Open
+    Constant width     0.000
+              area   297152503.127
+            length   93742.761
+
+          at point  X=343670500.000  Y=226116100.000  Z=    0.000
+          at point  X=343670500.000  Y=226124800.000  Z=    0.000
+          at point  X=343667168.427  Y=226127120.393  Z=    0.000
+          at point  X=343666870.851  Y=226133289.025  Z=    0.000
+          at point  X=343666870.851  Y=226147400.000  Z=    0.000
+          at point  X=343666870.851  Y=226202900.000  Z=    0.000
+          at point  X=343670800.000  Y=226206300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ace
+              Open
+    Constant width     0.000
+              area   0.000
+            length   27800.000
+
+          at point  X=343701100.000  Y=226206900.000  Z=    0.000
+          at point  X=343701100.000  Y=226179100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394ad1
+              Open
+    Constant width     0.000
+              area   18809154.227
+            length   12267.089
+
+          at point  X=343685001.842  Y=226100634.338  Z=    0.000
+          at point  X=343685001.842  Y=226106722.474  Z=    0.000
+          at point  X=343691180.796  Y=226106722.474  Z=    0.000
+
+Press ENTER to continue:
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394aef
+              Open
+    Constant width     0.000
+              area   2626734493.194
+            length   149333.122
+
+          at point  X=343544200.000  Y=225976800.000  Z=    0.000
+          at point  X=343535200.000  Y=225969300.000  Z=    0.000
+          at point  X=343504900.000  Y=225958700.000  Z=    0.000
+          at point  X=343503988.235  Y=225955052.941  Z=    0.000
+          at point  X=343501400.000  Y=225944700.000  Z=    0.000
+          at point  X=343502700.000  Y=225930300.000  Z=    0.000
+          at point  X=343510500.000  Y=225916600.000  Z=    0.000
+          at point  X=343528600.000  Y=225900000.000  Z=    0.000
+          at point  X=343543600.000  Y=225887100.000  Z=    0.000
+          at point  X=343547200.000  Y=225879600.000  Z=    0.000
+          at point  X=343547200.000  Y=225871400.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394af0
+              Open
+    Constant width     0.000
+              area   95500000.000
+            length   30897.490
+
+          at point  X=343535200.000  Y=225969300.000  Z=    0.000
+          at point  X=343536100.000  Y=225965400.000  Z=    0.000
+          at point  X=343534200.000  Y=225950200.000  Z=    0.000
+          at point  X=343545100.000  Y=225946300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394af1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   30599.048
+
+          at point  X=343534200.000  Y=225950200.000  Z=    0.000
+          at point  X=343526342.120  Y=225951462.218  Z=    0.000
+          at point  X=343503988.235  Y=225955052.941  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394b2b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   18058.385
+
+          at point  X=343775758.385  Y=226131411.486  Z=    0.000
+          at point  X=343757700.000  Y=226131411.486  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394b38
+              Open
+    Constant width     0.000
+              area   0.000
+            length   37113.068
+Press ENTER to continue:
+
+          at point  X=343841200.000  Y=226204713.068  Z=    0.000
+          at point  X=343841200.000  Y=226167600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394b7e
+              Open
+    Constant width     0.000
+              area   109258873.134
+            length   37877.147
+
+          at point  X=343750600.000  Y=226100634.338  Z=    0.000
+          at point  X=343750600.000  Y=226131411.486  Z=    0.000
+          at point  X=343757700.000  Y=226131411.486  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Color: 2 (yellow)    Linetype: "BYLAYER"
+                   Handle = 394b8c
+              Open
+    Constant width     0.000
+              area   32250000.000
+            length   19300.000
+
+          at point  X=343962100.000  Y=226148600.000  Z=    0.000
+          at point  X=343962100.000  Y=226144300.000  Z=    0.000
+          at point  X=343954600.000  Y=226144300.000  Z=    0.000
+          at point  X=343947100.000  Y=226144300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394b96
+              Open
+    Constant width     0.000
+              area   35773973.079
+            length   18698.456
+
+          at point  X=343962100.000  Y=226170460.009  Z=    0.000
+          at point  X=343966900.000  Y=226182000.000  Z=    0.000
+          at point  X=343973100.000  Y=226182000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394ba8
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8200.152
+
+          at point  X=344086800.000  Y=226187500.000  Z=    0.000
+          at point  X=344078600.000  Y=226187450.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394baa
+              Open
+    Constant width     0.000
+              area   0.000
+            length   19200.000
+
+          at point  X=344024500.000  Y=226149600.000  Z=    0.000
+          at point  X=344024500.000  Y=226130400.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bb1
+                   Press ENTER to continue:
+              Open
+    Constant width     0.000
+              area   761405216.195
+            length   97924.000
+
+          at point  X=344078600.000  Y=226162000.000  Z=    0.000
+          at point  X=344078600.000  Y=226150300.000  Z=    0.000
+          at point  X=344078600.000  Y=226109842.164  Z=    0.000
+          at point  X=344044507.061  Y=226109898.503  Z=    0.000
+          at point  X=344044597.622  Y=226098225.676  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bb9
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8200.000
+
+          at point  X=344086800.000  Y=226150300.000  Z=    0.000
+          at point  X=344078600.000  Y=226150300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bc4
+              Open
+    Constant width     0.000
+              area   72561160.527
+            length   29926.866
+
+          at point  X=344131173.654  Y=226143399.479  Z=    0.000
+          at point  X=344140200.000  Y=226143399.479  Z=    0.000
+          at point  X=344140200.000  Y=226162200.000  Z=    0.000
+          at point  X=344142300.000  Y=226162200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bc6
+              Open
+    Constant width     0.000
+              area   2800000.000
+            length   5100.000
+
+          at point  X=344158700.000  Y=226122200.000  Z=    0.000
+          at point  X=344160300.000  Y=226122200.000  Z=    0.000
+          at point  X=344160300.000  Y=226125700.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bea
+              Open
+    Constant width     0.000
+              area   639570000.000
+            length   73610.763
+
+          at point  X=344247500.000  Y=225710100.000  Z=    0.000
+          at point  X=344213400.000  Y=225712800.000  Z=    0.000
+          at point  X=344198000.000  Y=225705800.000  Z=    0.000
+          at point  X=344189700.000  Y=225684900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bf4
+              Open
+    Constant width     0.000
+              area   450248436.009
+            length   85511.128
+
+          at point  X=344271288.872  Y=225886300.000  Z=    0.000
+Press ENTER to continue:
+          at point  X=344293100.000  Y=225886300.000  Z=    0.000
+          at point  X=344344500.000  Y=225886300.000  Z=    0.000
+          at point  X=344344500.000  Y=225874000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bfc
+              Open
+    Constant width     0.000
+              area   190290086.558
+            length   192574.455
+
+          at point  X=344606485.591  Y=225854096.965  Z=    0.000
+          at point  X=344576900.000  Y=225854096.965  Z=    0.000
+          at point  X=344472100.000  Y=225854096.965  Z=    0.000
+          at point  X=344460500.000  Y=225857500.000  Z=    0.000
+          at point  X=344414400.000  Y=225857500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394bfd
+              Open
+    Constant width     0.000
+              area   3449315000.000
+            length   169600.000
+
+          at point  X=344344500.000  Y=225886300.000  Z=    0.000
+          at point  X=344412200.000  Y=225886300.000  Z=    0.000
+          at point  X=344412200.000  Y=225854600.000  Z=    0.000
+          at point  X=344412200.000  Y=225784400.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c15
+              Open
+    Constant width     0.000
+              area   0.000
+            length   112900.000
+
+          at point  X=344310500.000  Y=226079000.000  Z=    0.000
+          at point  X=344310500.000  Y=225966100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c31
+              Open
+    Constant width     0.000
+              area   0.000
+            length   34300.000
+
+          at point  X=344293100.000  Y=225886300.000  Z=    0.000
+          at point  X=344293100.000  Y=225920600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c3a
+              Open
+    Constant width     0.000
+              area   38498449.161
+            length   22987.513
+
+          at point  X=344134629.823  Y=225996517.336  Z=    0.000
+          at point  X=344138700.000  Y=225996517.336  Z=    0.000
+          at point  X=344138700.000  Y=225977600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c45
+Press ENTER to continue:
+              Open
+    Constant width     0.000
+              area   0.000
+            length   91550.303
+
+          at point  X=343973105.432  Y=226017125.454  Z=    0.000
+          at point  X=344064655.735  Y=226017125.454  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c70
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8954.907
+
+          at point  X=343861054.907  Y=226046870.127  Z=    0.000
+          at point  X=343852100.000  Y=226046870.127  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c71
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12870.355
+
+          at point  X=343882300.000  Y=226103070.355  Z=    0.000
+          at point  X=343882300.000  Y=226090200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c73
+              Open
+    Constant width     0.000
+              area   213840000.000
+            length   41900.206
+
+          at point  X=343876400.000  Y=226090200.000  Z=    0.000
+          at point  X=343876400.000  Y=226072600.000  Z=    0.000
+          at point  X=343852100.000  Y=226072700.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c7c
+              Open
+    Constant width     0.000
+              area   539716162.004
+            length   65754.907
+
+          at point  X=343829400.000  Y=226071000.000  Z=    0.000
+          at point  X=343829400.000  Y=226052500.000  Z=    0.000
+          at point  X=343829400.000  Y=226036900.000  Z=    0.000
+          at point  X=343861054.907  Y=226036900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c7d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   44600.112
+
+          at point  X=343829400.000  Y=226036900.000  Z=    0.000
+          at point  X=343829500.000  Y=225992300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394c96
+Press ENTER to continue:
+              Open
+    Constant width     0.000
+              area   0.000
+            length   36700.000
+
+          at point  X=343829400.000  Y=226036900.000  Z=    0.000
+          at point  X=343792700.000  Y=226036900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394cbd
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3255.671
+
+          at point  X=343836955.671  Y=226201300.000  Z=    0.000
+          at point  X=343833700.000  Y=226201300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394cdc
+              Open
+    Constant width     0.000
+              area   676036124.283
+            length   116748.763
+
+          at point  X=344028211.767  Y=225884400.927  Z=    0.000
+          at point  X=344046200.000  Y=225900600.000  Z=    0.000
+          at point  X=344061700.000  Y=225905500.000  Z=    0.000
+          at point  X=344078000.000  Y=225907500.000  Z=    0.000
+          at point  X=344090700.000  Y=225914619.614  Z=    0.000
+          at point  X=344097800.000  Y=225921900.000  Z=    0.000
+          at point  X=344112600.000  Y=225923900.000  Z=    0.000
+          at point  X=344132800.000  Y=225923900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394d09
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7845.995
+
+          at point  X=343783891.774  Y=225835203.507  Z=    0.000
+          at point  X=343776600.000  Y=225838100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394d1b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2321.643
+
+          at point  X=343823331.719  Y=225874729.808  Z=    0.000
+          at point  X=343825500.000  Y=225873900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394d24
+              Open
+    Constant width     0.000
+              area   522762848.730
+            length   90564.765
+
+          at point  X=343832076.736  Y=225836718.427  Z=    0.000
+          at point  X=343843200.000  Y=225834600.000  Z=    0.000
+          at point  X=343862056.634  Y=225831335.952  Z=    0.000
+Press ENTER to continue:
+          at point  X=343862183.899  Y=225813623.994  Z=    0.000
+          at point  X=343884000.000  Y=225813623.994  Z=    0.000
+          at point  X=343884000.000  Y=225830300.000  Z=    0.000
+          at point  X=343884000.000  Y=225834200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 394d2d
+              Open
+    Constant width     0.000
+              area   2777652.368
+            length   4777.652
+
+          at point  X=343867277.652  Y=225894600.000  Z=    0.000
+          at point  X=343864500.000  Y=225894600.000  Z=    0.000
+          at point  X=343864500.000  Y=225892600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 3a0a3c
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1301.003
+
+          at point  X=343855899.999  Y=226209301.003  Z=    0.000
+          at point  X=343855899.999  Y=226208000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 3a0a3d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1318.684
+
+          at point  X=343890300.000  Y=226209318.684  Z=    0.000
+          at point  X=343890300.000  Y=226208000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 3a0a62
+              Open
+    Constant width     0.000
+              area   0.000
+            length   9270.355
+
+          at point  X=343844093.779  Y=226103070.355  Z=    0.000
+          at point  X=343844093.779  Y=226097200.000  Z=    0.000
+          at point  X=343844093.779  Y=226093800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 3a0a8f
+              Open
+    Constant width     0.000
+              area   34255405.796
+            length   16797.524
+
+          at point  X=344074478.713  Y=226017125.454  Z=    0.000
+          at point  X=344074478.713  Y=226024100.000  Z=    0.000
+          at point  X=344084301.692  Y=226024100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 3a0a9c
+              Open
+    Constant width     0.000
+    Press ENTER to continue:
+              area   0.000
+            length   5187.454
+
+          at point  X=344344218.481  Y=225785012.546  Z=    0.000
+          at point  X=344344218.481  Y=225790200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-FOR-ASPNET"
+                            Space: Model space
+                   Handle = 3a0a9e
+              Open
+    Constant width     0.000
+              area   1880976572.382
+            length   138663.773
+
+          at point  X=343945084.069  Y=226129200.000  Z=    0.000
+          at point  X=343945084.069  Y=226139300.000  Z=    0.000
+          at point  X=343945084.069  Y=226170500.000  Z=    0.000
+          at point  X=343947700.000  Y=226170500.000  Z=    0.000
+          at point  X=343962100.000  Y=226170460.009  Z=    0.000
+          at point  X=343982100.000  Y=226165000.000  Z=    0.000
+          at point  X=343990918.773  Y=226165000.000  Z=    0.000
+          at point  X=344002400.000  Y=226161881.871  Z=    0.000
+          at point  X=344024500.000  Y=226161881.871  Z=    0.000
+          at point  X=344041300.000  Y=226161881.871  Z=    0.000
+# NOT STEP FREE:
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394976
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4991.635
+
+          at point  X=343645573.429  Y=226232220.305  Z=    0.000
+          at point  X=343641312.723  Y=226234820.845  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394979
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12200.000
+
+          at point  X=343683300.000  Y=226224500.000  Z=    0.000
+          at point  X=343691800.000  Y=226224500.000  Z=    0.000
+          at point  X=343694100.000  Y=226224500.000  Z=    0.000
+          at point  X=343695500.000  Y=226224500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394997
+              Open
+    Constant width     0.000
+              area   451943308.108
+            length   69913.584
+
+          at point  X=343687800.000  Y=226069900.000  Z=    0.000
+          at point  X=343691400.000  Y=226071600.000  Z=    0.000
+          at point  X=343694400.000  Y=226071100.000  Z=    0.000
+          at point  X=343705400.000  Y=226060600.000  Z=    0.000
+          at point  X=343712506.595  Y=226053816.432  Z=    0.000
+          at point  X=343718100.000  Y=226050300.000  Z=    0.000
+          at point  X=343687300.000  Y=226045000.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 3949a1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12059.557
+
+          at point  X=343664300.364  Y=226080237.130  Z=    0.000
+          at point  X=343654600.021  Y=226087402.062  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 3949a2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   11920.514
+
+          at point  X=343673599.960  Y=226089400.040  Z=    0.000
+Press ENTER to continue:
+          at point  X=343664500.000  Y=226097100.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394a76
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4100.000
+
+          at point  X=343763800.000  Y=226269300.000  Z=    0.000
+          at point  X=343767900.000  Y=226269300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394a97
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3400.000
+
+          at point  X=343818700.000  Y=226265600.000  Z=    0.000
+          at point  X=343815300.000  Y=226265600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394a98
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5100.000
+
+          at point  X=343833700.000  Y=226265600.000  Z=    0.000
+          at point  X=343833700.000  Y=226260500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394aa1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2983.188
+
+          at point  X=343682576.471  Y=226244694.118  Z=    0.000
+          at point  X=343683300.000  Y=226241800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394aa4
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3100.000
+
+          at point  X=343683300.000  Y=226220000.000  Z=    0.000
+          at point  X=343683300.000  Y=226216900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394aa6
+              Open
+Press ENTER to continue:
+    Constant width     0.000
+              area   0.000
+            length   9340.771
+
+          at point  X=343880300.000  Y=226264200.000  Z=    0.000
+          at point  X=343886000.000  Y=226271600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394ab7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2100.000
+
+          at point  X=343947700.000  Y=226195400.000  Z=    0.000
+          at point  X=343947700.000  Y=226193300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394abf
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4500.000
+
+          at point  X=343783800.000  Y=226227200.000  Z=    0.000
+          at point  X=343779300.000  Y=226227200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394ac1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   14900.000
+
+          at point  X=343962100.000  Y=226148600.000  Z=    0.000
+          at point  X=343962100.000  Y=226163500.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394ac4
+              Open
+    Constant width     0.000
+              area   0.000
+            length   18510.866
+
+          at point  X=344089000.000  Y=226112751.003  Z=    0.000
+          at point  X=344107510.866  Y=226112751.003  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394ac7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   22788.199
+
+          at point  X=343932031.029  Y=226025304.511  Z=    0.000
+          at point  X=343925163.131  Y=226047033.156  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+Press ENTER to continue:
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394ac8
+              Open
+    Constant width     0.000
+              area   0.000
+            length   44842.527
+
+          at point  X=343925163.131  Y=226047033.156  Z=    0.000
+          at point  X=343925163.131  Y=226091875.683  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394aca
+              Open
+    Constant width     0.000
+              area   6050000.000
+            length   12083.754
+
+          at point  X=343733100.000  Y=226036300.000  Z=    0.000
+          at point  X=343730700.000  Y=226031300.000  Z=    0.000
+          at point  X=343730000.000  Y=226024800.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394acd
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6200.000
+
+          at point  X=343701100.000  Y=226213100.000  Z=    0.000
+          at point  X=343701100.000  Y=226206900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394acf
+              Open
+    Constant width     0.000
+              area   0.000
+            length   6477.801
+
+          at point  X=343666870.851  Y=226202900.000  Z=    0.000
+          at point  X=343660400.000  Y=226203200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394ad0
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8674.380
+
+          at point  X=343685001.842  Y=226100634.338  Z=    0.000
+          at point  X=343691180.796  Y=226106722.474  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394b00
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12281.871
+Press ENTER to continue:
+
+          at point  X=344024500.000  Y=226161881.871  Z=    0.000
+          at point  X=344024500.000  Y=226149600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394b82
+              Open
+    Constant width     0.000
+              area   21010117.828
+            length   12965.662
+
+          at point  X=343784200.000  Y=226107200.000  Z=    0.000
+          at point  X=343790600.000  Y=226107200.000  Z=    0.000
+          at point  X=343790600.000  Y=226100634.338  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Color: 4 (cyan)    Linetype: "BYLAYER"
+                   Handle = 394b8d
+              Open
+    Constant width     0.000
+              area   5039826.264
+            length   7015.931
+
+          at point  X=343945084.069  Y=226139300.000  Z=    0.000
+          at point  X=343947100.000  Y=226139300.000  Z=    0.000
+          at point  X=343947100.000  Y=226144300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Handle = 394bc2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12076.837
+
+          at point  X=344137100.000  Y=226173100.000  Z=    0.000
+          at point  X=344142300.000  Y=226162200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Handle = 394bff
+              Open
+    Constant width     0.000
+              area   0.000
+            length   7600.000
+
+          at point  X=344412200.000  Y=225854600.000  Z=    0.000
+          at point  X=344419800.000  Y=225854600.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Handle = 394c4e
+              Open
+    Constant width     0.000
+              area   6267527.323
+            length   56618.605
+
+          at point  X=344042400.000  Y=226095800.000  Z=    0.000
+          at point  X=344050707.734  Y=226095208.662  Z=    0.000
+          at point  X=344070414.659  Y=226093805.940  Z=    0.000
+          at point  X=344098840.549  Y=226091335.162  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                            Press ENTER to continue:
+                   Handle = 394c72
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5900.000
+
+          at point  X=343882300.000  Y=226090200.000  Z=    0.000
+          at point  X=343876400.000  Y=226090200.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Handle = 394c74
+              Open
+    Constant width     0.000
+              area   0.000
+            length   25829.873
+
+          at point  X=343852100.000  Y=226072700.000  Z=    0.000
+          at point  X=343852100.000  Y=226046870.127  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Handle = 394c97
+              Open
+    Constant width     0.000
+              area   0.000
+            length   8631.338
+
+          at point  X=343784200.000  Y=226035400.000  Z=    0.000
+          at point  X=343792700.000  Y=226036900.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Handle = 394db6
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5069.891
+
+          at point  X=343958000.000  Y=226201656.158  Z=    0.000
+          at point  X=343961800.000  Y=226198300.000  Z=    0.000
+
+                  LWPOLYLINE  Layer: "PATH-OUTLINES-STEP"
+                            Space: Model space
+                   Handle = 3a0a78
+              Open
+    Constant width     0.000
+              area   4535675762.628
+            length   259184.818
+
+          at point  X=343959135.713  Y=225799965.281  Z=    0.000
+          at point  X=344032000.000  Y=225800324.140  Z=    0.000
+          at point  X=344072300.000  Y=225803700.000  Z=    0.000
+          at point  X=344092900.000  Y=225803700.000  Z=    0.000
+          at point  X=344163867.602  Y=225803700.000  Z=    0.000
+          at point  X=344163935.826  Y=225838056.194  Z=    0.000
+          at point  X=344145254.918  Y=225845071.262  Z=    0.000

@@ -1,0 +1,46 @@
+10W
+10 West
+          at point  X=343667649.819  Y=226075482.728  Z=    0.000
+          at point  X=343681887.205  Y=226075482.728  Z=    0.000
+          at point  X=343681887.205  Y=225996591.728  Z=    0.000
+          at point  X=343667417.055  Y=225996591.728  Z=    0.000
+          at point  X=343667417.055  Y=226052364.911  Z=    0.000
+          at point  X=343657929.308  Y=226052364.911  Z=    0.000
+          at point  X=343657929.308  Y=226050157.728  Z=    0.000
+          at point  X=343643666.639  Y=226050157.728  Z=    0.000
+          at point  X=343643666.639  Y=226074742.728  Z=    0.000
+          at point  X=343658417.205  Y=226074742.728  Z=    0.000
+          at point  X=343658417.205  Y=226077393.728  Z=    0.000
+          at point  X=343659830.276  Y=226077393.728  Z=    0.000
+          at point  X=343662374.229  Y=226079937.829  Z=    0.000
+          at point  X=343664922.864  Y=226077393.728  Z=    0.000
+          at point  X=343667649.819  Y=226077393.728  Z=    0.000
+          at point  X=343667649.819  Y=226075482.728  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a93
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2785.908
+          at point  X=343664300.364  Y=226080237.130  Z=    0.000
+          at point  X=343662400.000  Y=226078200.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a92
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2998.316
+          at point  X=343660200.000  Y=226080237.130  Z=    0.000
+          at point  X=343662400.000  Y=226078200.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b4b
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5400.000
+          at point  X=343664800.000  Y=226048300.000  Z=    0.000
+          at point  X=343664800.000  Y=226053700.000  Z=    1

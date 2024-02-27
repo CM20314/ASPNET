@@ -1,0 +1,48 @@
+Eastwood Pitches
+Eastwood Football Pitches
+          at point  X=344418593.175  Y=226074708.449  Z=    0.000
+          at point  X=344468803.854  Y=226117544.038  Z=    0.000
+          at point  X=344592142.769  Y=225973110.543  Z=    0.000
+          at point  X=344601796.988  Y=225921879.554  Z=    0.000
+          at point  X=344601796.988  Y=225863879.554  Z=    0.000
+          at point  X=344479767.748  Y=225863879.554  Z=    0.000
+          at point  X=344479820.947  Y=225996876.239  Z=    0.000
+          at point  X=344477005.341  Y=226006239.340  Z=    0.000
+          at point  X=344418593.175  Y=226074708.449  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd3
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3753.665
+          at point  X=344471100.000  Y=226118900.000  Z=    0.000
+          at point  X=344468300.000  Y=226116400.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c12
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13697.565
+          at point  X=344593900.000  Y=225974100.000  Z=    0.000
+          at point  X=344583233.984  Y=225965505.852  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd4
+              Open
+    Constant width     0.000
+              area   0.000
+            length   12200.000
+          at point  X=344604700.000  Y=225921400.000  Z=    0.000
+          at point  X=344592500.000  Y=225921400.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c11
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13503.035
+          at point  X=344576900.000  Y=225854096.965  Z=    0.000
+          at point  X=344576900.000  Y=225867600.000  Z=    1

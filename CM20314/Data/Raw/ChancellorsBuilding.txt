@@ -1,0 +1,39 @@
+CB
+Chancellors' Building
+          at point  X=344035170.705  Y=226211519.723  Z=    0.000
+          at point  X=344035170.705  Y=226164519.723  Z=    0.000
+          at point  X=344041820.705  Y=226164519.723  Z=    0.000
+          at point  X=344041820.705  Y=226159669.723  Z=    0.000
+          at point  X=344063070.705  Y=226159669.723  Z=    0.000
+          at point  X=344063070.705  Y=226164519.723  Z=    0.000
+          at point  X=344077670.705  Y=226164519.723  Z=    0.000
+          at point  X=344077670.705  Y=226211519.723  Z=    0.000
+          at point  X=344035170.705  Y=226211519.723  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394ba5
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1000.000
+          at point  X=344041300.000  Y=226161881.871  Z=    0.000
+          at point  X=344042300.000  Y=226161881.871  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394ba7
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4200.000
+          at point  X=344064800.000  Y=226162000.000  Z=    0.000
+          at point  X=344064800.000  Y=226166200.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394ba9
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2900.000
+          at point  X=344078600.000  Y=226187450.000  Z=    0.000
+          at point  X=344075700.000  Y=226187450.000  Z=    1

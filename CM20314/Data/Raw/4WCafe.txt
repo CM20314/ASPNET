@@ -1,0 +1,28 @@
+4W Cafe
+4W Cafe
+          at point  X=343794300.000  Y=226099279.883  Z=    0.000
+          at point  X=343843100.000  Y=226099295.635  Z=    0.000
+          at point  X=343843100.000  Y=226091850.939  Z=    0.000
+          at point  X=343836542.837  Y=226091844.131  Z=    0.000
+          at point  X=343809677.354  Y=226091844.224  Z=    0.000
+          at point  X=343794300.000  Y=226091844.224  Z=    0.000
+          at point  X=343794300.000  Y=226099279.883  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a6f
+              Open
+    Constant width     0.000
+              area   0.000
+            length   3593.779
+          at point  X=343844093.779  Y=226097200.000  Z=    0.000
+          at point  X=343840500.000  Y=226097200.000  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a6d
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2434.338
+          at point  X=343798400.000  Y=226100634.338  Z=    0.000
+          at point  X=343798400.000  Y=226098200.000  Z=    2

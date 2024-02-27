@@ -1,0 +1,26 @@
+Volleyball
+Beach Volleyball Court
+          at point  X=344416632.032  Y=226033719.562  Z=    0.000
+          at point  X=344431653.624  Y=226033719.562  Z=    0.000
+          at point  X=344431653.624  Y=225914800.599  Z=    0.000
+          at point  X=344416632.032  Y=225914800.599  Z=    0.000
+          at point  X=344416630.643  Y=226033719.556  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd1
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13700.000
+          at point  X=344405600.000  Y=226029900.000  Z=    0.000
+          at point  X=344419300.000  Y=226029900.000  Z=    1
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394bd2
+              Open
+    Constant width     0.000
+              area   0.000
+            length   13700.000
+          at point  X=344405600.000  Y=225917000.000  Z=    0.000
+          at point  X=344419300.000  Y=225917000.000  Z=    1

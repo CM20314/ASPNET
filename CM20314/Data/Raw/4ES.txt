@@ -1,0 +1,16 @@
+4ES
+4 East South
+          at point  X=344061311.739  Y=226000707.825  Z=    0.000
+          at point  X=343980230.252  Y=226000707.825  Z=    0.000
+          at point  X=343980280.714  Y=226014156.288  Z=    0.000
+          at point  X=344061311.739  Y=226014156.288  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394c44
+              Open
+    Constant width     0.000
+              area   0.000
+            length   5481.784
+          at point  X=344026300.056  Y=225997218.216  Z=    0.000
+          at point  X=344026300.056  Y=226002700.000  Z=    1

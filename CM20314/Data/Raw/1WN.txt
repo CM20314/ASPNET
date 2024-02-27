@@ -1,0 +1,62 @@
+1WN
+1 West North
+          at point  X=343862938.928  Y=226173889.078  Z=    0.000
+          at point  X=343862968.676  Y=226171797.720  Z=    0.000
+          at point  X=343871698.184  Y=226171797.720  Z=    0.000
+          at point  X=343875694.537  Y=226175794.072  Z=    0.000
+          at point  X=343876881.044  Y=226174607.565  Z=    0.000
+          at point  X=343901159.835  Y=226201325.810  Z=    0.000
+          at point  X=343901104.949  Y=226206472.682  Z=    0.000
+          at point  X=343898837.276  Y=226208618.872  Z=    0.000
+          at point  X=343895812.783  Y=226205423.181  Z=    0.000
+          at point  X=343894199.466  Y=226206950.071  Z=    0.000
+          at point  X=343894181.125  Y=226208669.940  Z=    0.000
+          at point  X=343891480.971  Y=226208669.940  Z=    0.000
+          at point  X=343891497.508  Y=226207119.239  Z=    0.000
+          at point  X=343888427.935  Y=226203875.917  Z=    0.000
+          at point  X=343885595.391  Y=226206556.718  Z=    0.000
+          at point  X=343880714.959  Y=226201400.035  Z=    0.000
+          at point  X=343878172.932  Y=226203805.882  Z=    0.000
+          at point  X=343873498.715  Y=226198867.086  Z=    0.000
+          at point  X=343868269.403  Y=226203816.257  Z=    0.000
+          at point  X=343865794.817  Y=226201201.601  Z=    0.000
+          at point  X=343860420.246  Y=226206288.249  Z=    0.000
+          at point  X=343858083.138  Y=226203818.851  Z=    0.000
+          at point  X=343854595.405  Y=226207119.741  Z=    0.000
+          at point  X=343854580.177  Y=226208547.650  Z=    0.000
+          at point  X=343852069.174  Y=226208520.872  Z=    0.000
+          at point  X=343849882.507  Y=226206210.432  Z=    0.000
+          at point  X=343847267.851  Y=226208685.017  Z=    0.000
+          at point  X=343845003.678  Y=226206292.684  Z=    0.000
+          at point  X=343845065.143  Y=226200528.989  Z=    0.000
+          at point  X=343867793.392  Y=226179018.324  Z=    0.000
+          at point  X=343862938.928  Y=226173889.078  Z=    0.000
+          at point  X=343862942.197  Y=226173888.924  Z=    0.000
+#ENTRANCES
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 394b87
+              Open
+    Constant width     0.000
+              area   0.000
+            length   4763.402
+          at point  X=343875600.000  Y=226172400.000  Z=    0.000
+          at point  X=343871900.000  Y=226175400.000  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a3f
+              Open
+    Constant width     0.000
+              area   0.000
+            length   2000.000
+          at point  X=343890300.000  Y=226208000.000  Z=    0.000
+          at point  X=343892300.000  Y=226208000.000  Z=    2
+                  LWPOLYLINE  Layer: "PATH-BUILDING-ENTRANCES"
+                            Space: Model space
+                   Handle = 3a0a3e
+              Open
+    Constant width     0.000
+              area   0.000
+            length   1899.999
+          at point  X=343855899.999  Y=226208000.000  Z=    0.000
+          at point  X=343854000.000  Y=226208000.000  Z=    2
