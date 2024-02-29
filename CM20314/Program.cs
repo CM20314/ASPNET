@@ -25,17 +25,17 @@ builder.Services.AddSingleton<RoutingService>();
 var app = builder.Build();
 
 // Initialise Database (on first run) and MapDataService
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    ApplicationDbContext applicationDbContext = services.GetRequiredService<ApplicationDbContext>();
-    services.GetRequiredService<DbInitialiser>().Initialise(applicationDbContext);
-    services.GetRequiredService<MapDataService>().Initialise(applicationDbContext);
-    services.GetRequiredService<RoutingService>().Initialise(
-        services.GetRequiredService<PathfindingService>(),
-        services.GetRequiredService<MapDataService>(),
-        applicationDbContext);
-}
+//using (var scope = app.Services.CreateScope())
+//{
+//    var services = scope.ServiceProvider;
+//    ApplicationDbContext applicationDbContext = services.GetRequiredService<ApplicationDbContext>();
+//    services.GetRequiredService<DbInitialiser>().Initialise(applicationDbContext);
+//    services.GetRequiredService<MapDataService>().Initialise(applicationDbContext);
+//    services.GetRequiredService<RoutingService>().Initialise(
+//        services.GetRequiredService<PathfindingService>(),
+//        services.GetRequiredService<MapDataService>(),
+//        applicationDbContext);
+//}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

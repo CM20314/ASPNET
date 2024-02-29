@@ -11,16 +11,13 @@ namespace CM20314.Data
 {
     public class DbInitialiser
     {
-        private readonly FileService _fileService;
+        private FileService _fileService;
         private ApplicationDbContext _context;
 
-        public DbInitialiser(FileService fileService)
-        {
-            _fileService = fileService;
-        }
-        public void Initialise(ApplicationDbContext context)
+        public void Initialise(ApplicationDbContext context, FileService fileService)
         {
             _context = context;
+            _fileService = fileService;
             switch (Constants.STARTUP_MODE)
             {
                 case StartupMode.UseExistingDb:
@@ -42,7 +39,8 @@ namespace CM20314.Data
             // Open buildings floors folders one by one:
             ProcessBuildings();
             // Ensure coordinates are adjusted such that the top left corner is the origin
-            StandardiseCoordinates();
+            var coords = StandardiseCoordinates();
+            ComputeNodeArcCosts(coords);
         }
 
         // Opens a path file, extracts coordinates and creates Nodes and NodeArcs.
@@ -64,14 +62,21 @@ namespace CM20314.Data
                                     .Select(coord => double.Parse(coord.Split('=')[1])).ToList();
 
                     Coordinate coordinate = new Coordinate(coordinates[0] + mapOffset.OffX, coordinates[1] + mapOffset.OffY);
-  
-                    Coordinate? matchingCoordinate = _context.Coordinate.AsEnumerable().FirstOrDefault(c => c.X == coordinate.X && c.Y == coordinate.Y);
+                    
+                    if(coordinate.X == 343645573.429 || coordinate.X == 343676900)
+                    {
+
+                    }
+                    Coordinate? matchingCoordinate = _context.Coordinate.FirstOrDefault(c => c.X == coordinate.X && c.Y == coordinate.Y);
                     
                     if(matchingCoordinate == null) {
-                        System.Diagnostics.Debug.WriteLine("Matching coordinate");
                         _context.Coordinate.Add(coordinate);
                         _context.SaveChanges();
                         matchingCoordinate = coordinate;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Matching coordinate");
                     }
 
                     Node? matchingNode = _context.Node.FirstOrDefault(n => n.CoordinateId == matchingCoordinate.Id);
@@ -261,10 +266,10 @@ namespace CM20314.Data
                     _context.Node.Add(entranceNode);
                     _context.SaveChanges();
 
-                    Coordinate? coord = _context.Coordinate.AsEnumerable().FirstOrDefault(c => c.X == entranceCoordinates[i].X && c.Y == entranceCoordinates[i].Y);
+                    Coordinate? coord = _context.Coordinate.FirstOrDefault(c => c.X == entranceCoordinates[i].X && c.Y == entranceCoordinates[i].Y);
                     if (coord != null)
                     {
-                        Node? sitewidePathNode = _context.Node.AsEnumerable().FirstOrDefault(n => n.CoordinateId == coord.Id);
+                        Node? sitewidePathNode = _context.Node.FirstOrDefault(n => n.CoordinateId == coord.Id);
                         if (sitewidePathNode != null)
                         {
                             sitewidePathNode.MatchHandle = entranceCoordinates[i].MatchHandle;
@@ -289,7 +294,7 @@ namespace CM20314.Data
                 List<int> floors = Constants.SourceFilePaths.BUILDING_FLOORS.ContainsKey(buildingName) ?
                     Constants.SourceFilePaths.BUILDING_FLOORS[buildingName] : new List<int>();
                 if (floors.Count() == 0) continue;
-                Building building = _context.Building.AsEnumerable().First(b => b.ShortName.Equals(buildingName));
+                Building building = _context.Building.First(b => b.ShortName.Equals(buildingName));
 
                 foreach (int floor in floors)
                 {
@@ -364,7 +369,7 @@ namespace CM20314.Data
                 }
             }
 
-            Node matchingNode = _context.Node.AsEnumerable().First(n => n.MatchHandle == currentLineCoords[1].MatchHandle);
+            Node matchingNode = _context.Node.First(n => n.MatchHandle.Equals(currentLineCoords[1].MatchHandle));
 
             Coordinate n1coordinate = _context.Coordinate.First(c => c.Id == matchingNode.CoordinateId);
 
@@ -496,28 +501,40 @@ namespace CM20314.Data
             // first should coincide with inside path node
             // second should coincide with sitewide path node
 
-            Node outsideNode = _context.Node.AsEnumerable().First(n => n.MatchHandle == coordinates[0].MatchHandle);
+            Node outsideNode = _context.Node.First(n => n.MatchHandle.Equals(coordinates[0].MatchHandle));
 
             //Coordinate outsideNodeCoord = _context.Coordinate.AsEnumerable().First(c => c.getX() == coordinates[1].getX() && c.getY() == coordinates[1].getY());
             //Node? outsideNode = _context.Node.AsEnumerable().FirstOrDefault(n => n.getCoordinateId() == outsideNodeCoord.Id);
 
-            Node insideNode = _context.Node.AsEnumerable().Last(n => n.MatchHandle == coordinates[0].MatchHandle);
+            Node insideNode = _context.Node.OrderBy(n => n.Id).Last(n => n.MatchHandle.Equals(coordinates[0].MatchHandle));
 
-            double cost = Coordinate.CalculateEucilidianDistance(
-            _context.Coordinate.First(c => c.Id == insideNode.CoordinateId),
-            _context.Coordinate.First(c => c.Id == outsideNode.CoordinateId)
-            );
-            NodeArc nodeArc = new NodeArc(insideNode, outsideNode, false, cost, NodeArcType.Path, false);
+            NodeArc nodeArc = new NodeArc(insideNode, outsideNode, false, 0, NodeArcType.Path, false);
             _context.NodeArc.Add(nodeArc);
             _context.SaveChanges();
             System.Diagnostics.Debug.WriteLine("Added external link node arc");
         }
 
         // Scale and offset coordinates for use in client app
-        private void StandardiseCoordinates()
+        private List<Coordinate> StandardiseCoordinates()
         {
             List<Coordinate> coordinates = _context.Coordinate.ToList();
             StandardiseCoordinates(coordinates);
+            _context.SaveChanges();
+            return coordinates;
+        }
+
+        private void ComputeNodeArcCosts(List<Coordinate> coordinates)
+        {
+            List<NodeArc> nodeArcs = _context.NodeArc.ToList();
+            foreach(NodeArc arc in nodeArcs)
+            {
+                arc.Node1 = _context.Node.First(n => n.Id == arc.Node1Id);
+                arc.Node2 = _context.Node.First(n => n.Id == arc.Node2Id);
+                arc.Node1.Coordinate = coordinates.First(c => c.Id == arc.Node1.CoordinateId);
+                arc.Node2.Coordinate = coordinates.First(c => c.Id == arc.Node2.CoordinateId);
+
+                arc.Cost = Coordinate.CalculateEucilidianDistance(arc.Node1.Coordinate, arc.Node2.Coordinate);
+            }
             _context.SaveChanges();
         }
         public static void StandardiseCoordinates(List<Coordinate> coords)

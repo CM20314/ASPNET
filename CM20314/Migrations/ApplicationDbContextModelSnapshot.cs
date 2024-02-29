@@ -78,6 +78,10 @@ namespace CM20314.Migrations
                     b.Property<int>("Floor")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("MatchHandle")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasDiscriminator().HasValue("Node");
                 });
 

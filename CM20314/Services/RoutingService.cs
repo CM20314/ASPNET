@@ -60,7 +60,7 @@ namespace CM20314.Services
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 
-            for(int i = 0; i < nodeArcs.Count - 1; i++)
+            for(int i = 0; i < nodeArcs.Count; i++)
             {
                 NodeArcDirection nodeArcDirection = new NodeArcDirection(nodeArcs.ElementAt(i), GetDirectionStringForNodeArc(nodeArcs.ElementAt(i)));
                 arcDirections.Add(nodeArcDirection);
