@@ -45,7 +45,7 @@ namespace CM20314.Tests
             // Test the algorithm with a graph that contains a solution (shouldn't work for directed, should for undirected)
             System.Diagnostics.Debug.WriteLine("FindPath2: ");
             
-            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[1], Models.AccessibilityLevel.None,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[1], new List<Node>() { TestData.Nodes.testNodes[1] }, Models.AccessibilityLevel.None,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[2], TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1] };
 
@@ -64,7 +64,7 @@ namespace CM20314.Tests
             // Test the algorithm when the start node and end node are the same
             System.Diagnostics.Debug.WriteLine("FindPath3: ");
             
-            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[5], Models.AccessibilityLevel.None,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[5], new List<Node>() { TestData.Nodes.testNodes[5] }, Models.AccessibilityLevel.None,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[5] };
 
@@ -78,7 +78,7 @@ namespace CM20314.Tests
             // Test the algorithm with a graph that doesn't have the solution (test with directed graph; should return an empty list, otherwise it will work with undirected)
             System.Diagnostics.Debug.WriteLine("FindPath4: ");
             
-            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[10], Models.AccessibilityLevel.None,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[10], new List<Node>() { TestData.Nodes.testNodes[10] }, Models.AccessibilityLevel.None,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { };
 
@@ -93,7 +93,7 @@ namespace CM20314.Tests
             
             TestData.Nodes.testNodeArcs[2].StepFree = false;
             TestData.Nodes.testNodeArcs[3].StepFree = false;
-            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.StepFree,
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], new List<Node>() { TestData.Nodes.testNodes[9] }, Models.AccessibilityLevel.StepFree,
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
 
