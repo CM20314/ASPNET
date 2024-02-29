@@ -123,3 +123,4 @@ src/.vs/config/applicationhost.config
 
 CM20314/Data/CM_DB.db-shm
 CM20314/Data/CM_DB.db-wal
+CM20314/Data/CM_DB.db

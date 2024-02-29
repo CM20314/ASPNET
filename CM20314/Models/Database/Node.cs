@@ -11,7 +11,7 @@ namespace CM20314.Models.Database
         public int Floor { get; set; }
         public int CoordinateId { get; set; }
         public int BuildingId { get; set; }
-        [NotMapped]
+
         public string MatchHandle { get; set; }
         [NotMapped]
         public Coordinate Coordinate { get; set; }

@@ -13,15 +13,35 @@ namespace CM20314.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        private readonly ApplicationDbContext _context;
         private readonly RoutingService _routingService;
+        private readonly PathfindingService _pathfindingService;
         private readonly MapDataService _mapDataService;
+        private readonly FileService _fileService;
+        private readonly DbInitialiser _dbInitialiser;
         public HomeController(
+            ApplicationDbContext context,
             RoutingService routingService,
-            MapDataService mapDataService)
+            PathfindingService pathfindingService,
+            FileService fileService,
+            MapDataService mapDataService,
+            DbInitialiser dbInitialiser)
         {
             // Acquire services via dependency injection
+            _context = context;
             _routingService = routingService;
             _mapDataService = mapDataService;
+            _pathfindingService = pathfindingService;
+            _fileService = fileService;
+            _dbInitialiser = dbInitialiser;
+        }
+
+        [HttpPost("init")]
+        public void Initialise()
+        {
+            _dbInitialiser.Initialise(_context, _fileService);
+            _mapDataService.Initialise(_context);
+            _routingService.Initialise(_pathfindingService, _mapDataService, _context);
         }
 
         // POST api/directions

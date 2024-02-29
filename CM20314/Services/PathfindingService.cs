@@ -12,11 +12,11 @@ namespace CM20314.Services
             Node targetNode = RoutingService.GetNearestNodeToCoordinate(startNode.Coordinate, allNodes.Where(n => n.BuildingId == endContainer.Id).ToList());
 
             return AStarSearch(
-                startNode, targetNode, accessLevel, allNodes, allNodeArcs).ToList();
+                startNode, targetNode, allNodes.Where(n => n.BuildingId == endContainer.Id).ToList(), accessLevel, allNodes, allNodeArcs).ToList();
         }
 
-        // Uses Dijkstra's Algorithm to perform path search
-        public static List<NodeArc> AStarSearch(Node startNode, Node goalNode, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> arcs)
+        // Uses A* Algorithm to perform path search
+        public static List<NodeArc> AStarSearch(Node startNode, Node goalNode, List<Node> goalNodes, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> arcs)
         {
             //return arcs.ToList();
             // Initialize open and closed sets
@@ -48,12 +48,14 @@ namespace CM20314.Services
                 openSet.Remove(currentNode);
 
                 // Check if the goal is reached
-                if (currentNode == goalNode)
+                if (goalNodes.Select(n => n.Id).Contains(currentNode.Id))
                 {
                     // Reconstruct and return the path
-                    return ReconstructPath(startNode, goalNode, parents, arcs);
+                    return ReconstructPath(startNode, currentNode, parents, arcs);
                 }
 
+                System.Diagnostics.Debug.WriteLine($"Start node {startNode.Id} (x={startNode.Coordinate.X}, y={startNode.Coordinate.Y}");
+                System.Diagnostics.Debug.WriteLine($"Goal node {goalNode.Id} (x={goalNode.Coordinate.X}, y={goalNode.Coordinate.Y}");
                 // Generate q's successors and set their parents to q
                 foreach (var arc in arcs.FindAll(a => a.Node1 == currentNode || a.Node2 == currentNode ))
                 {
@@ -61,7 +63,11 @@ namespace CM20314.Services
 
                     // Skip if neighbor is in the closed set
                     if (closedSet.Contains(neighbor))
-                        continue;
+                            continue;
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Exploring node {neighbor.Id} (x={neighbor.Coordinate.X}, y={neighbor.Coordinate.Y}");
+                    }
 
                     // Compute g, h, f for successor
                     var tentativeGValue = gValues[currentNode] + arc.Cost;
@@ -131,7 +137,7 @@ namespace CM20314.Services
                 currentNode = nextNode;
                 nextNode = parents.ContainsKey(currentNode) ? parents[currentNode] : null;
             }
-
+                     
             return path;
         }
 
