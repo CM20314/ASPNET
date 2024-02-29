@@ -27,7 +27,7 @@ namespace CM20314.Tests
 
             // List is in reverse order; endNode, node_z, node_y, node_x, startNode
             // Print starting from the end of the list
-            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], Models.AccessibilityLevel.None, 
+            List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], new List<Node>() { TestData.Nodes.testNodes[9] }, Models.AccessibilityLevel.None, 
                 TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
 
