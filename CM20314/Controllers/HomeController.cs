@@ -36,12 +36,10 @@ namespace CM20314.Controllers
             _dbInitialiser = dbInitialiser;
         }
 
-        [HttpPost("init")]
+        [HttpGet("init")]
         public void Initialise()
         {
-            _dbInitialiser.Initialise(_context, _fileService);
-            _mapDataService.Initialise(_context);
-            _routingService.Initialise(_pathfindingService, _mapDataService, _context);
+            _dbInitialiser.SplitArcsAndConfigureJunctions(_context);
         }
 
         // POST api/directions

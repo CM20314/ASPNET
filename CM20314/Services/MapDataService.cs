@@ -15,7 +15,7 @@ namespace CM20314.Services
         private ApplicationDbContext _context;
 #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
-        private static MapResponseData mapResponseData = new MapResponseData(new List<Building>(), new List<Room>());
+        private static MapResponseData mapResponseData = new MapResponseData(new List<Building>(), new List<Room>(), new List<NodeArc>());
 
         public void Initialise(ApplicationDbContext context)
         {
@@ -43,6 +43,14 @@ namespace CM20314.Services
                 room.Polyline = new Polyline(polylineCoords);
                 mapResponseData.Rooms.Add(room);
             }
+            foreach(NodeArc arc in _context.NodeArc.Where(a => a.IsMapDisplayablePath).ToList())
+            {
+                arc.Node1 = _context.Node.First(n => n.Id == arc.Node1Id);
+                arc.Node2 = _context.Node.First(n => n.Id == arc.Node2Id);
+                arc.Node1.Coordinate = _context.Coordinate.First(c => c.Id == arc.Node1.CoordinateId);
+                arc.Node2.Coordinate = _context.Coordinate.First(c => c.Id == arc.Node2.CoordinateId);
+                mapResponseData.Paths.Add(arc);
+            }
         }
 
         public MapResponseData GetMapData(int buildingId)
@@ -51,8 +59,9 @@ namespace CM20314.Services
                 return mapResponseData;
             MapResponseData filteredResponseData = new MapResponseData(
                 mapResponseData.Buildings.Where(b => b.Id == buildingId).ToList(),
-                mapResponseData.Rooms.Where(r => r.BuildingId == buildingId).ToList()
-                );
+                mapResponseData.Rooms.Where(r => r.BuildingId == buildingId).ToList(),
+                mapResponseData.Paths
+                ) ;
             return filteredResponseData;
         }
 
@@ -76,7 +85,7 @@ namespace CM20314.Services
             // Search through each building
             foreach (Building building in buildings)
             {
-                String builLongName = building.LongName.Replace("'", string.Empty);
+                string builLongName = building.LongName.Replace("'", string.Empty);
                 builLongName = builLongName.ToUpper();
 
                 // If the input contains the building's long name or short name
@@ -105,9 +114,9 @@ namespace CM20314.Services
 
             foreach (Building building in buildings)
             {
-                String builLongName = building.LongName.Replace("'", string.Empty);
+                string builLongName = building.LongName.Replace("'", string.Empty);
                 builLongName = builLongName.ToUpper();
-                String builShortName = building.ShortName.Replace("'", string.Empty);
+                string builShortName = building.ShortName.Replace("'", string.Empty);
                 builShortName = builShortName.ToUpper();
 
                 if (builLongName.Contains(query) || builShortName.Contains(query))
@@ -118,9 +127,9 @@ namespace CM20314.Services
 
 
             foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms)) {
-                String roomLongName = room.LongName.Replace("'", string.Empty);
+                string roomLongName = room.LongName.Replace("'", string.Empty);
                 roomLongName = roomLongName.ToUpper();
-                String roomShortName = room.ShortName.Replace("'", string.Empty);
+                string roomShortName = room.ShortName.Replace("'", string.Empty);
                 roomShortName = roomShortName.ToUpper();
 
                 if (roomShortName.Contains(query) || roomLongName.Contains(query))

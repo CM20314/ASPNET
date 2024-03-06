@@ -4,7 +4,7 @@
 
 namespace CM20314.Migrations
 {
-    public partial class Initial : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,12 +28,15 @@ namespace CM20314.Migrations
                     Floor = table.Column<int>(type: "INTEGER", nullable: true),
                     CoordinateId = table.Column<int>(type: "INTEGER", nullable: true),
                     BuildingId = table.Column<int>(type: "INTEGER", nullable: true),
+                    MatchHandle = table.Column<string>(type: "TEXT", nullable: true),
+                    JunctionSize = table.Column<int>(type: "INTEGER", nullable: true),
                     Node1Id = table.Column<int>(type: "INTEGER", nullable: true),
                     Node2Id = table.Column<int>(type: "INTEGER", nullable: true),
                     StepFree = table.Column<bool>(type: "INTEGER", nullable: true),
                     Cost = table.Column<double>(type: "REAL", nullable: true),
                     NodeArcType = table.Column<int>(type: "INTEGER", nullable: true),
-                    RequiresUsageRequest = table.Column<bool>(type: "INTEGER", nullable: true)
+                    RequiresUsageRequest = table.Column<bool>(type: "INTEGER", nullable: true),
+                    IsMapDisplayablePath = table.Column<bool>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -12,13 +12,14 @@ namespace CM20314.Models.Database
         public bool RequiresUsageRequest { get; set; }
         [NotMapped] public Node Node1 { get; set; }
         [NotMapped] public Node Node2 { get; set; }
+        public bool IsMapDisplayablePath { get; set; }
 
 
         public NodeArc()
         {
 
         }
-        public NodeArc(Node n1, Node n2, bool stepFree, double cost, NodeArcType type, bool usageRequest, bool assignNodes = false)
+        public NodeArc(Node n1, Node n2, bool stepFree, double cost, NodeArcType type, bool usageRequest, bool isDisplayablePath, bool assignNodes)
         {
             Node1Id = n1.Id;
             Node2Id = n2.Id;
@@ -26,6 +27,7 @@ namespace CM20314.Models.Database
             Cost = cost;
             NodeArcType = (int)type;
             RequiresUsageRequest = usageRequest;
+            IsMapDisplayablePath = isDisplayablePath;
             if (assignNodes)
             {
                 Node1 = n1;

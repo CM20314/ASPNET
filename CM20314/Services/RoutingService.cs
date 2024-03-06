@@ -3,6 +3,9 @@ using CM20314.Data;
 using CM20314.Models;
 using CM20314.Models.Database;
 using KdTree;
+using Microsoft.Extensions.Configuration.UserSecrets;
+using System.Numerics;
+using System.Runtime.Intrinsics;
 
 namespace CM20314.Services
 {
@@ -58,11 +61,24 @@ namespace CM20314.Services
             var nodeArcs = _pathfindingService.FindShortestPath(
                 startNode, endContainer, requestData.AccessibilityLevel, allNodes, allNodeArcs);
 
+            if(nodeArcs.Count == 0)
+            {
+                return new RouteResponseData(new List<NodeArcDirection>(), false, "Unable to find a route.");
+            }
+
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 
             for(int i = 0; i < nodeArcs.Count; i++)
             {
-                NodeArcDirection nodeArcDirection = new NodeArcDirection(nodeArcs.ElementAt(i), GetDirectionStringForNodeArc(nodeArcs.ElementAt(i)));
+                NodeArcDirection nodeArcDirection;
+                if (i > 0)
+                {
+                    nodeArcDirection = new NodeArcDirection(nodeArcs.ElementAt(i), GetDirectionStringForNodeArc(nodeArcs.ElementAt(i - 1), nodeArcs.ElementAt(i)));
+                }
+                else
+                {
+                    nodeArcDirection = new NodeArcDirection(nodeArcs.ElementAt(i), string.Empty);
+                }
                 arcDirections.Add(nodeArcDirection);
             }
 
@@ -86,10 +102,90 @@ namespace CM20314.Services
             return nearestNode;
         }
 
-        public string GetDirectionStringForNodeArc(NodeArc arc)
+        public static string GetDirectionStringForNodeArc(NodeArc arc1, NodeArc arc2)
         {
-            // IMPLEMENT
-            return string.Empty;
+            if (arc1.Node1Id == arc2.Node1Id)
+            {
+                SwapNodeArcDirection(arc1);
+            }
+            else if (arc1.Node2Id == arc2.Node1Id)
+            {
+
+            }
+            else if (arc1.Node1Id == arc2.Node2Id)
+            {
+                SwapNodeArcDirection(arc1);
+                SwapNodeArcDirection(arc2);
+            }
+            else // if (arc1.Node2Id == arc2.Node2Id)
+            {
+                SwapNodeArcDirection(arc2);
+            }
+
+            float angle = -1 * AngleBetweenArcs(arc1, arc2);
+            System.Diagnostics.Debug.WriteLine($"Angle: {angle}");
+            double turningLeftThreshold = - Math.PI / 4 + 0.1;
+            double bearingLeftThreshold = - Math.PI / 6 + 0.01;
+            double bearingRightThreshold = Math.PI / 6 - 0.01;
+            double turningRightThreshold = Math.PI / 4 - 0.1;
+
+            if (angle < turningLeftThreshold)
+            {
+                return "Turn Right";
+            }
+            else if (angle < bearingLeftThreshold)
+            {
+                return arc1.Node2.JunctionSize > 2 ? "Bear Right" : string.Empty;
+            }
+            else if (angle > turningRightThreshold)
+            {
+                return "Turn Left";
+            }
+            else if (angle > bearingRightThreshold)
+            {
+                return arc1.Node2.JunctionSize > 2 ? "Bear Left" : string.Empty;
+            }
+            else
+            {
+                return arc1.Node2.JunctionSize > 4 ? "Go straight" : string.Empty;
+            }
+        }
+
+        private static NodeArc SwapNodeArcDirection(NodeArc arc)
+        {
+            Node tempNode = arc.Node1;
+            arc.Node1 = arc.Node2;
+            arc.Node2 = tempNode;
+            arc.Node1Id = arc.Node1.Id;
+            arc.Node2Id = arc.Node2.Id;
+            return arc;
+        }
+
+        private static float AngleBetweenArcs(NodeArc arc1, NodeArc arc2)
+        {
+            Vector2 vector1 = new Vector2((float)(arc1.Node2.Coordinate.X - arc1.Node1.Coordinate.X), (float)(arc1.Node2.Coordinate.Y - arc1.Node1.Coordinate.Y));
+            Vector2 vector2 = new Vector2((float)(arc2.Node2.Coordinate.X - arc2.Node1.Coordinate.X), (float)(arc2.Node2.Coordinate.Y - arc2.Node1.Coordinate.Y));
+            
+            // Calculate the dot product
+            float dotProduct = Vector2.Dot(vector1, vector2);
+
+            // Calculate the magnitudes of the vectors
+            float magnitude1 = vector1.Length();
+            float magnitude2 = vector2.Length();
+
+            // Calculate the cosine of the angle
+            float cosAngle = dotProduct / (magnitude1 * magnitude2);
+
+            // Calculate the angle in radians
+            float angleRad = (float)Math.Acos(cosAngle);
+
+            float crossProduct = vector1.X * vector2.Y - vector2.X * vector1.Y;
+            if (crossProduct < 0)
+            {
+                angleRad = -angleRad; // Adjust the angle sign based on the cross product
+            }
+
+            return angleRad;
         }
     }
 }

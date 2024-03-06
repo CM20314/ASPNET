@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CM20314.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240220214314_Initial")]
-    partial class Initial
+    [Migration("20240303003157_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -80,6 +80,13 @@ namespace CM20314.Migrations
                     b.Property<int>("Floor")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("JunctionSize")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("MatchHandle")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasDiscriminator().HasValue("Node");
                 });
 
@@ -89,6 +96,9 @@ namespace CM20314.Migrations
 
                     b.Property<double>("Cost")
                         .HasColumnType("REAL");
+
+                    b.Property<bool>("IsMapDisplayablePath")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("Node1Id")
                         .HasColumnType("INTEGER");

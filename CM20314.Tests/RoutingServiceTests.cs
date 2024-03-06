@@ -29,6 +29,77 @@ namespace CM20314.Tests
 
             Assert.AreEqual(outputNode.Id, expectedNode.Id);
         }
+
+        //[TestMethod]
+        public void Directions1()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[0], TestData.Nodes.n1_12);
+            string expectedDirection = "Bear Right";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
+
+        [TestMethod]
+        public void Directions2()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[0], TestData.Nodes.n2_12);
+            string expectedDirection = "Turn Right";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
+
+        [TestMethod]
+        public void Directions3()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[1], TestData.Nodes.n3_12);
+            string expectedDirection = "Turn Right";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
+
+        [TestMethod]
+        public void Directions4()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[2], TestData.Nodes.n4_12);
+            string expectedDirection = "Turn Right";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
+        //[TestMethod]
+        public void Directions5()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[0], TestData.Nodes.n1_13);
+            string expectedDirection = "Bear Right";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
+
+        [TestMethod]
+        public void Directions6()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[0], TestData.Nodes.n2_13);
+            string expectedDirection = "Turn Left";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
+
+        [TestMethod]
+        public void Directions7()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[1], TestData.Nodes.n3_13);
+            string expectedDirection = "Turn Left";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
+
+        [TestMethod]
+        public void Directions8()
+        {
+            string outputDirection = RoutingService.GetDirectionStringForNodeArc(TestData.Nodes.testNodeArcs[2], TestData.Nodes.n4_13);
+            string expectedDirection = "Turn Left";
+
+            Assert.IsTrue(outputDirection.Equals(expectedDirection));
+        }
     }
 }
 

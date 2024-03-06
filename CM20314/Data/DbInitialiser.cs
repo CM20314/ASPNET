@@ -31,9 +31,8 @@ namespace CM20314.Data
         private void GenerateDbFromFiles()
         {
             ClearDatabase();
-
             // Open paths file, create all Nodes and NodeArcs, without duplicating Nodes.
-            ProcessPaths(Constants.SourceFilePaths.PATHS_FILENAME, Constants.SourceFilePaths.FLOOR_OUTDOOR, 0, new MapOffset());     
+            ProcessPaths(Constants.SourceFilePaths.PATHS_FILENAME, Constants.SourceFilePaths.FLOOR_OUTDOOR, 0, new MapOffset(), true);     
             // Open buildings file one by one, create all Polylines and entrance Nodes and NodeArcs.
             ProcessBuildingBoundariesAndEntrances();
             // Open buildings floors folders one by one:
@@ -43,8 +42,36 @@ namespace CM20314.Data
             ComputeNodeArcCosts(coords);
         }
 
+        public void SplitArcsAndConfigureJunctions(ApplicationDbContext context)
+        {
+            _context = context;
+            List<Node> nodes = _context.Node.ToList();
+            List<NodeArc> nodeArcs = _context.NodeArc.ToList();
+            foreach (Node node in nodes)
+            {
+                node.Coordinate = _context.Coordinate.First(c => c.Id == node.CoordinateId);
+                SetNodeJunctionCount(node);
+            }
+            _context.SaveChanges();
+            foreach(NodeArc nodeArc in nodeArcs)
+            {
+                nodeArc.Node1 = nodes.First(a => a.Id == nodeArc.Node1Id);
+                nodeArc.Node2 = nodes.First(a => a.Id == nodeArc.Node2Id);
+                SplitAndSaveNodeArc(nodeArc);
+            }
+        }
+
+        private void SetNodeJunctionCount(Node node)
+        {
+            int count = _context.NodeArc.Where(a => a.Node1Id == node.Id || a.Node2Id == node.Id).Count();
+            if(count > 0)
+            {
+                node.JunctionSize = count;
+            }
+        }
+
         // Opens a path file, extracts coordinates and creates Nodes and NodeArcs.
-        private void ProcessPaths(string filename, int floorNum, int buildingId, MapOffset mapOffset)
+        private void ProcessPaths(string filename, int floorNum, int buildingId, MapOffset mapOffset, bool isDisplayablePath = false)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(filename);
             List<Node> currentLineNodes = new List<Node>();
@@ -63,10 +90,6 @@ namespace CM20314.Data
 
                     Coordinate coordinate = new Coordinate(coordinates[0] + mapOffset.OffX, coordinates[1] + mapOffset.OffY);
                     
-                    if(coordinate.X == 343645573.429 || coordinate.X == 343676900)
-                    {
-
-                    }
                     Coordinate? matchingCoordinate = _context.Coordinate.FirstOrDefault(c => c.X == coordinate.X && c.Y == coordinate.Y);
                     
                     if(matchingCoordinate == null) {
@@ -104,19 +127,19 @@ namespace CM20314.Data
                 }
                 else if (lines[i].StartsWith("LWPOLYLINE"))
                 {
-                    CreateNodeArcsForPath(currentLineNodes, stepFree);
+                    CreateNodeArcsForPath(currentLineNodes, stepFree, isDisplayablePath);
                     currentLineNodes.Clear();
                 }
                 else if (lines[i].StartsWith("# NOT STEP FREE"))
                 {
                     stepFree = false;
                 }
-                //CreateNodeArcsForPath(currentLineNodes, stepFree);
             }
+            CreateNodeArcsForPath(currentLineNodes, stepFree, isDisplayablePath);
         }
 
         // Creates NodeArcs for a given list of nodes
-        private void CreateNodeArcsForPath(List<Node> nodes, bool stepFree)
+        private void CreateNodeArcsForPath(List<Node> nodes, bool stepFree, bool isDisplayablePath)
         {
             for (int i = 0; i < nodes.Count - 1; i++)
             {
@@ -125,9 +148,10 @@ namespace CM20314.Data
                 NodeArc nodeArc = new NodeArc(
                     nodes[i], nodes[i + 1], stepFree,
                     Coordinate.CalculateEucilidianDistance(c1, c2),
-                    NodeArcType.Path, false, true);
+                    NodeArcType.Path, false, isDisplayablePath, true);
 
-                SplitAndSaveNodeArc(nodeArc);
+                _context.NodeArc.Add(nodeArc);
+                //SplitAndSaveNodeArc(nodeArc);
             }
             _context.SaveChanges();
         }
@@ -135,22 +159,26 @@ namespace CM20314.Data
         private void SplitAndSaveNodeArc(NodeArc nodeArc)
         {
             NodeArcSplitSet splitNodeArc = SplitNodeArc(nodeArc);
-            foreach(Node node in splitNodeArc.Nodes)
+            if(splitNodeArc.NodeArcs.Count > 1)
             {
-                _context.Coordinate.Add(node.Coordinate);
+                System.Diagnostics.Debug.WriteLine("Splitting arc");
+                _context.NodeArc.Remove(nodeArc);
+                foreach (Node node in splitNodeArc.Nodes)
+                {
+                    _context.Coordinate.Add(node.Coordinate);
+                    _context.SaveChanges();
+                    node.CoordinateId = node.Coordinate.Id;
+                }
+                _context.AddRange(splitNodeArc.Nodes);
                 _context.SaveChanges();
-                node.CoordinateId = node.Coordinate.Id;
-            }
-            _context.AddRange(splitNodeArc.Nodes);
-            _context.SaveChanges();
 
-            foreach(NodeArc arc in splitNodeArc.NodeArcs)
-            {
-                arc.Node1Id = arc.Node1.Id;
-                arc.Node2Id = arc.Node2.Id;
-                _context.NodeArc.Add(arc);
+                foreach (NodeArc arc in splitNodeArc.NodeArcs)
+                {
+                    arc.Node1Id = arc.Node1.Id;
+                    arc.Node2Id = arc.Node2.Id;
+                    _context.NodeArc.Add(arc);
+                }
             }
-            _context.SaveChanges();
         }
 
         public static NodeArcSplitSet SplitNodeArc(NodeArc nodeArc)
@@ -160,7 +188,6 @@ namespace CM20314.Data
             var distance = Coordinate.CalculateEucilidianDistance(nodeArc.Node1.Coordinate, nodeArc.Node2.Coordinate);
             if (distance > Constants.MAX_NODE_ARC_LENGTH)
             {
-                System.Diagnostics.Debug.WriteLine("Splitting NodeArc");
                 int numberOfIntermediateNodes = (int)Math.Floor(distance / Constants.MAX_NODE_ARC_LENGTH);
                 if (numberOfIntermediateNodes == 1)
                 {
@@ -184,7 +211,7 @@ namespace CM20314.Data
                 {
                     NodeArc newNodeArc = new NodeArc(allRelevantNodes.ElementAt(j), allRelevantNodes.ElementAt(j + 1), nodeArc.StepFree,
                         Coordinate.CalculateEucilidianDistance(allRelevantNodes.ElementAt(j).Coordinate, allRelevantNodes.ElementAt(j + 1).Coordinate),
-                        (NodeArcType)nodeArc.NodeArcType, nodeArc.RequiresUsageRequest, true);
+                        (NodeArcType)nodeArc.NodeArcType, nodeArc.RequiresUsageRequest, nodeArc.IsMapDisplayablePath, true);
                     set.NodeArcs.Add(newNodeArc);
                 }
             }
@@ -274,8 +301,8 @@ namespace CM20314.Data
                         {
                             sitewidePathNode.MatchHandle = entranceCoordinates[i].MatchHandle;
                             _context.Node.Update(sitewidePathNode);
-                            NodeArc entranceNodeArc = new NodeArc(sitewidePathNode, entranceNode, false,
-                                Coordinate.CalculateEucilidianDistance(entranceNodeCoord, coord), NodeArcType.Path, false);
+                            NodeArc entranceNodeArc = new NodeArc(sitewidePathNode, entranceNode, true,
+                                Coordinate.CalculateEucilidianDistance(entranceNodeCoord, coord), NodeArcType.Path, false, false, false);
                             _context.NodeArc.Add(entranceNodeArc);
                             _context.SaveChanges();
                         }
@@ -508,7 +535,7 @@ namespace CM20314.Data
 
             Node insideNode = _context.Node.OrderBy(n => n.Id).Last(n => n.MatchHandle.Equals(coordinates[0].MatchHandle));
 
-            NodeArc nodeArc = new NodeArc(insideNode, outsideNode, false, 0, NodeArcType.Path, false);
+            NodeArc nodeArc = new NodeArc(insideNode, outsideNode, true, 0, NodeArcType.Path, false, false, false);
             _context.NodeArc.Add(nodeArc);
             _context.SaveChanges();
             System.Diagnostics.Debug.WriteLine("Added external link node arc");

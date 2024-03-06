@@ -15,6 +15,7 @@ namespace CM20314.Models.Database
         public string MatchHandle { get; set; }
         [NotMapped]
         public Coordinate Coordinate { get; set; }
+        public int JunctionSize { get; set; } = 0;
 
         public Node()
         {

@@ -57,7 +57,8 @@ namespace CM20314.Services
                 System.Diagnostics.Debug.WriteLine($"Start node {startNode.Id} (x={startNode.Coordinate.X}, y={startNode.Coordinate.Y}");
                 System.Diagnostics.Debug.WriteLine($"Goal node {goalNode.Id} (x={goalNode.Coordinate.X}, y={goalNode.Coordinate.Y}");
                 // Generate q's successors and set their parents to q
-                foreach (var arc in arcs.FindAll(a => a.Node1 == currentNode || a.Node2 == currentNode ))
+                var neighbourArcs = arcs.FindAll(a => a.Node1 == currentNode || a.Node2 == currentNode);
+                foreach (var arc in neighbourArcs)
                 {
                     var neighbor = (arc.Node1.Id == currentNode.Id) ? arc.Node2 : arc.Node1;
 
@@ -130,6 +131,8 @@ namespace CM20314.Services
                     Node temp = arc2.Node1;
                     arc2.Node1 = arc2.Node2;
                     arc2.Node2 = temp;
+                    arc1.Node1Id = arc1.Node1.Id;
+                    arc2.Node2Id = arc2.Node2.Id;
                 }
 
                 path.Insert(0, arc2);

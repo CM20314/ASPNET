@@ -78,6 +78,9 @@ namespace CM20314.Migrations
                     b.Property<int>("Floor")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("JunctionSize")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("MatchHandle")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -91,6 +94,9 @@ namespace CM20314.Migrations
 
                     b.Property<double>("Cost")
                         .HasColumnType("REAL");
+
+                    b.Property<bool>("IsMapDisplayablePath")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("Node1Id")
                         .HasColumnType("INTEGER");

@@ -37,8 +37,8 @@ namespace CM20314.Tests
         public void NodeArcSplitTest()
         {
             NodeArcSplitSet result = DbInitialiser.SplitNodeArc(TestData.Nodes.longNodeArc1);
-            Assert.AreEqual(result.Nodes.Count(), 2);
-            Assert.AreEqual(result.NodeArcs.Count(), 3);
+            Assert.AreEqual(result.Nodes.Count(), 714);
+            Assert.AreEqual(result.NodeArcs.Count(), 715);
         }
     }
 }
