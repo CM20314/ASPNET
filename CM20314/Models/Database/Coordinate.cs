@@ -10,7 +10,7 @@ namespace CM20314.Models.Database
         [NotMapped]
         public int Z { get; set; }
         [NotMapped]
-        public string MatchHandle { get; set; }
+        public string? MatchHandle { get; set; }
 
         public Coordinate()
         {
