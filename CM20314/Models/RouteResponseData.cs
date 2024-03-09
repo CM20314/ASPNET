@@ -6,12 +6,14 @@ namespace CM20314.Models
 		public List<NodeArcDirection> NodeArcDirections { get; set; }
         public bool Success { get; set; }
 		public string ErrorMessage { get; set; }
+        public string Destination { get; set; }
 
-		public RouteResponseData(List<NodeArcDirection> nodeArcDirections, bool success, string errorMessage)
+        public RouteResponseData(List<NodeArcDirection> nodeArcDirections, bool success, string errorMessage, string destination)
 		{
 			NodeArcDirections = nodeArcDirections;
 			Success = success;
 			ErrorMessage = errorMessage;
+			Destination = destination;
 		}
 	}
 }

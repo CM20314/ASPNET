@@ -52,10 +52,10 @@ namespace CM20314.Services
         {
             // Validates request and then calls PathfindingService methods
             Container endContainer = _mapDataService.SearchContainers(requestData.EndContainerName).FirstOrDefault();
-            if(endContainer == null) return new RouteResponseData(new List<NodeArcDirection>(), false, "Cannot find destination");
+            if(endContainer == null) return new RouteResponseData(new List<NodeArcDirection>(), false, "Cannot find destination", string.Empty);
 
             if (requestData.StartCoordinate == null)
-                return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.");
+                return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.", string.Empty);
             Node startNode = GetNearestNodeToCoordinate(requestData.StartCoordinate);
 
             var nodeArcs = _pathfindingService.FindShortestPath(
@@ -63,7 +63,7 @@ namespace CM20314.Services
 
             if(nodeArcs.Count == 0)
             {
-                return new RouteResponseData(new List<NodeArcDirection>(), false, "Unable to find a route.");
+                return new RouteResponseData(new List<NodeArcDirection>(), false, "Unable to find a route.", string.Empty);
             }
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
@@ -82,7 +82,7 @@ namespace CM20314.Services
                 arcDirections.Add(nodeArcDirection);
             }
 
-            return new RouteResponseData(arcDirections, true, string.Empty);
+            return new RouteResponseData(arcDirections, true, string.Empty, endContainer.ShortName);
         }
 
         public Node GetNearestNodeToCoordinate(Coordinate coords)
