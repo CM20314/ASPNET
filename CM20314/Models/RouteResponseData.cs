@@ -1,6 +1,9 @@
 ﻿using System;
 namespace CM20314.Models
 {
+	/// <summary>
+	/// Represents a computed route response
+	/// </summary>
 	public class RouteResponseData
 	{
 		public List<NodeArcDirection> NodeArcDirections { get; set; }

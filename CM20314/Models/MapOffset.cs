@@ -1,5 +1,8 @@
 ﻿namespace CM20314.Models
 {
+    /// <summary>
+    /// Represents data to translate and scale coordinates to map from one space to another
+    /// </summary>
     public class MapOffset
     {
         public double OffX { get; set; }

@@ -8,22 +8,20 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CM20314.Controllers
 {
-    // Home controller responsible for all calls to the API
+    /// <summary>
+    /// Home controller responsible for all calls to the API
+    /// </summary>
     [Route("api")]
     [ApiController]
     public class HomeController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
         private readonly RoutingService _routingService;
-        private readonly PathfindingService _pathfindingService;
         private readonly MapDataService _mapDataService;
-        private readonly FileService _fileService;
         private readonly DbInitialiser _dbInitialiser;
         public HomeController(
             ApplicationDbContext context,
             RoutingService routingService,
-            PathfindingService pathfindingService,
-            FileService fileService,
             MapDataService mapDataService,
             DbInitialiser dbInitialiser)
         {
@@ -31,18 +29,21 @@ namespace CM20314.Controllers
             _context = context;
             _routingService = routingService;
             _mapDataService = mapDataService;
-            _pathfindingService = pathfindingService;
-            _fileService = fileService;
             _dbInitialiser = dbInitialiser;
         }
 
-        [HttpGet("init")]
-        public void Initialise()
-        {
-            _dbInitialiser.SplitArcsAndConfigureJunctions(_context);
-        }
+        // For testing
+        //[HttpGet("init")]
+        //public void Initialise()
+        //{
+        //    _dbInitialiser.SplitArcsAndConfigureJunctions(_context);
+        //}
 
-        // POST api/directions
+        /// <summary>
+        /// POST api/directions
+        /// </summary>
+        /// <param name="requestData">Route request data (e.g. start, end)</param>
+        /// <returns>RouteResponseData object containing directions</returns>
         [HttpPost("directions")]
         public RouteResponseData GetDirections([FromBody] RouteRequestData requestData)
         {
@@ -50,7 +51,11 @@ namespace CM20314.Controllers
             return _routingService.ComputeRoute(requestData);
         }
 
-        // GET api/map
+        /// <summary>
+        /// GET api/map
+        /// </summary>
+        /// <param name="buildingId">Building to view (default = all buildings)</param>
+        /// <returns>Map data</returns>
         [HttpGet("map")]
         public MapResponseData GetMap(int buildingId = 0)
         {
@@ -58,7 +63,11 @@ namespace CM20314.Controllers
             return _mapDataService.GetMapData(buildingId);
         }
 
-        // GET api/search?query=SEARCH_QUERY
+        /// <summary>
+        /// GET api/search?query=SEARCH_QUERY
+        /// </summary>
+        /// <param name="query">Search query</param>
+        /// <returns>Search results</returns>
         [HttpGet("search")]
         public SearchResponseData SearchContainers(string query)
         {

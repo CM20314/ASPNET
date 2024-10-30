@@ -8,15 +8,21 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CM20314.Services
 {
-    // Handles map data search and fetch operations
+    /// <summary>
+    /// Handles map data search and fetch operations
+    /// </summary>
 	public class MapDataService
     {
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        #pragma warning disable CS8618
         private ApplicationDbContext _context;
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        #pragma warning restore CS8618
 
         private static MapResponseData mapResponseData = new MapResponseData(new List<Building>(), new List<Room>(), new List<NodeArc>());
 
+        /// <summary>
+        /// Initialise the map data service by making an in-memory copy of the buildings, rooms and paths
+        /// </summary>
+        /// <param name="context">DB context</param>
         public void Initialise(ApplicationDbContext context)
         {
             _context = context;
@@ -53,6 +59,11 @@ namespace CM20314.Services
             }
         }
 
+        /// <summary>
+        /// Returns the map for a particular building (or all buildings if 0)
+        /// </summary>
+        /// <param name="buildingId">Building ID to view</param>
+        /// <returns>Map data</returns>
         public MapResponseData GetMapData(int buildingId)
         {
             if(buildingId == 0)
@@ -65,11 +76,23 @@ namespace CM20314.Services
             return filteredResponseData;
         }
 
+        /// <summary>
+        /// Searches containers for a query match
+        /// </summary>
+        /// <param name="query">Search query</param>
+        /// <returns>List of matching containers (buildings or rooms)</returns>
         public List<Container> SearchContainers(string query)
         {
             return SearchContainers(query, mapResponseData.Buildings, mapResponseData.Rooms);
         }
 
+        /// <summary>
+        /// Searches containers for a query match
+        /// </summary>
+        /// <param name="query">Search query</param>
+        /// <param name="buildings">Search buildings</param>
+        /// <param name="rooms">Search rooms</param>
+        /// <returns>List of matching containers (buildings or rooms)</returns>
         public List<Container> SearchContainers(string query, List<Building> buildings, List<Room> rooms)
         {
             if (string.IsNullOrWhiteSpace(query))
@@ -111,7 +134,7 @@ namespace CM20314.Services
                 }
             }
 
-
+            // Deal with apostrophes (buildings)
             foreach (Building building in buildings)
             {
                 string builLongName = building.LongName.Replace("'", string.Empty);
@@ -125,7 +148,7 @@ namespace CM20314.Services
                 }
             }
 
-
+            // Deal with apostrophes (rooms)
             foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms)) {
                 string roomLongName = room.LongName.Replace("'", string.Empty);
                 roomLongName = roomLongName.ToUpper();
@@ -138,6 +161,7 @@ namespace CM20314.Services
                 }
             }
 
+            // Deal with room abbreviations
             foreach (Room room in rooms.Where(r => !r.ExcludeFromRooms))
             {
                 if (query.Contains(room.ShortName.ToUpper()) || query.Contains(room.LongName.ToUpper()))
@@ -146,6 +170,7 @@ namespace CM20314.Services
                 }
             }
 
+            // Return first 20
             return containers.Take(20).ToList();
         }
     }

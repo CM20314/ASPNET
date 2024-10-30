@@ -1,8 +1,10 @@
 ﻿using CM20314.Models.Database;
-using System;
-using System.ComponentModel;
+
 namespace CM20314.Models
 {
+    /// <summary>
+    /// Represents map data to return to the client
+    /// </summary>
 	public class MapResponseData
 	{
         public List<Building> Buildings { get; set; }

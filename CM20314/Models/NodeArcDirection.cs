@@ -2,6 +2,9 @@
 
 namespace CM20314.Models
 {
+    /// <summary>
+    /// A node arc with an additional direction command (e.g. "Turn right")
+    /// </summary>
     public class NodeArcDirection
     {
         public NodeArc NodeArc { get; set; }

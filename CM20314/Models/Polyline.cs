@@ -2,6 +2,9 @@
 using System;
 namespace CM20314.Models
 {
+    /// <summary>
+    /// A list of coordinates that successively form a line
+    /// </summary>
     public class Polyline
     {
         public List<Coordinate> Coordinates { get; set; }

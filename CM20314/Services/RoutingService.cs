@@ -9,16 +9,26 @@ using System.Runtime.Intrinsics;
 
 namespace CM20314.Services
 {
-    // Handles routing at a higher level by using the PathfindingService
+    /// <summary>
+    /// Handles routing at a higher level by using the PathfindingService
+    /// </summary>
     public class RoutingService
     {
+        #pragma warning disable CS8618
         private PathfindingService _pathfindingService;
         private MapDataService _mapDataService;
         private ApplicationDbContext _context;
         private KDTree<Node> kdTree;
         private List<Node> allNodes;
         private List<NodeArc> allNodeArcs;
+        #pragma warning restore CS8618
 
+        /// <summary>
+        /// Initialise routing service by creating KD tree from map data
+        /// </summary>
+        /// <param name="pathfindingService">Pathfinding service instance</param>
+        /// <param name="mapDataService">Map data service instance</param>
+        /// <param name="context">DB context</param>
         public void Initialise(
             PathfindingService pathfindingService,
             MapDataService mapDataService,
@@ -48,16 +58,22 @@ namespace CM20314.Services
             kdTree = KDTree.FromData(points, allNodesArr);
         }
 
+        /// <summary>
+        /// Computes a route for a given route request
+        /// </summary>
+        /// <param name="requestData">Route request data</param>
+        /// <returns>Route data</returns>
         public RouteResponseData ComputeRoute(RouteRequestData requestData)
         {
             // Validates request and then calls PathfindingService methods
-            Container endContainer = _mapDataService.SearchContainers(requestData.EndContainerName).FirstOrDefault();
+            Container? endContainer = _mapDataService.SearchContainers(requestData.EndContainerName).FirstOrDefault();
             if(endContainer == null) return new RouteResponseData(new List<NodeArcDirection>(), false, "Cannot find destination", string.Empty);
 
             if (requestData.StartCoordinate == null)
                 return new RouteResponseData(new List<NodeArcDirection>(), false, "No start location specified.", string.Empty);
             Node startNode = GetNearestNodeToCoordinate(requestData.StartCoordinate);
 
+            // Find shortest path
             var nodeArcs = _pathfindingService.FindShortestPath(
                 startNode, endContainer, requestData.AccessibilityLevel, allNodes, allNodeArcs);
 
@@ -68,6 +84,7 @@ namespace CM20314.Services
 
             List<NodeArcDirection> arcDirections = new List<NodeArcDirection>();
 
+            // Loop through node arcs (path) and add direction commands
             for(int i = 0; i < nodeArcs.Count; i++)
             {
                 NodeArcDirection nodeArcDirection;
@@ -85,13 +102,22 @@ namespace CM20314.Services
             return new RouteResponseData(arcDirections, true, string.Empty, endContainer.ShortName);
         }
 
+        /// <summary>
+        /// Finds nearest node to user location coordinate
+        /// </summary>
+        /// <param name="coords">User location</param>
+        /// <returns>Nearest node</returns>
         public Node GetNearestNodeToCoordinate(Coordinate coords)
         {
             Node nearestNode = kdTree.Nearest(new double[] { coords.X, coords.Y }).Value;
             return nearestNode;
         }
 
-        // For unit testing
+        /// <summary>
+        /// [FOR UNIT TESTING] Finds nearest node to user location coordinate
+        /// </summary>
+        /// <param name="coords">User location</param>
+        /// <returns>Nearest node</returns>
         public static Node GetNearestNodeToCoordinate(Coordinate coords, List<Node> nodes)
         {
             Node[] allNodes = nodes.ToArray();
@@ -102,6 +128,12 @@ namespace CM20314.Services
             return nearestNode;
         }
 
+        /// <summary>
+        /// Determines direction string for a node arc based on the angle
+        /// </summary>
+        /// <param name="arc1">First arc</param>
+        /// <param name="arc2">Second (successive) arc</param>
+        /// <returns></returns>
         public static string GetDirectionStringForNodeArc(NodeArc arc1, NodeArc arc2)
         {
             if (arc1.Node1Id == arc2.Node1Id)
@@ -151,6 +183,11 @@ namespace CM20314.Services
             }
         }
 
+        /// <summary>
+        /// Swaps the direction of an arc
+        /// </summary>
+        /// <param name="arc">Arc to swap</param>
+        /// <returns>Swapped arc</returns>
         private static NodeArc SwapNodeArcDirection(NodeArc arc)
         {
             Node tempNode = arc.Node1;
@@ -161,6 +198,12 @@ namespace CM20314.Services
             return arc;
         }
 
+        /// <summary>
+        /// Calculates the angle between two arcs
+        /// </summary>
+        /// <param name="arc1">Arc 1</param>
+        /// <param name="arc2">Arc 2</param>
+        /// <returns>Angle (radians)</returns>
         private static float AngleBetweenArcs(NodeArc arc1, NodeArc arc2)
         {
             Vector2 vector1 = new Vector2((float)(arc1.Node2.Coordinate.X - arc1.Node1.Coordinate.X), (float)(arc1.Node2.Coordinate.Y - arc1.Node1.Coordinate.Y));

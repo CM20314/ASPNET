@@ -2,6 +2,9 @@
 
 namespace CM20314.Services
 {
+    /// <summary>
+    /// Application constants
+    /// </summary>
     public static class Constants
     {
         public static StartupMode STARTUP_MODE = StartupMode.UseExistingDb;

@@ -9,11 +9,21 @@ using System.Linq;
 
 namespace CM20314.Data
 {
+    /// <summary>
+    /// Responsible for seeding the database using files from the Raw/ directory
+    /// </summary>
     public class DbInitialiser
     {
+        #pragma warning disable CS8618
         private FileService _fileService;
         private ApplicationDbContext _context;
+        #pragma warning restore CS8618
 
+        /// <summary>
+        /// Initialises the DbInitialiser service
+        /// </summary>
+        /// <param name="context">DB Context to access database</param>
+        /// <param name="fileService">File service to manipulate input files</param>
         public void Initialise(ApplicationDbContext context, FileService fileService)
         {
             _context = context;
@@ -28,6 +38,9 @@ namespace CM20314.Data
             }
         }
 
+        /// <summary>
+        /// Clears and seeds the database from raw file information
+        /// </summary>
         private void GenerateDbFromFiles()
         {
             ClearDatabase();
@@ -39,12 +52,15 @@ namespace CM20314.Data
             ProcessBuildings();
             // Ensure coordinates are adjusted such that the top left corner is the origin
             var coords = StandardiseCoordinates();
+            // Computes arc costs for pathfinding calculations
             ComputeNodeArcCosts(coords);
         }
 
-        public void SplitArcsAndConfigureJunctions(ApplicationDbContext context)
+        /// <summary>
+        /// Traverses nodes and node arcs, splitting long node arcs into shorter ones
+        /// </summary>
+        public void SplitArcsAndConfigureJunctions()
         {
-            _context = context;
             List<Node> nodes = _context.Node.ToList();
             List<NodeArc> nodeArcs = _context.NodeArc.ToList();
             foreach (Node node in nodes)
@@ -61,6 +77,10 @@ namespace CM20314.Data
             }
         }
 
+        /// <summary>
+        /// Computes number of junctions encountered by each node
+        /// </summary>
+        /// <param name="node">Node to analyse</param>
         private void SetNodeJunctionCount(Node node)
         {
             int count = _context.NodeArc.Where(a => a.Node1Id == node.Id || a.Node2Id == node.Id).Count();
@@ -70,7 +90,14 @@ namespace CM20314.Data
             }
         }
 
-        // Opens a path file, extracts coordinates and creates Nodes and NodeArcs.
+        /// <summary>
+        /// Opens a path file, extracts coordinates and creates Nodes and NodeArcs.
+        /// </summary>
+        /// <param name="filename">File name to open</param>
+        /// <param name="floorNum">Elevation for path</param>
+        /// <param name="buildingId">Building ID (if path is in building)</param>
+        /// <param name="mapOffset">Offset needed to map to system coordinates</param>
+        /// <param name="isDisplayablePath">Should display on map (some node arcs are hidden)</param>
         private void ProcessPaths(string filename, int floorNum, int buildingId, MapOffset mapOffset, bool isDisplayablePath = false)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(filename);
@@ -138,7 +165,12 @@ namespace CM20314.Data
             CreateNodeArcsForPath(currentLineNodes, stepFree, isDisplayablePath);
         }
 
-        // Creates NodeArcs for a given list of nodes
+        /// <summary>
+        /// Creates NodeArcs for a given list of nodes
+        /// </summary>
+        /// <param name="nodes">Nodes to process</param>
+        /// <param name="stepFree">True if path is step-free, otherwise False</param>
+        /// <param name="isDisplayablePath">Should display on map (some node arcs are hidden)</param>
         private void CreateNodeArcsForPath(List<Node> nodes, bool stepFree, bool isDisplayablePath)
         {
             for (int i = 0; i < nodes.Count - 1; i++)
@@ -151,11 +183,15 @@ namespace CM20314.Data
                     NodeArcType.Path, false, isDisplayablePath, true);
 
                 _context.NodeArc.Add(nodeArc);
-                //SplitAndSaveNodeArc(nodeArc);
+                SplitAndSaveNodeArc(nodeArc);
             }
             _context.SaveChanges();
         }
 
+        /// <summary>
+        /// Splits node arc and saves it if it is too long
+        /// </summary>
+        /// <param name="nodeArc">Node arc to process</param>
         private void SplitAndSaveNodeArc(NodeArc nodeArc)
         {
             NodeArcSplitSet splitNodeArc = SplitNodeArc(nodeArc);
@@ -181,6 +217,11 @@ namespace CM20314.Data
             }
         }
 
+        /// <summary>
+        /// Splits node arc if it is too long
+        /// </summary>
+        /// <param name="nodeArc">Node arc to process</param>
+        /// <returns>Resulting (new) nodes and node arcs</returns>
         public static NodeArcSplitSet SplitNodeArc(NodeArc nodeArc)
         {
             NodeArcSplitSet set = new NodeArcSplitSet();
@@ -219,7 +260,9 @@ namespace CM20314.Data
             return set;
         }
 
-        // Processes all building boundaries (polylines) and entrances (i.e. links from sitewide path nodes to building nodes).
+        /// <summary>
+        /// Processes all building boundaries (polylines) and entrances (i.e. links from sitewide path nodes to building nodes)
+        /// </summary>
         private void ProcessBuildingBoundariesAndEntrances()
         {
             foreach (string buildingName in Constants.SourceFilePaths.BUILDING_NAMES)
@@ -289,7 +332,7 @@ namespace CM20314.Data
                     _context.Coordinate.Add(entranceNodeCoord);
                     _context.SaveChanges();
 
-                    Node entranceNode = new Node(entranceNodeCoord.Z, building.Id, entranceNodeCoord.Id, entranceCoordinates[i].MatchHandle);
+                    Node entranceNode = new Node(entranceNodeCoord.Z, building.Id, entranceNodeCoord.Id, entranceCoordinates[i].MatchHandle ?? "");
                     _context.Node.Add(entranceNode);
                     _context.SaveChanges();
 
@@ -299,7 +342,7 @@ namespace CM20314.Data
                         Node? sitewidePathNode = _context.Node.FirstOrDefault(n => n.CoordinateId == coord.Id);
                         if (sitewidePathNode != null)
                         {
-                            sitewidePathNode.MatchHandle = entranceCoordinates[i].MatchHandle;
+                            sitewidePathNode.MatchHandle = entranceCoordinates[i].MatchHandle ?? "";
                             _context.Node.Update(sitewidePathNode);
                             NodeArc entranceNodeArc = new NodeArc(sitewidePathNode, entranceNode, true,
                                 Coordinate.CalculateEucilidianDistance(entranceNodeCoord, coord), NodeArcType.Path, false, false, false);
@@ -311,7 +354,9 @@ namespace CM20314.Data
             }
         }
 
-        // Floor-level processing for buildings
+        /// <summary>
+        /// Floor-level processing for buildings
+        /// </summary>
         private void ProcessBuildings()
         {
             foreach (string buildingName in Constants.SourceFilePaths.BUILDING_NAMES)
@@ -335,7 +380,11 @@ namespace CM20314.Data
             }
         }
 
-        // Processes floor-specific files
+        /// <summary>
+        /// Processes floor-specific files
+        /// </summary>
+        /// <param name="building">Building to process</param>
+        /// <param name="floor">Floor to process</param>
         private void ProcessFloor(Building building, int floor)
         {
             // SHOULD FIRST FIND MULTIPLIER AND OFFSET
@@ -356,7 +405,13 @@ namespace CM20314.Data
             ProcessExternalFloorLinks(building, floor, mapOffset);
         }
 
-        // Computes x and y offset by determining a reference point between the two scales
+        /// <summary>
+        /// Computes x and y offset by determining a reference point between the two scales
+        /// </summary>
+        /// <param name="building">Building to process</param>
+        /// <param name="floorNum">Floor to process</param>
+        /// <param name="scale">Scale for zoom (currently placeholder)</param>
+        /// <returns>Required offset</returns>
         private MapOffset ComputeMapOffset(Building building, int floorNum, double scale)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_EXTERNAL_LINKS,
@@ -403,16 +458,27 @@ namespace CM20314.Data
             return CalculateOffset(currentLineCoords[1], n1coordinate, scale);
         }
 
-        // Computes offset between two coordinates.
+        /// <summary>
+        /// Computes offset between two coordinates.
+        /// </summary>
+        /// <param name="src">Source coordinate</param>
+        /// <param name="dst">Destination coordinate</param>
+        /// <param name="scale">Scale for zoom (currently placeholder)</param>
+        /// <returns></returns>
         private MapOffset CalculateOffset(Coordinate src, Coordinate dst, double scale)
         {
             double offsetX = dst.X - src.X;
             double offsetY = dst.Y - src.Y;
 
-            return new MapOffset(offsetX, offsetY, scale: scale);
+            return new MapOffset(offsetX, offsetY, scale);
         }
 
-        // Processes polyline boundary for a floor.
+        /// <summary>
+        /// Processes polyline boundary for a floor.
+        /// </summary>
+        /// <param name="building">Building to process</param>
+        /// <param name="floorNum">Floor number to process</param>
+        /// <param name="mapOffset">Offset to apply to points</param>
         private void ProcessFloorBoundary(Building building, int floorNum, MapOffset mapOffset)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_BOUNDARY,
@@ -436,7 +502,12 @@ namespace CM20314.Data
             _context.SaveChanges();
         }
 
-        // Processes polyline boundaries for containers (rooms) within a floor
+        /// <summary>
+        /// Processes polyline boundaries for containers (rooms) within a floor
+        /// </summary>
+        /// <param name="building">Building to process</param>
+        /// <param name="floorNum">Floor number to process</param>
+        /// <param name="mapOffset">Offset to apply to points</param>
         private void ProcessFloorContainers(Building building, int floorNum, MapOffset mapOffset)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_CONTAINERS,
@@ -477,7 +548,12 @@ namespace CM20314.Data
             }
         }
 
-        // Processes links from floorplan to external nodes.
+        /// <summary>
+        /// Processes links from floorplan to external nodes.
+        /// </summary>
+        /// <param name="building">Building to process</param>
+        /// <param name="floorNum">Floor number to process</param>
+        /// <param name="mapOffset">Offset to apply to points</param>
         private void ProcessExternalFloorLinks(Building building, int floorNum, MapOffset mapOffset)
         {
             List<string> lines = _fileService.ReadLinesFromFileWithName(Constants.SourceFilePaths.FLOOR_FILENAME_EXTERNAL_LINKS,
@@ -521,7 +597,10 @@ namespace CM20314.Data
             CreateExternalLink(currentLineCoords);
         }
 
-        // Creates an external link for a given pair of coordinates.
+        /// <summary>
+        /// Creates an external link for a given pair of coordinates.
+        /// </summary>
+        /// <param name="coordinates">Pair (as list) of coordinates to process</param>
         private void CreateExternalLink(List<Coordinate> coordinates)
         {
             // first coordinate is inside, second is out.
@@ -541,7 +620,10 @@ namespace CM20314.Data
             System.Diagnostics.Debug.WriteLine("Added external link node arc");
         }
 
-        // Scale and offset coordinates for use in client app
+        /// <summary>
+        /// Scale and offset coordinates for use in client app
+        /// </summary>
+        /// <returns>Standardised coordinates</returns>
         private List<Coordinate> StandardiseCoordinates()
         {
             List<Coordinate> coordinates = _context.Coordinate.ToList();
@@ -550,6 +632,10 @@ namespace CM20314.Data
             return coordinates;
         }
 
+        /// <summary>
+        /// Computes cost (as Euclidian distance) for all node arcs
+        /// </summary>
+        /// <param name="coordinates">Coordinates (that correspond to the node arcs)</param>
         private void ComputeNodeArcCosts(List<Coordinate> coordinates)
         {
             List<NodeArc> nodeArcs = _context.NodeArc.ToList();
@@ -564,6 +650,11 @@ namespace CM20314.Data
             }
             _context.SaveChanges();
         }
+
+        /// <summary>
+        /// Standardises a list of coordinates by scaling and offsetting
+        /// </summary>
+        /// <param name="coords">Standardised coordinates</param>
         public static void StandardiseCoordinates(List<Coordinate> coords)
         {
             var minCoordX = coords.Min(c => c.X);
@@ -592,7 +683,9 @@ namespace CM20314.Data
             }
         }
 
-        // Clears all rows from database tables.
+        /// <summary>
+        /// Clears all rows from database tables
+        /// </summary>
         private void ClearDatabase()
         {
             foreach (var entity in _context.GetType().GetProperties())

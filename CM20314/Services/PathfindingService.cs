@@ -4,21 +4,39 @@ using CM20314.Models.Database;
 
 namespace CM20314.Services
 {
-    // Handles path-finding and direction services
+    /// <summary>
+    /// Handles path-finding and direction services
+    /// </summary>
     public class PathfindingService
     {
-            public List<NodeArc> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel, List<Node> allNodes, List<NodeArc> allNodeArcs)
+        /// <summary>
+        /// Find shortest path from A to B given constraints and path
+        /// </summary>
+        /// <param name="startNode">Start node (nearest to location)</param>
+        /// <param name="endContainer">End container (building or room)</param>
+        /// <param name="accessLevel">Access level (e.g. Step Free)</param>
+        /// <param name="allNodes">Nodes</param>
+        /// <param name="allNodeArcs">Arcs</param>
+        /// <returns>List of NodeArcs that take you from A to B</returns>
+        public List<NodeArc> FindShortestPath(Node startNode, Container endContainer, AccessibilityLevel accessLevel, List<Node> allNodes, List<NodeArc> allNodeArcs)
         {
             Node targetNode = RoutingService.GetNearestNodeToCoordinate(startNode.Coordinate, allNodes.Where(n => n.BuildingId == endContainer.Id).ToList());
 
             return AStarSearch(
-                startNode, targetNode, allNodes.Where(n => n.BuildingId == endContainer.Id).ToList(), accessLevel, allNodes, allNodeArcs).ToList();
+                startNode, targetNode, allNodes.Where(n => n.BuildingId == endContainer.Id).ToList(), accessLevel, allNodeArcs).ToList();
         }
 
-        // Uses A* Algorithm to perform path search
-        public static List<NodeArc> AStarSearch(Node startNode, Node goalNode, List<Node> goalNodes, AccessibilityLevel accessLevel, List<Node> nodes, List<NodeArc> arcs)
+        /// <summary>
+        /// Uses A* Algorithm to perform path search
+        /// </summary>
+        /// <param name="startNode">Start node (nearest to location)</param>
+        /// <param name="goalNode">Primary goal node</param>
+        /// <param name="goalNodes">All goal nodes (e.g. multiple entrances to a building)</param>
+        /// <param name="accessLevel">Access level (e.g. Step Free)</param>
+        /// <param name="arcs">Arcs</param>
+        /// <returns>List of NodeArcs that take you from A to B</returns>
+        public static List<NodeArc> AStarSearch(Node startNode, Node goalNode, List<Node> goalNodes, AccessibilityLevel accessLevel, List<NodeArc> arcs)
         {
-            //return arcs.ToList();
             // Initialize open and closed sets
             var openSet = new List<Node> { startNode };
             var closedSet = new List<Node>();
@@ -34,7 +52,7 @@ namespace CM20314.Services
             hValues[startNode] = Coordinate.CalculateEucilidianDistance(startNode.Coordinate, goalNode.Coordinate);
             fValues[startNode] = gValues[startNode] + hValues[startNode];
 
-            if(accessLevel == AccessibilityLevel.StepFree)
+            if (accessLevel == AccessibilityLevel.StepFree)
             {
                 arcs = arcs.Where(a => a.StepFree).ToList();
             }
@@ -51,7 +69,7 @@ namespace CM20314.Services
                 if (goalNodes.Select(n => n.Id).Contains(currentNode.Id))
                 {
                     // Reconstruct and return the path
-                    return ReconstructPath(startNode, currentNode, parents, arcs);
+                    return ReconstructPath(currentNode, parents, arcs);
                 }
 
                 System.Diagnostics.Debug.WriteLine($"Start node {startNode.Id} (x={startNode.Coordinate.X}, y={startNode.Coordinate.Y}");
@@ -64,7 +82,7 @@ namespace CM20314.Services
 
                     // Skip if neighbor is in the closed set
                     if (closedSet.Contains(neighbor))
-                            continue;
+                        continue;
                     else
                     {
                         System.Diagnostics.Debug.WriteLine($"Exploring node {neighbor.Id} (x={neighbor.Coordinate.X}, y={neighbor.Coordinate.Y}");
@@ -95,10 +113,16 @@ namespace CM20314.Services
             return new List<NodeArc>();
         }
 
+        /// <summary>
+        /// Find node with minimum F value (argmin)
+        /// </summary>
+        /// <param name="openSet">Nodes to process</param>
+        /// <param name="fValues">Corresponding F values</param>
+        /// <returns>Node with minimum F value</returns>
         private static Node GetLowestFValueNode(List<Node> openSet, Dictionary<Node, double> fValues)
         {
             double minFValue = double.MaxValue;
-            Node lowestFValueNode = null;
+            Node? lowestFValueNode = null;
 
             foreach (var node in openSet)
             {
@@ -109,10 +133,17 @@ namespace CM20314.Services
                 }
             }
 
-            return lowestFValueNode;
+            return lowestFValueNode ?? openSet.First();
         }
 
-        private static List<NodeArc> ReconstructPath(Node startNode, Node goalNode, Dictionary<Node, Node> parents, List<NodeArc> nodeArcs)
+        /// <summary>
+        /// Reconstruct path from node arcs and parents
+        /// </summary>
+        /// <param name="goalNode">Target node</param>
+        /// <param name="parents">Node to parent mapping</param>
+        /// <param name="nodeArcs">Node arcs</param>
+        /// <returns>List of node arcs representing path</returns>
+        private static List<NodeArc> ReconstructPath(Node goalNode, Dictionary<Node, Node> parents, List<NodeArc> nodeArcs)
         {
             var path = new List<NodeArc>();
             var currentNode = goalNode;
@@ -121,11 +152,11 @@ namespace CM20314.Services
             while (currentNode != null && nextNode != null)
             {
                 var arc1 = nodeArcs.FirstOrDefault(
-                    a => a.Node1.Id == currentNode.Id && a.Node2.Id == nextNode.Id); 
+                    a => a.Node1.Id == currentNode.Id && a.Node2.Id == nextNode.Id);
                 var arc2 = nodeArcs.FirstOrDefault(
                     a => a.Node2.Id == currentNode.Id && a.Node1.Id == nextNode.Id);
 
-                if(arc1 != null && arc2 == null)
+                if (arc1 != null && arc2 == null)
                 {
                     arc2 = arc1;
                     Node temp = arc2.Node1;
@@ -135,12 +166,15 @@ namespace CM20314.Services
                     arc2.Node2Id = arc2.Node2.Id;
                 }
 
-                path.Insert(0, arc2);
+                if(arc2 != null)
+                {
+                    path.Insert(0, arc2);
+                }
 
                 currentNode = nextNode;
                 nextNode = parents.ContainsKey(currentNode) ? parents[currentNode] : null;
             }
-                     
+
             return path;
         }
 
