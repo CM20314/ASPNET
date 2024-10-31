@@ -1,13 +1,5 @@
 ﻿using CM20314.Services;
-using CM20314.Models;
 using CM20314.Models.Database;
-using Microsoft.AspNetCore.Hosting;
-using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CM20314.Tests
 {
@@ -28,7 +20,7 @@ namespace CM20314.Tests
             // List is in reverse order; endNode, node_z, node_y, node_x, startNode
             // Print starting from the end of the list
             List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], new List<Node>() { TestData.Nodes.testNodes[9] }, Models.AccessibilityLevel.None, 
-                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+                TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
 
             Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
@@ -46,7 +38,7 @@ namespace CM20314.Tests
             System.Diagnostics.Debug.WriteLine("FindPath2: ");
             
             List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[1], new List<Node>() { TestData.Nodes.testNodes[1] }, Models.AccessibilityLevel.None,
-                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+                TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[2], TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1] };
 
             Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
@@ -65,7 +57,7 @@ namespace CM20314.Tests
             System.Diagnostics.Debug.WriteLine("FindPath3: ");
             
             List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[5], TestData.Nodes.testNodes[5], new List<Node>() { TestData.Nodes.testNodes[5] }, Models.AccessibilityLevel.None,
-                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+                TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[5] };
 
             Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
@@ -79,7 +71,7 @@ namespace CM20314.Tests
             System.Diagnostics.Debug.WriteLine("FindPath4: ");
             
             List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[10], new List<Node>() { TestData.Nodes.testNodes[10] }, Models.AccessibilityLevel.None,
-                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+                TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { };
 
             Assert.AreEqual(expectedNodes.Count(), output.Count());
@@ -94,7 +86,7 @@ namespace CM20314.Tests
             TestData.Nodes.testNodeArcs[2].StepFree = false;
             TestData.Nodes.testNodeArcs[3].StepFree = false;
             List<NodeArc> output = PathfindingService.AStarSearch(TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[9], new List<Node>() { TestData.Nodes.testNodes[9] }, Models.AccessibilityLevel.StepFree,
-                TestData.Nodes.testNodes, TestData.Nodes.testNodeArcs);
+                TestData.Nodes.testNodeArcs);
             List<Node> expectedNodes = new List<Node>() { TestData.Nodes.testNodes[0], TestData.Nodes.testNodes[1], TestData.Nodes.testNodes[3], TestData.Nodes.testNodes[6], TestData.Nodes.testNodes[9] };
 
             Assert.AreEqual(expectedNodes.Count() - 1, output.Count());
